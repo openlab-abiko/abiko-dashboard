@@ -1,0 +1,58 @@
+/* v81 — 9月議会の議案も同じ編集カードとして掲載。 */
+body[data-view="home"] .v81-council-preview{
+ display:flex;flex-direction:column;justify-content:space-between;gap:8px;
+ height:100%;width:100%;padding:17px 18px 15px;box-sizing:border-box;
+ color:#214634;background:linear-gradient(140deg,#edf5ef 0%,#f7faf7 100%);
+}
+body[data-view="home"] .v81-council-top{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#4b6855;line-height:1.4;}
+body[data-view="home"] .v81-council-outcome{display:flex;align-items:baseline;gap:13px;min-height:36px;}
+body[data-view="home"] .v81-council-outcome strong{font-size:28px;font-weight:700;line-height:1.2;}
+body[data-view="home"] .v81-council-outcome>span{font-size:12px;color:#547261;}
+body[data-view="home"] .v81-council-meter{display:flex;height:11px;border-radius:99px;overflow:hidden;background:#d4e2d6;border:1px solid #b5cdbc;flex:none;}
+body[data-view="home"] .v81-council-meter span{height:100%;display:block;}
+body[data-view="home"] .v81-council-yes{background:#267e60;}
+body[data-view="home"] .v81-council-no{background:#d17798;}
+body[data-view="home"] .v81-council-left{background:#959e96;}
+body[data-view="home"] .v81-council-votes{display:flex;gap:8px;flex-wrap:wrap;}
+body[data-view="home"] .v81-council-votes>span{display:inline-flex;align-items:baseline;gap:4px;border:1px solid #8db29a;border-radius:var(--abiko-pill-radius);background:white;color:#22533a;padding:5px 9px;font-size:12px;line-height:1.2;}
+body[data-view="home"] .v81-council-votes>span.has-opposition{background:#c35f85;color:#fff;border-color:#c35f85;}
+body[data-view="home"] .v81-council-votes b{font-size:17px;font-weight:700;}
+body[data-view="home"] .v81-council-sub{font-size:11px;color:#567262;white-space:normal;}
+/* Dashboard preview: enlarged chart with a legible axis, labels and values. */
+body[data-view="home"] .v66-highlights .v81-dashboard-card .v80-card-media{height:265px!important;}
+body[data-view="home"] .v81-dashboard-card .v81-dashboard-graphic{
+ padding:17px 17px 12px!important;background:#f3f8f3!important;
+ gap:7px!important;overflow:hidden!important;justify-content:flex-start!important;
+}
+body[data-view="home"] .v81-chart-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;color:#315c43;font-size:13px;line-height:1.4;}
+body[data-view="home"] .v81-chart-head strong{font-size:21px;color:#18573b;font-weight:750;white-space:nowrap;}
+body[data-view="home"] .v81-chart-head strong small{font-size:11px;font-weight:400;}
+body[data-view="home"] .v81-chart-legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:#456854;font-size:12px;line-height:1.3;}
+body[data-view="home"] .v81-chart-legend span{display:inline-flex;align-items:center;gap:6px;}
+body[data-view="home"] .v81-chart-legend i{display:inline-block;width:10px;height:10px;border-radius:50%;flex:none;}
+body[data-view="home"] .v81-dashboard-card .v81-trend-svg{
+ flex:1 1 auto!important;display:block;width:100%!important;height:auto!important;
+ min-height:0!important;max-height:208px!important;overflow:visible;
+}
+body[data-view="home"] .v81-dashboard-card .v81-treemap{width:100%!important;flex:1 1 auto;max-height:214px;min-height:0;display:block;}
+body[data-view="home"] .v66-highlights .v81-dashboard-card .v80-card-media .v66-graphic svg.v81-trend-svg,
+body[data-view="home"] .v66-highlights .v81-dashboard-card .v80-card-media .v66-graphic svg.v81-treemap{
+ max-height:225px!important;width:100%!important;height:auto!important;
+}
+body[data-view="home"] .v81-ranked-list{display:grid;gap:10px;flex:1;align-content:center;min-height:0;}
+body[data-view="home"] .v81-ranked-row{min-width:0;}
+body[data-view="home"] .v81-ranked-label{display:flex;align-items:baseline;justify-content:space-between;gap:7px;font-size:12px;color:#365746;line-height:1.2;margin-bottom:5px;}
+body[data-view="home"] .v81-ranked-label span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+body[data-view="home"] .v81-ranked-label b{font-size:13px;color:#1d5439;white-space:nowrap;}
+body[data-view="home"] .v81-ranked-track{width:100%;height:10px;border-radius:6px;overflow:hidden;background:#dce9df;}
+body[data-view="home"] .v81-ranked-track span{height:100%;display:block;border-radius:6px;}
+@media(max-width:700px){
+ body[data-view="home"] .v66-highlights .v81-dashboard-card .v80-card-media{height:285px!important;}
+ body[data-view="home"] .v81-dashboard-card .v81-dashboard-graphic{padding:18px 14px 12px!important;}
+ body[data-view="home"] .v81-chart-head{font-size:13px;}
+ body[data-view="home"] .v81-chart-head strong{font-size:24px;}
+ body[data-view="home"] .v81-chart-legend{font-size:12px;}
+ body[data-view="home"] .v81-council-preview{padding:19px 19px 17px;}
+ body[data-view="home"] .v81-council-outcome strong{font-size:30px;}
+}
+@media(max-width:350px){body[data-view="home"] .v81-council-top{font-size:11px}body[data-view="home"] .v81-council-outcome>span{font-size:11px;}}

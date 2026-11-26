@@ -1,0 +1,84 @@
+{
+  "datasets": [
+    {
+      "id": "budget-initial",
+      "title": "我孫子市一般会計当初予算",
+      "data_path": "assets/scripts/data/finance-data.js",
+      "coverage": "2026年度当初予算（歳入・歳出）",
+      "updated_on": null,
+      "sources": [
+        {
+          "publisher": "我孫子市",
+          "title": "令和8年度当初予算の概要",
+          "url": "https://www.city.abiko.chiba.jp/shisei/zaisei/tousho_gaiyou/R8tousyo_gaiyou.html",
+          "retrieved_on": null
+        },
+        {
+          "publisher": "我孫子市",
+          "title": "令和8年度当初予算書",
+          "url": "https://www.city.abiko.chiba.jp/shisei/zaisei/yosansho/R8yosan.html",
+          "retrieved_on": null
+        }
+      ]
+    },
+    {
+      "id": "budget-annual-results",
+      "title": "我孫子市の決算歳入・歳出",
+      "data_path": "assets/scripts/data/finance-data.js",
+      "coverage": "2023〜2025年度",
+      "updated_on": null,
+      "note": "既存ページは整理済み資料の再利用と明記。個々の値と原資料の照合は未実施。",
+      "sources": [
+        {
+          "publisher": "我孫子市",
+          "title": "年度別決算（既存ページの参照先）",
+          "url": "https://www.city.abiko.chiba.jp/shisei/zaisei/kessan/nendobetsu.html",
+          "retrieved_on": null
+        }
+      ]
+    },
+    {
+      "id": "council-2026-09",
+      "title": "我孫子市議会 2026年9月定例会の掲載記録",
+      "data_path": "assets/data/data-2026-09.json",
+      "coverage": "2026-09-02〜2026-09-29",
+      "updated_on": "2026-11-18",
+      "sources": [
+        {
+          "publisher": "我孫子市議会",
+          "title": "議案一覧",
+          "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.html",
+          "retrieved_on": "2026-11-18"
+        },
+        {
+          "publisher": "我孫子市議会",
+          "title": "議員別採決結果一覧",
+          "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/index.files/saiketsukekkaR8.9.pdf",
+          "retrieved_on": "2026-11-18"
+        },
+        {
+          "publisher": "我孫子市議会",
+          "title": "会議録（暫定版）",
+          "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.html",
+          "retrieved_on": "2026-11-18"
+        }
+      ],
+      "note": "議案、請願・陳情、一般質問、意見書、市政一般報告から選んだ項目。記事ごとの出典とPDFの参照箇所はデータファイルに記録。"
+    },
+    {
+      "id": "population-resident-register",
+      "title": "住民基本台帳の人口・世帯",
+      "data_path": "assets/scripts/data/dashboard-data.js",
+      "coverage": "2026年4〜11月（11月1日現在の掲載分まで）",
+      "updated_on": null,
+      "sources": [
+        {
+          "publisher": "我孫子市",
+          "title": "令和8年度 人口と世帯（住民基本台帳）",
+          "url": "https://www.city.abiko.chiba.jp/shisei/toukeijoho/toukei/jinoku_setai/abk2026jinkosetai.html",
+          "retrieved_on": null
+        }
+      ]
+    }
+  ]
+}

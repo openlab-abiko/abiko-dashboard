@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#f7f9f5" name="theme-color"/><meta content="我孫子市議会の議案と採決を、一次資料と一緒に読む非公式市民サイト。" name="description"/><title>市議会を見る｜あびこ、どうなってる？</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/styles/foundation/site.css"><link rel="stylesheet" href="assets/styles/foundation/main-base.css"><link rel="stylesheet" href="assets/styles/pages/council.css"><link rel="stylesheet" href="assets/styles/overrides/latest.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="v73-2026-11-17" name="abiko-build"/><link rel="stylesheet" href="assets/styles/overrides/v75.css"/><link rel="stylesheet" href="assets/styles/overrides/v78.css"/><link rel="stylesheet" href="assets/styles/overrides/v79.css"/><link rel="stylesheet" href="assets/styles/overrides/v82.css"/><link rel="stylesheet" href="assets/styles/pages/council-editorial.css"/>
+</head><body data-view="gikai"><header class="v37-header v38-floating-nav top" id="globalHeader"><div class="v37-header-inner topinner"><a aria-label="トップへ戻る" class="v37-brand brand" href="index.html">あびこ、どうなってる？<span aria-label="ベータ版" class="brand-beta" title="ベータ版">β</span></a><nav aria-label="メインナビゲーション" class="v37-mainnav nav"><a aria-label="市の重点事業を見る" class="v37-nav-item" href="projects.html">重点事業</a><a aria-label="市のお金" class="v37-nav-item" href="budget.html">市のお金</a><a aria-label="先行事例を見る" class="v37-nav-item" href="compare.html"><span class="nav-label-long">先行事例を見る</span><span class="nav-label-short">先行事例</span></a><a aria-label="10の論点" class="v37-nav-item" href="issues.html">10の論点</a><a aria-current="page" aria-label="市議会を見る" class="v37-nav-item v37-selected" href="gikai.html"><span class="nav-label-long">市議会を見る</span><span class="nav-label-short">市議会</span></a><a aria-label="数字で見る我孫子" class="v37-nav-item" href="city-dashboard.html">数字で見る</a></nav></div></header>
+<div aria-label="ページ操作" class="v39-fab-group"><button aria-label="ページ先頭へ戻る" class="v39-back-top" id="v39BackToTop" title="トップへ" type="button"><span aria-hidden="true" class="v39-top-arrow">↑</span><span class="v39-fab-text">トップへ</span></button><button aria-controls="floatingMenu" aria-expanded="false" aria-label="メニューを開く" class="v37-menu-button nav-menu-button v39-fab-menu-toggle" id="menuToggle" type="button"><svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 24 24" width="22"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path></svg><span class="v39-fab-text">メニュー</span></button><nav aria-label="全ページ一覧" class="v37-menu floating-menu v39-fab-panel" hidden="" id="floatingMenu"><div class="v37-menu-kicker">PAGES / ページ一覧</div><a href="index.html">トップへ<span aria-hidden="true">↗</span></a><a href="projects.html">市の重点事業を見る<span aria-hidden="true">↗</span></a><a href="budget.html">市のお金<span aria-hidden="true">↗</span></a><a href="compare.html">先行事例を見る<span aria-hidden="true">↗</span></a><a href="issues.html">10の論点<span aria-hidden="true">↗</span></a><a href="gikai.html">市議会を見る<span aria-hidden="true">↗</span></a><a href="city-dashboard.html">数字で見る我孫子<span aria-hidden="true">↗</span></a><p>非公式・独立した市民プロジェクトの試作版です。</p></nav></div>
+<main id="main" class="council-shell" tabindex="-1">
+  <nav class="council-section-nav council-container" aria-label="市議会ページ内">
+    <a href="#home" data-council-nav="home">市議会トップ</a>
+    <a href="#records" data-council-nav="records">記録を探す</a>
+    <a href="#schedule" data-council-nav="schedule">議会の日程</a>
+    <a href="#guide" data-council-nav="guide">議会のしくみ</a>
+    <a href="#sources" data-council-nav="sources">出典と編集方針</a>
+  </nav>
+
+  <div data-council-view="home" id="g-home">
+    <section class="council-hero" id="home" aria-labelledby="council-title">
+      <div class="council-container council-hero-layout">
+        <h1 id="council-title" tabindex="-1">市議会を見る</h1>
+        <aside class="council-edition" aria-labelledby="council-edition-title">
+          <h2 id="council-edition-title">2026年9月定例会</h2>
+          <p id="council-edition-period"></p>
+          <ul id="council-edition-types"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="council-section council-container" id="pickup" aria-labelledby="council-pickup-title">
+      <div class="council-section-head">
+        <h2 id="council-pickup-title" lang="en">Pick UP</h2>
+        <a class="council-text-link" href="#records">すべての記録を探す <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="council-pickup-tabs" id="council-pickup-tabs" role="group" aria-label="ピックアップのテーマ"></div>
+      <ul class="g-list council-results" id="council-pickup-results"></ul>
+      <p class="council-note" id="council-pickup-status" role="status"></p>
+      <div class="council-pickup-actions">
+        <button class="council-button council-pickup-more" id="council-pickup-more" type="button" aria-controls="council-pickup-results" hidden>もっと見る</button>
+      </div>
+    </section>
+  </div>
+
+  <div data-council-view="records" class="council-container council-directory" id="allBills" hidden>
+    <header class="council-page-header">
+      <h1 tabindex="-1">市議会の記録を探す</h1>
+      <p>気になる言葉や議員名で、議案、請願・陳情、一般質問、意見書、市政一般報告を横断できます。</p>
+    </header>
+    <form class="council-filters" id="council-search" role="search" aria-label="議会記録">
+      <div class="council-search-row">
+        <label for="council-keyword">キーワード</label>
+        <input type="search" id="council-keyword" name="q" placeholder="給食費、介護認定、議案第13号">
+        <button type="submit" class="council-button">検索</button>
+      </div>
+      <div class="council-filter-row">
+        <label>種別<select name="type" id="council-type"></select></label>
+        <label>テーマ<select name="theme" id="council-theme"></select></label>
+        <label>会期<select name="session" id="council-session"></select></label>
+      </div>
+      <div class="council-filter-actions">
+        <label><input type="checkbox" name="divided" value="1"> 賛否が分かれた議案</label>
+        <button type="button" class="council-reset" id="council-reset">条件をリセット</button>
+      </div>
+    </form>
+    <p class="council-result-count" id="council-result-count" role="status" aria-atomic="true"></p>
+    <ul class="g-list council-results" id="council-results"></ul>
+    <p class="council-empty" id="council-empty" hidden>該当する記録がありません。検索語や絞り込み条件を変えてください。</p>
+    <p class="council-coverage" id="council-coverage"></p>
+  </div>
+
+  <div data-council-view="detail" class="council-container council-detail" id="g-detail" hidden>
+    <nav class="council-breadcrumb" aria-label="パンくず">
+      <a href="#home">市議会トップ</a>
+      <span aria-hidden="true">/</span>
+      <a href="#records" id="council-article-back">記録一覧</a>
+    </nav>
+    <div id="council-article"></div>
+  </div>
+
+  <div data-council-view="schedule" class="council-container council-utility" id="g-schedule" hidden>
+    <header class="council-page-header council-reading-header">
+      <h1 tabindex="-1">議会の日程</h1>
+      <p>次の招集予定と、開催された会期の記録を確認できます。</p>
+    </header>
+    <section class="council-utility-section" aria-labelledby="council-schedule-next">
+      <h2 id="council-schedule-next">次の会議</h2>
+      <div id="council-next-schedule"></div>
+      <p class="council-note">会期の状態は、公式発表や会議録を確認して更新します。開会予定日や閉会予定日を過ぎても、表示は自動的に切り替わりません。</p>
+    </section>
+    <section class="council-utility-section" aria-labelledby="council-year-title">
+      <h2 id="council-year-title">定例会は、年4回。</h2>
+      <p>定例会とは別に、必要に応じて臨時会が開かれます。3月議会は通称で、2026年の第1回定例会は2月24日に開会しました。</p>
+      <ul class="council-meeting-list" id="council-year-meetings"></ul>
+      <p class="council-note" id="council-year-checked" hidden></p>
+    </section>
+    <section class="council-utility-section" id="council-extra-section" aria-labelledby="council-extra-title" hidden>
+      <h2 id="council-extra-title">臨時会</h2>
+      <ul class="council-meeting-list" id="council-extra-meetings"></ul>
+    </section>
+    <div id="council-session-calendars"></div>
+  </div>
+
+  <div class="council-container council-utility" data-council-view="guide" id="g-guide" hidden>
+    <header class="council-page-header council-reading-header">
+      <h1 tabindex="-1">市議会のしくみ</h1>
+      <p>市民の声が届く経路から、議会で話し合い、結論を出すまでをたどります。</p>
+    </header>
+    <nav class="council-guide-nav" aria-label="図解の目次">
+      <a href="#guide-relationships">市民と議会の関係</a>
+      <a href="#guide-process">議案が決まるまで</a>
+      <a href="#guide-year">議会の一年</a>
+      <a href="#guide-record-types">記録の違い</a>
+    </nav>
+
+    <section class="council-utility-section council-guide-section" id="guide-relationships">
+      <h2 tabindex="-1">市民が選び、議会と市長が役割を担う</h2>
+      <div class="council-diagram council-relationship" role="group" aria-label="市民、市議会、市長、市役所の関係">
+        <div class="council-diagram-node council-citizens">
+          <h3>市民</h3><p>選挙で議員と市長を選ぶ</p>
+        </div>
+        <div class="council-branches">
+          <div>
+            <p class="council-down-arrow"><span class="council-arrow-stem" aria-hidden="true"></span>議員を選ぶ<br>請願・陳情を届ける</p>
+            <div class="council-diagram-node">
+              <h3>市議会</h3><p>条例や予算を審議・議決し、決算を認定する。市の仕事を調査し、チェックする。</p>
+            </div>
+          </div>
+          <div>
+            <p class="council-down-arrow"><span class="council-arrow-stem" aria-hidden="true"></span>市長を選ぶ</p>
+            <div class="council-diagram-node">
+              <h3>市長</h3><p>予算や条例を提案し、議決を受けて事業を進める。</p>
+            </div>
+          </div>
+        </div>
+        <div class="council-city-office">
+          <p class="council-down-arrow"><span class="council-arrow-stem" aria-hidden="true"></span>市長が市役所を指揮する</p>
+          <div class="council-diagram-node">
+            <h3>市役所</h3><p>担当する部署が行政サービスや事業を実施する。</p>
+          </div>
+        </div>
+        <ul class="council-exchange-arrows">
+          <li>市長 <span class="council-diagram-motion">→</span> 市議会 <span>議案を提出し、説明する</span></li>
+          <li>議員 <span class="council-diagram-motion">→</span> 市議会 <span>法令の要件に沿って議案を提出する</span></li>
+          <li>市議会 <span class="council-diagram-motion">→</span> 市長・市役所 <span>議決を伝え、行政の仕事を確認する</span></li>
+        </ul>
+      </div>
+      <p>市議会と市長は、どちらも市民が直接選びます。議員も、法令に定められた要件を満たせば条例案などを提出できます。市の予算案は市長が提出します。市民は、請願や陳情のほか、傍聴や会議録などを通じて議会に関わることができます。</p>
+      <p class="council-note"><a href="https://www.city.abiko.chiba.jp/shisei/shigikai/shimin_shigikai.html">請願・陳情の提出方法</a> · <a href="https://laws.e-gov.go.jp/law/322AC0000000067">地方自治法（議決・検査・議案提出・請願）</a></p>
+    </section>
+
+    <section class="council-utility-section council-guide-section" id="guide-process">
+      <h2 tabindex="-1">議案は、こうして決まる</h2>
+      <p>議案は、条例の制定や予算などについて、議会に判断を求める案です。代表的な定例会では、次の順で審議します。</p>
+      <ol class="council-diagram council-process" aria-label="議案を提出してから採決するまで">
+        <li class="council-diagram-node">
+          <span class="council-chip council-chip--muted council-step-number council-diagram-motion" aria-hidden="true">01</span>
+          <h3>提出・説明</h3><p>市長などが議案を出し、本会議で提案の理由を説明する。</p>
+        </li>
+        <li class="council-diagram-node">
+          <span class="council-chip council-chip--muted council-step-number council-diagram-motion" aria-hidden="true">02</span>
+          <h3>質疑</h3><p>本会議で議員が議案の内容を質問し、必要な議案を担当の委員会に送る。</p>
+        </li>
+        <li class="council-diagram-node">
+          <span class="council-chip council-chip--muted council-step-number council-diagram-motion" aria-hidden="true">03</span>
+          <h3>委員会審査</h3><p>担当者に詳しく質問し、必要に応じて討論し、委員会としての結論を出す。</p>
+        </li>
+        <li class="council-diagram-node">
+          <span class="council-chip council-chip--muted council-step-number council-diagram-motion" aria-hidden="true">04</span>
+          <h3>報告・討論</h3><p>本会議で委員長が審査結果を報告し、討論があれば議員が賛否の意見を述べる。</p>
+        </li>
+        <li class="council-diagram-node">
+          <span class="council-chip council-chip--muted council-step-number council-diagram-motion" aria-hidden="true">05</span>
+          <h3>採決</h3><p>本会議で採決し、議会の最終的な意思を決める。</p>
+        </li>
+      </ol>
+      <div class="council-diagram-node council-diagram-note">
+        <p>議案によっては、委員会に送る手続き（委員会付託）を省略して本会議で採決する場合があります。一般質問は、市政全般について市長などに聞く機会です。</p>
+        <a href="https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/kaigi_unei.html">市議会の会議と運営</a>
+      </div>
+    </section>
+
+    <section class="council-utility-section council-guide-section" id="guide-year">
+      <h2 tabindex="-1">議会の一年</h2>
+      <p>定例会は年4回です。臨時会は、急いで議決が必要な案件があるときなどに開きます。</p>
+      <ol class="council-diagram council-year-diagram" aria-label="定例会の開かれる時期と議題の例">
+        <li class="council-diagram-node"><span class="council-chip council-chip--muted">第1回</span><h3 class="council-diagram-motion">3月ごろ</h3><p>当初予算など</p></li>
+        <li class="council-diagram-node"><span class="council-chip council-chip--muted">第2回</span><h3 class="council-diagram-motion">6月ごろ</h3><p>条例・補正予算など</p></li>
+        <li class="council-diagram-node"><span class="council-chip council-chip--muted">第3回</span><h3 class="council-diagram-motion">9月ごろ</h3><p>前年度の決算など</p></li>
+        <li class="council-diagram-node"><span class="council-chip council-chip--muted">第4回</span><h3 class="council-diagram-motion">12月ごろ</h3><p>条例・補正予算など</p></li>
+      </ol>
+      <p class="council-note">時期や議題は年によって異なります。<a href="#schedule">今年の議会日程を見る</a></p>
+      <div class="council-meeting-relationship" aria-label="会期中の本会議と委員会">
+        <div class="council-diagram-node"><h3>本会議</h3><p>全議員で議案を審議・議決し、議員が一般質問を行う。</p></div>
+        <p class="council-meeting-arrows"><span aria-hidden="true"></span>案件を委員会へ<br>審査結果を本会議へ</p>
+        <div class="council-diagram-node"><h3>委員会</h3><p>分野ごとに分かれ、議案などを詳しく調べる。必要に応じて会期外にも開く。</p></div>
+      </div>
+    </section>
+
+    <section class="council-utility-section council-guide-section" id="guide-record-types">
+      <h2 tabindex="-1">議案・一般質問・請願などの違い</h2>
+      <p>誰が始め、議会で何をし、結果がどうなるかを比べます。</p>
+      <div class="council-record-types">
+        <article class="council-diagram-node">
+          <h3><a href="#records?type=bill">議案</a></h3>
+          <dl><dt>始める人</dt><dd>市長や議員など</dd><dt>議会で</dt><dd>条例案や予算案などを審議する。</dd><dt>結果</dt><dd>可決・否決、認定、同意などを議決する。</dd></dl>
+        </article>
+        <article class="council-diagram-node">
+          <h3><a href="#records?type=question">一般質問</a></h3>
+          <dl><dt>始める人</dt><dd>議員</dd><dt>議会で</dt><dd>市政全般について市長などに質問する。</dd><dt>結果</dt><dd>市の考えや対応を答弁で確かめる。採決は行わない。</dd></dl>
+        </article>
+        <article class="council-diagram-node">
+          <h3><a href="#records?type=petition">請願</a></h3>
+          <dl><dt>始める人</dt><dd>紹介議員を通じて要望を届ける人</dd><dt>議会で</dt><dd>要望を審査し、採否を判断する。</dd><dt>結果</dt><dd>採択した請願を市長などに送る。実際の対応は処理の報告で確認できる。</dd></dl>
+        </article>
+        <article class="council-diagram-node">
+          <h3><a href="#records?type=petition">陳情</a></h3>
+          <dl><dt>始める人</dt><dd>紹介議員を介さず要望を届ける人</dd><dt>議会で</dt><dd>我孫子市では陳情により審査や参考配布など、扱いが異なる。</dd><dt>結果</dt><dd>採択した陳情は市長などに送る。審査されるかは受付条件で確認できる。</dd></dl>
+        </article>
+        <article class="council-diagram-node">
+          <h3><a href="#records?type=resolution">意見書</a></h3>
+          <dl><dt>始める人</dt><dd>意見書の案を出す議員など</dd><dt>議会で</dt><dd>市の公益に関わることについて審議し、採決する。</dd><dt>結果</dt><dd>可決すると、議会の意見を国会や関係行政庁に届ける。</dd></dl>
+        </article>
+        <article class="council-diagram-node">
+          <h3><a href="#records?type=report">市政一般報告</a></h3>
+          <dl><dt>始める人</dt><dd>市長</dd><dt>議会で</dt><dd>事業や計画の進み具合を報告する。</dd><dt>結果</dt><dd>市の取り組みを確認できる。報告自体に議決は伴わない。</dd></dl>
+        </article>
+      </div>
+      <p class="council-note">請願と陳情の受付方法・締切は公式案内で確認できます。<a href="https://www.city.abiko.chiba.jp/shisei/shigikai/shimin_shigikai.html">請願・陳情の提出方法</a></p>
+    </section>
+    <section class="council-utility-section council-guide-section">
+      <h2>我孫子市議会の3つの常任委員会。</h2>
+      <p>専門分野ごとに分かれ、条例や事業、予算などを審査します。担当の分野は次のとおりです。</p>
+      <div class="council-committee-list">
+        <div><h3>総務企画委員会</h3><p>市の企画・財政、防災、消防、広報、市民活動など。</p></div>
+        <div><h3>教育福祉委員会</h3><p>保育・学校教育、介護、福祉、健康、図書館など。</p></div>
+        <div><h3>環境都市委員会</h3><p>環境、道路、交通、上下水道、都市計画、産業など。</p></div>
+      </div>
+      <div class="council-diagram-note">
+        <strong>特別委員会もあります</strong>
+        <p>特定の議題を詳しく審査するために設置されます。我孫子市議会では当初予算や決算の審査に特別委員会を設ける取り扱いです。</p>
+      </div>
+    </section>
+    <section class="council-utility-section council-guide-section g-guide-extra">
+      <h2>議会をもっと知る</h2>
+      <div class="council-faq">
+        <details>
+          <summary>どんなことを議決するの？</summary>
+          <div class="council-faq-answer">
+            <p>主なものは、条例の制定・改廃、予算、一定額以上の契約や財産の取得・処分、決算の認定、人事案件などです。すべての市役所の支出について、個別の採決があるわけではありません。</p>
+            <p>新しい制度を「始める」と決めるだけでなく、使ったお金が適切だったかを後から確認することも議会の役割です。</p>
+          </div>
+        </details>
+        <details>
+          <summary>「予算」と「決算」は何が違う？</summary>
+          <div class="council-faq-answer">
+            <p>予算は新年度の収入・支出の計画で、原則として執行前に議会で審議されます。補正予算は年度途中に計画を変更するためのものです。決算は年度が終わった後の実績で、監査委員の審査などを経て議会が認定します。</p>
+            <p>認定は「この支出がすべて望ましかった」という政治的な承認とは必ずしも同義ではありません。</p>
+          </div>
+        </details>
+        <details>
+          <summary>市長と議会が対立したら？</summary>
+          <div class="council-faq-answer">
+            <p>議会は市長提案の議案に修正・反対できます。市長側には、法律に定められた場合に議決の再議を求める制度があります。議会には調査や不信任議決などの権限もありますが、要件はそれぞれ異なります。</p>
+            <p>普段の政策形成では、質問・委員会審査・説明要求によって問題点を明らかにすることが重要です。</p>
+          </div>
+        </details>
+        <details>
+          <summary>委員会は何のためにある？</summary>
+          <div class="council-faq-answer">
+            <p>全議員が本会議だけで細部を検討するのは困難です。そこで総務企画、教育福祉、環境都市など分野ごとの常任委員会が詳細に審査します。予算や決算のように横断的なテーマでは特別委員会が設けられることがあります。</p>
+            <p>委員会での審査後、議決が必要な議案の最終的な判断は本会議で行われます。</p>
+          </div>
+        </details>
+        <details>
+          <summary>一般質問と議案質疑は違う？</summary>
+          <div class="council-faq-answer">
+            <p>一般質問は市政全体について、市長や執行部の考え・対応を問いただす場です。一方、議案質疑は提出された議案の内容や根拠を確認するものです。</p>
+            <p>議員が質問したことと、議会が正式に決議したことは区別して読む必要があります。</p>
+          </div>
+        </details>
+        <details>
+          <summary>可決・否決・認定・同意</summary>
+          <div class="council-faq-answer">
+            <p>「可決」は議案の内容を認めること、「否決」は認めないことです。決算については「認定」、人事案件などには「同意」という用語を使うことがあります。結果を読むときは、その議案が何についての判断だったかを確認しましょう。</p>
+            <p>賛否人数は議長の扱い、欠席・退席などの区別にも注意が必要です。</p>
+          </div>
+        </details>
+        <details>
+          <summary>議案が可決されたら、すぐ実施？</summary>
+          <div class="council-faq-answer">
+            <p>可決後も、条例の施行日、予算執行の準備、入札・契約、関係機関との協議などの手続きが残る場合があります。議案の「可決」と、事業が「完了した」ことは別です。</p>
+            <p>実施時期や進捗は、市長部局の資料や事業報告と照らす必要があります。</p>
+          </div>
+        </details>
+        <details>
+          <summary>請願と陳情はどう違う？</summary>
+          <div class="council-faq-answer">
+            <p>議会に要望を届ける手段です。一般的に請願には紹介議員が必要で、陳情には不要ですが、具体的な取扱いや期限は議会ごとに定められています。</p>
+            <p>我孫子市へ提出する場合は、最新の受付方法・様式・締切を公式サイトで確認してください。</p>
+          </div>
+        </details>
+        <details>
+          <summary>傍聴・会議録・映像中継</summary>
+          <div class="council-faq-answer">
+            <p>本会議や委員会の公開・傍聴、映像配信、会議録などを使うと、議案の背景や賛否の理由を追いやすくなります。議事録の掲載は会議直後とは限りません。</p>
+            <p>公式の映像・会議録・議案本文・採決結果を突き合わせて読むことが重要です。</p>
+          </div>
+        </details>
+        <details>
+          <summary>議案を読むときの5つの手順</summary>
+          <div class="council-faq-answer">
+            <p>①件名と目的を確認 ②条例の新旧対照表や予算書の該当箇所を確認 ③委員会での論点を読む ④本会議の採決結果を確認 ⑤施行後の実績・評価を追う。</p>
+            <p>このサイトの短い解説だけで結論を出さず、原文リンクも見てください。</p>
+          </div>
+        </details>
+      </div>
+      <div class="council-guide-source">
+        <strong>資料の読み分け</strong>
+        <p>議案名・提出日・原文PDF・採決結果は公式資料に基づきます。一方、「暮らしへの影響」や「考えたい問い」は本サイトの編集であり、市議会の公式見解ではありません。未確認の説明を付け足さないため、詳細解説がない議案もあります。</p>
+        <p>出典：<a href="https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/kaigi_unei.html" rel="noopener noreferrer" target="_blank">我孫子市議会の会議と運営</a>／<a href="https://www.city.abiko.chiba.jp/shisei/shigikai/index.html" rel="noopener noreferrer" target="_blank">市議会公式トップ</a></p>
+      </div>
+    </section>
+  </div>
+
+  <div data-council-view="sources" class="council-container council-utility" id="g-sources" hidden>
+    <header class="council-page-header">
+      <h1 tabindex="-1">出典と編集方針</h1>
+      <p>記事から会議録や採決表の該当ページに戻れるよう、参照先を掲載しています。</p>
+    </header>
+    <div id="council-primary-sources"></div>
+    <section class="council-utility-section" aria-labelledby="council-editorial-title">
+      <h2 id="council-editorial-title">編集の約束</h2>
+      <ul class="council-policy">
+        <li>発言が会議録で確認できたものは、質問者の氏名と答弁した市側の役職を示し、やりとりを要約します。</li>
+        <li>質問要項は事前の通告として扱います。実際の発言や答弁を確認できないときは、その旨を明記します。</li>
+        <li>採決表は賛否を示す資料です。賛否の理由は、発言などの根拠が確認できる場合に掲載します。</li>
+        <li>請願の採択、意見書の提出、市政一般報告には、それぞれ異なる意味があります。</li>
+        <li>請願者などの一般市民の氏名・住所は再掲載しません。記事末尾の確認点は、このサイトの編集上の問いです。</li>
+      </ul>
+    </section>
+  </div>
+
+  <noscript><p class="council-container council-note">一覧・検索と記事表示には JavaScript が必要です。<a href="https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/index.html">9月定例会の公式資料</a>は市議会サイトでご覧いただけます。</p></noscript>
+</main>
+<footer class="footer v45-footer"><div class="wrap v45-footer-main">
+<div class="v45-footer-about"><span class="v45-footer-kicker"></span><strong>あびこ、どうなってる？</strong><p>公開データを手がかりに、まちを知り、考え、話し合うための非公式の市民プロジェクト。</p></div>
+<nav aria-label="フッターのページ案内" class="v45-footer-navigation"><a href="projects.html"><span>重点事業</span></a><a href="budget.html"><span>市のお金</span></a><a href="compare.html"><span>先行事例</span></a><a href="issues.html"><span>10の論点</span></a><a href="gikai.html"><span>市議会を見る</span></a><a href="city-dashboard.html"><span>数字で見る</span></a></nav></div>
+<div class="wrap v45-footer-bottom"><div class="v45-footer-facts"><span>非公式・独立した試作版／我孫子市・政党・候補者の公式見解ではありません。</span><span>数値の対象年・算出基準は各ページで確認してください。自動取得対象外の資料は更新時期が異なります。</span></div>
+<details class="v45-footer-sources"><summary>出典・写真・ライセンスについて <span aria-hidden="true">＋</span></summary><div class="v45-footer-sources-inner"><p>政策・予算・事業の原資料は各項目の出典から確認できます。資料写真は各事業の実施現場や完成状態を示すものではありません。撮影対象と利用条件は、下の「写真の出典・利用条件」を確認してください。</p>
+<div class="v45-source-links"><a href="https://www.city.abiko.chiba.jp/shisei/gyoseikaikaku/gyoseihyouka/shiteijimu/R8siteijimujigyou.html" rel="noopener" target="_blank">市の指定事務事業 ↗</a><a href="https://www.city.abiko.chiba.jp/shisei/zaisei/yosansho/R8yosan.html" rel="noopener" target="_blank">市の当初予算 ↗</a><a href="https://www.city.abiko.chiba.jp/shisei/keikauhoushin/toshikiban/koutsuukeikaku.html" rel="noopener" target="_blank">市の公共交通計画 ↗</a><a href="https://fontawesome.com/license/free" rel="noopener" target="_blank">Font Awesome Free（CC BY 4.0） ↗</a></div>
+<section class="photo-credits"><h3>写真の出典・利用条件</h3><p>写真は撮影時点の記録です。各事業の施工場所・完成状態を示すものではありません。写真がその事業の対象を表していない場合は「資料写真」と明記しています。今回差し替えた資料写真はWikimedia Commonsの再利用可能な画像を表示しています。写真はレイアウトに合わせてトリミング表示することがあります。実在の別地域・施設を撮影した写真は事業の現地写真ではありません。</p><div class="credit-list"><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Teganuma_Park_in_Ciba_Japan.jpg" rel="noopener" target="_blank">手賀沼公園（我孫子市）（2009年） / 岡部碩道 / Public Domain</a><small> ・ <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Abiko_city_hall.JPG" rel="noopener" target="_blank">我孫子市役所（2012年） / Altomarina / CC BY-SA 3.0</a><small> ・ <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Abiko_City_ABIKO_Junior_HighSchool.jpg" rel="noopener" target="_blank">我孫子中学校（2012年） / Miyuki Meinaka / CC0 1.0</a><small> ・ <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Abiko-Sta-S-Rotary.JPG" rel="noopener" target="_blank">我孫子駅南口（2018年） / Nyao148 / Archiroid21 / CC BY-SA 3.0</a><small> ・ <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener" target="_blank">利用条件</a></small></span><a href="https://commons.wikimedia.org/wiki/File:Abiko_City_Library_Fusa_Sub_Library.jpg" rel="noopener" target="_blank">我孫子市民図書館 布佐分館（2012年） / Miyuki Meinaka / CC BY-SA 3.0</a><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Abiko_City_Library_Bus_%22Soyokaze-go%22.jpg" rel="noopener" target="_blank">我孫子市民図書館の移動図書館（2012年） / Miyuki Meinaka / CC BY-SA 3.0</a><small> ・ <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener" target="_blank">利用条件</a></small></span><a href="https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E5%AD%A6%E6%A0%A1%E3%81%AE%E7%B5%A6%E9%A3%9F.jpg" rel="noopener" target="_blank">日本の学校給食の参考写真（我孫子市のものではありません）（2024年） / ねこはっぴー / CC0 1.0</a><a href="https://commons.wikimedia.org/wiki/File:Fire_truck_in_Tokyo.jpg" rel="noopener" target="_blank">東京の消防車の参考写真（我孫子市の車両ではありません）（2021年） / Syced / CC0 1.0</a><a href="https://commons.wikimedia.org/wiki/File:Tega_Akebono_Bridge.JPG" rel="noopener" target="_blank">手賀曙橋（千葉県柏市）（2021年） / あばさー / Public Domain</a><a href="https://commons.wikimedia.org/wiki/File:Matsudo_20241006_132242.jpg" rel="noopener" target="_blank">松戸市内の分別回収例（我孫子市ではありません）（2024年） / Ka23 13 / CC BY 4.0</a><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Inage_Health_and_Welfare_Center.jpg" rel="noopener" target="_blank">千葉市・稲毛保健福祉センター / 掬茶 / CC BY-SA 3.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:%E5%8C%97%E5%8D%83%E8%91%89%E7%AC%AC%E4%BA%8C%E6%A9%9F%E5%A0%B4%E3%81%AE%E5%8C%97%E5%8D%83%E8%91%89%E5%B0%8E%E6%B0%B4%E3%83%93%E3%82%B8%E3%82%BF%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg" rel="noopener" target="_blank">北千葉導水ビジターセンター / Souka Kinmei / CC0 1.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:%E9%81%93%E3%81%AE%E9%A7%85%E3%81%97%E3%82%87%E3%81%86%E3%81%AA%E3%82%93%E3%83%BB%E3%81%A6%E3%82%93%E3%81%A8.jpg" rel="noopener" target="_blank">柏市・道の駅しょうなん「てんと」 / Souka Kinmei / CC0 1.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Recycling_bins_in_a_Japanese_supermarket-_caps%2C_juiceboxes%2C_styrofoam_trays.jpg" rel="noopener" target="_blank">国内スーパーの資源分別回収 / Syced / CC0 1.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:%E6%88%91%E5%AD%AB%E5%AD%90%E5%B8%82%E7%94%9F%E6%B6%AF%E5%AD%A6%E7%BF%92%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E3%82%A2%E3%83%93%E3%82%B9%E3%82%BF.jpg" rel="noopener" target="_blank">我孫子市生涯学習センター アビスタ / Souka Kinmei / CC0 1.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:%E6%89%8B%E8%B3%80%E6%B2%BC%E3%81%AB%E3%81%8D%E3%82%8C%E3%81%84%E3%81%AA%E6%B0%B4%E3%82%92%E6%B5%81%E3%81%99%28%E5%8C%97%E5%8D%83%E8%91%89%E7%AC%AC%E4%BA%8C%E6%A9%9F%E5%A0%B4%E3%81%8B%E3%82%89%E6%92%AE%E5%BD%B1%29.jpg" rel="noopener" target="_blank">手賀沼への導水 / Souka Kinmei / CC0 1.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:%E7%9C%8C%E7%AB%8B%E6%89%8B%E8%B3%80%E6%B2%BC%E8%87%AA%E7%84%B6%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E7%B7%91%E9%81%93.jpg" rel="noopener" target="_blank">県立手賀沼自然ふれあい緑道 / Souka Kinmei / CC0 1.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Teganuma_in_Ciba_Japan.jpg" rel="noopener" target="_blank">手賀沼の水辺 / 岡部碩道 / Public Domain（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/publicdomain/mark/1.0/" rel="noopener" target="_blank">利用条件</a></small></span><span class="photo-credit-entry"><a href="https://commons.wikimedia.org/wiki/File:Swans_and_boats_on_Lake_Tega%2C_Chiba_prefecture_%E6%89%8B%E8%B3%80%E6%B2%BC_%E5%8D%83%E8%91%89%E7%9C%8C.jpg" rel="noopener" target="_blank">手賀沼の景観 / OiMax / CC BY 2.0（表示時にトリミングあり）</a><small> ・ <a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener" target="_blank">利用条件</a></small></span><a href="https://commons.wikimedia.org/wiki/File:%E5%8C%97%E5%8D%83%E8%91%89%E7%AC%AC%E4%BA%8C%E6%A9%9F%E5%A0%B4%E3%81%AE%E5%8C%97%E5%8D%83%E8%91%89%E5%B0%8E%E6%B0%B4%E3%83%93%E3%82%B8%E3%82%BF%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg" rel="noopener" target="_blank">北千葉導水ビジターセンター / Souka Kinmei / CC0 1.0（表示時にトリミングあり）</a></div></section><p class="v45-license-note">画像の著作権・ライセンスは各提供者に帰属。出典先の利用条件を優先してください。</p></div></details>
+<small class="v45-footer-copyright">非公式・独立した市民プロジェクト</small></div></footer>
+<script src="assets/scripts/core/common-nav-v60.js"></script><script src="assets/scripts/core/v39-controls.js"></script><script src="assets/scripts/data/council-data.js"></script><script src="assets/scripts/features/council-engine.js"></script><script defer src="assets/scripts/core/v79-nav.js"></script><script defer src="assets/scripts/core/v78-focus.js"></script></body></html>

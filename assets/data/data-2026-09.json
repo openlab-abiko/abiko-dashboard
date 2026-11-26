@@ -1,0 +1,3354 @@
+{
+  "meta": {
+    "id": "2026-09",
+    "name": "2026年9月定例会",
+    "shortName": "2026年9月議会",
+    "start": "2026-09-02",
+    "end": "2026-09-29",
+    "checkedOn": "2026-11-18",
+    "status": "閉会済み",
+    "expectedCounts": {
+      "bill": 24,
+      "petition": 4,
+      "question": 12,
+      "report": 8,
+      "resolution": 4
+    },
+    "minutesEdition": "provisional",
+    "minutesNote": "市は正式版を11月25日に会議録検索システムに掲載する予定です（11月18日確認）。暫定版は校正中の記録です。",
+    "coverage": "市長提出議案24件、請願・陳情4件、一般質問12人、意見書4件、市政一般報告から選んだ8項目。"
+  },
+  "members": [
+    "甲斐俊光",
+    "椎名幸雄",
+    "日暮俊一",
+    "西垣一郎",
+    "高木宏樹",
+    "澤田敦士",
+    "木村得道",
+    "江川克哉",
+    "山下佳代",
+    "島田安子",
+    "坂巻宗男",
+    "早川真",
+    "飯塚誠",
+    "豊島庸市",
+    "芹澤正子",
+    "深井優也",
+    "佐々木豊治",
+    "内田美恵子",
+    "岩井康",
+    "船橋優",
+    "茅野理",
+    "海津にいな",
+    "西川佳克",
+    "芝田真代"
+  ],
+  "sources": {
+    "term": {
+      "label": "9月定例会の公式資料一覧",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/index.html"
+    },
+    "schedule": {
+      "label": "9月定例会の会期日程",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-3kaikinittei.html"
+    },
+    "bills": {
+      "label": "提出議案・議案資料の一覧",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.html"
+    },
+    "votes": {
+      "label": "議員別採決結果（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/index.files/saiketsukekkaR8.9.pdf"
+    },
+    "minutes": {
+      "label": "本会議・委員会の会議録一覧（暫定版）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.html",
+      "edition": "provisional"
+    },
+    "question-index": {
+      "label": "一般質問日程・登壇者一覧",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9ippanshitsumon.html"
+    },
+    "question-outline": {
+      "label": "一般質問要項（事前の通告・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9ippanshitsumon.files/shitsumon-youkouR8.9.pdf"
+    },
+    "reports": {
+      "label": "9月2日の市政一般報告・全文",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html"
+    },
+    "petitions": {
+      "label": "請願・陳情一覧",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-3seiganchinjo.html"
+    },
+    "petition-original": {
+      "label": "請願・陳情文書表（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-3seiganchinjo.files/R8.9seiganchinjo-bunshohyo.pdf"
+    },
+    "opinions": {
+      "label": "提出した意見書の一覧",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/ikensyo.html"
+    },
+    "opinion-proposals": {
+      "label": "発議案第1〜4号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/index.files/R8.9hatsugian1-4.pdf"
+    },
+    "referral": {
+      "label": "議案等委員会付託表",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9giantoufutaku.html"
+    },
+    "bill-notes": {
+      "label": "提出議案の説明資料（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/gianshiryou.pdf"
+    },
+    "member-list": {
+      "label": "我孫子市議会 議員名簿",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/giinmeibo/index.html"
+    },
+    "plenary-02": {
+      "label": "9月2日 本会議 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80902honkaigi.pdf",
+      "edition": "provisional",
+      "date": "2026-09-02",
+      "venue": "本会議"
+    },
+    "plenary-09": {
+      "label": "9月9日 本会議 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80909honkaigi.pdf",
+      "edition": "provisional",
+      "date": "2026-09-09",
+      "venue": "本会議"
+    },
+    "plenary-10": {
+      "label": "9月10日 本会議 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80910honkaigi.pdf",
+      "edition": "provisional",
+      "date": "2026-09-10",
+      "venue": "本会議"
+    },
+    "plenary-11": {
+      "label": "9月11日 本会議 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80911honkaigi.pdf",
+      "edition": "provisional",
+      "date": "2026-09-11",
+      "venue": "本会議"
+    },
+    "plenary-29": {
+      "label": "9月29日 本会議 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80929honkaigi.pdf",
+      "edition": "provisional",
+      "date": "2026-09-29",
+      "venue": "本会議"
+    },
+    "general-committee": {
+      "label": "9月15日 総務企画常任委員会 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80915soumukikaku.pdf",
+      "edition": "provisional",
+      "date": "2026-09-15",
+      "venue": "総務企画常任委員会"
+    },
+    "education-committee": {
+      "label": "9月16日 教育福祉常任委員会 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80916kyouikufukusi.pdf",
+      "edition": "provisional",
+      "date": "2026-09-16",
+      "venue": "教育福祉常任委員会"
+    },
+    "environment-committee": {
+      "label": "9月17日 環境都市常任委員会 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80917kankyoutosi.pdf",
+      "edition": "provisional",
+      "date": "2026-09-17",
+      "venue": "環境都市常任委員会"
+    },
+    "budget-committee": {
+      "label": "9月18日 予算審査特別委員会 会議録（暫定版・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/R8_3kaigirokuzantei.files/R80918yosanshinsa.pdf",
+      "edition": "provisional",
+      "date": "2026-09-18",
+      "venue": "予算審査特別委員会"
+    },
+    "g1": {
+      "label": "議案第1号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g1.pdf"
+    },
+    "g2": {
+      "label": "議案第2号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g2.pdf"
+    },
+    "g3": {
+      "label": "議案第3号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g3.pdf"
+    },
+    "g4": {
+      "label": "議案第4号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g4.pdf"
+    },
+    "g5": {
+      "label": "議案第5号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g5.pdf"
+    },
+    "g6": {
+      "label": "議案第6号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g6.pdf"
+    },
+    "g7": {
+      "label": "議案第7号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g7.pdf"
+    },
+    "g8": {
+      "label": "議案第8号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g8.pdf"
+    },
+    "g9": {
+      "label": "議案第9号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g9.pdf"
+    },
+    "g10": {
+      "label": "議案第10号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g10.pdf"
+    },
+    "g11-14": {
+      "label": "議案第11〜14号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g11-14.pdf"
+    },
+    "g15": {
+      "label": "議案第15号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g15.pdf"
+    },
+    "g16": {
+      "label": "議案第16号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g16.pdf"
+    },
+    "g17-20": {
+      "label": "議案第17〜20号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g17-20.pdf"
+    },
+    "g21": {
+      "label": "議案第21号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g21.pdf"
+    },
+    "g22": {
+      "label": "議案第22号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g22.pdf"
+    },
+    "g23": {
+      "label": "議案第23号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g23.pdf"
+    },
+    "g24": {
+      "label": "議案第24号の本文（PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-9-gian.files/g24.pdf"
+    },
+    "report-kyushoku": {
+      "label": "学校給食費公会計化に向けた推進（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cmsC5568"
+    },
+    "report-rain": {
+      "label": "令和8年8月千葉豪雨（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cmsB25EE"
+    },
+    "report-bus": {
+      "label": "あびバス平和台地区運行事業（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cms66969"
+    },
+    "report-child": {
+      "label": "多子世帯保育料軽減制度の拡充（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cmsE3D6C"
+    },
+    "report-otayori": {
+      "label": "介護未経験者から介護の担い手となるまでの一体的支援事業（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cms11829"
+    },
+    "report-cashless": {
+      "label": "公金のキャッシュレス納付（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cmsDF5F6"
+    },
+    "report-kohokudai": {
+      "label": "湖北台市民センターについて（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cmsB5DD2"
+    },
+    "report-window": {
+      "label": "市役所の窓口開庁時間の短縮（市政一般報告）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shiseihoushin/r8_ippan/20260902shiseiippan.html#cms2E25B"
+    },
+    "resolution-1": {
+      "label": "非核三原則の堅持を求める意見書（提出した意見書・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/ikensyo.files/R8.9ikennnsho-dai1gou.pdf"
+    },
+    "resolution-2": {
+      "label": "中学校の給食費の完全無償化を早急に実現することを求める意見書（提出した意見書・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/ikensyo.files/R8.9ikennnsho-dai2gou.pdf"
+    },
+    "resolution-3": {
+      "label": "国における2027年度教育予算拡充に関する意見書（提出した意見書・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/ikensyo.files/R8.9ikennnsho-dai3gou.pdf"
+    },
+    "resolution-4": {
+      "label": "義務教育費国庫負担制度の堅持に関する意見書（提出した意見書・PDF）",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/ikensyo.files/R8.9ikennnsho-dai4gou.pdf"
+    },
+    "minutes-search": {
+      "label": "我孫子市議会 会議録検索システム（正式版の確認先）",
+      "url": "https://ssp.kaigiroku.net/tenant/abiko/pg/index.html"
+    },
+    "council-procedure": {
+      "label": "我孫子市議会 議会のしくみ",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/kaigi_unei/kaigi_unei.html"
+    }
+  },
+  "records": [
+    {
+      "id": "bill-1",
+      "type": "bill",
+      "label": "議案第1号",
+      "title": "災害対応の手当を見直す",
+      "officialTitle": "我孫子市一般職の職員の給与に関する条例の一部を改正する条例の制定について",
+      "lead": "災害時の応急作業や消防の広域応援に携わる職員の手当を改める条例です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "government",
+        "safety"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g1"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "災害発生時の応急作業や消防の応援に携わる職員に支払う手当の上限を引き上げる改正です。",
+        "background": "国の人事院規則の改正により、国家公務員の関連手当が引き上げられたことを考慮し、市も手当額を見直すと説明しています。",
+        "points": [
+          "防災作業手当の上限を日額1,000円から1,440円へ変更",
+          "緊急消防援助隊出動手当の上限を日額2,160円から2,880円へ変更",
+          "改正後の規定は2026年4月1日から適用"
+        ],
+        "questions": [
+          "手当を受ける職員の業務内容や人数はどの程度か",
+          "見直しによって市の支出はどの程度増えるのか"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": []
+    },
+    {
+      "id": "bill-2",
+      "type": "bill",
+      "label": "議案第2号",
+      "title": "行政からの公示通知をネットでも",
+      "officialTitle": "我孫子市行政手続条例の一部を改正する条例の制定について",
+      "lead": "相手の所在地がわからない場合の公示送達について、インターネットを使う方法を加える改正です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "government"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g2"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "行政が処分などの通知をする際、相手の所在地がわからない場合に用いる「公示送達」の方法を増やす改正です。",
+        "background": "これまでは市役所などの掲示場に必要事項を掲示する方法が中心でした。行政手続法の改正を踏まえ、市もインターネットによる公表などを可能にします。",
+        "points": [
+          "インターネットによる公表を新たな方法として追加",
+          "従来の掲示場での掲示や窓口での画面表示にも対応",
+          "不利益処分の通知に関わる手続の変更"
+        ],
+        "questions": [
+          "ネットに掲載する個人情報の扱いはどうなるか",
+          "ネット利用が難しい人への周知は十分か"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": [
+        "report-window"
+      ]
+    },
+    {
+      "id": "bill-3",
+      "type": "bill",
+      "label": "議案第3号",
+      "title": "湖北台市民センターは2027年3月末で閉館へ",
+      "officialTitle": "我孫子市集会施設の設置及び管理に関する条例の一部を改正する条例の制定について",
+      "lead": "湖北台市民センターの閉館と、布佐南近隣センターのテニスコートの夜間利用開始時期の変更などを扱います。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "town",
+        "care"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g3"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "湖北台市民センターの閉館と、布佐南近隣センターのテニスコート利用ルールの変更などを定める議案です。",
+        "background": "市の提案理由には、湖北台市民センターを2027年3月31日で閉館すること、布佐南近隣センターのテニスコートの夜間利用開始時期を5月へ前倒しすることなどが示されています。",
+        "points": [
+          "湖北台市民センターを2027年3月31日で閉館",
+          "布佐南近隣センターのテニスコートの夜間利用開始時期を5月に変更",
+          "施設利用に関する条例の条文を整備"
+        ],
+        "questions": [
+          "閉館後、地域の集会活動の受け皿はどこになるか",
+          "利用者への案内や代替施設の確保はどう進められるか"
+        ]
+      },
+      "exchanges": [
+        {
+          "speaker": "早川真",
+          "question": "近隣施設への移行を円滑にするため、利用団体や市民に閉館を改めて知らせてほしい。",
+          "role": "市民協働推進課長補佐",
+          "answer": "「広報あびこ」、インターネット、湖北台市民センターと湖北台近隣センターでの掲示などで周知すると答えました。",
+          "source": {
+            "id": "general-committee",
+            "page": 10
+          }
+        }
+      ],
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": [
+        "report-kohokudai"
+      ]
+    },
+    {
+      "id": "bill-4",
+      "type": "bill",
+      "label": "議案第4号",
+      "title": "自治会などの印鑑登録に関する制度変更",
+      "officialTitle": "我孫子市認可地縁団体印鑑の登録及び証明に関する条例の一部を改正する条例の制定について",
+      "lead": "認可地縁団体の印鑑登録・証明に関する条例を改める議案です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "government"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g4"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 14
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "地方自治法施行規則の改正で、市の条例が参照する条項がずれたため、条文を整えました。",
+        "points": [
+          "地域の団体が法人格を得た「認可地縁団体」の印鑑登録と、その証明に関する条例です。"
+        ],
+        "questions": [
+          "実際に手続きをするときは、市の最新の申請案内を確認してください。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": []
+    },
+    {
+      "id": "bill-5",
+      "type": "bill",
+      "label": "議案第5号",
+      "title": "障害者福祉センターの廃止を決定",
+      "officialTitle": "我孫子市障害者福祉センターの設置及び管理に関する条例を廃止する条例の制定について",
+      "lead": "施設の老朽化と民間サービスの提供体制の整備などを理由に、障害者福祉センターを廃止する条例です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "care"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g5"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "施設の老朽化と民間事業所によるサービス提供体制の整備を背景に、障害者福祉センターの設置・管理条例を廃止する内容です。",
+        "background": "市は、建物の老朽化が進んでいること、民間の障害福祉サービス事業所による提供体制が整ってきたことから、センターでの事業を終了する見込みが立ったと説明しています。",
+        "points": [
+          "障害者福祉センターを設置・管理する条例を廃止",
+          "施行日は2027年4月1日",
+          "市内の障害福祉サービス全体を廃止する議案ではない"
+        ],
+        "questions": [
+          "現在の利用者はどの事業所・サービスへ移行できるか",
+          "利用者にとってサービスの質やアクセスは維持できるか"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": []
+    },
+    {
+      "id": "bill-6",
+      "type": "bill",
+      "label": "議案第6号",
+      "title": "中小企業向け融資条例の条文整理",
+      "officialTitle": "我孫子市中小企業資金融資条例の一部を改正する条例の制定について",
+      "lead": "国の法律改正に伴い、条例が引用する条項番号を修正する改正です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "town"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g6"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "企業への融資条件そのものを大きく変更する議案ではなく、引用している国の法律の条項番号を整える改正です。",
+        "background": "産業競争力強化法の改正で参照する条項がずれたことに対応するため、市の中小企業資金融資条例を修正します。",
+        "points": [
+          "産業競争力強化法の引用条項を修正",
+          "議案の提案理由は条文の整理",
+          "条例は公布の日から施行"
+        ],
+        "questions": [
+          "実際の融資を受ける際の運用に変更があるか"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": [],
+      "exchanges": [
+        {
+          "speaker": "飯塚誠",
+          "question": "中小企業向けの融資を必要とする人に案内するため、金融機関などとはどう連携しているか。",
+          "role": "企業立地推進課長補佐",
+          "answer": "市の制度と、商工会を通じた日本政策金融公庫の融資などを相談者に案内していると答えました。金融機関にも周知の協力を求めていると説明しました。",
+          "source": {
+            "id": "environment-committee",
+            "page": 2,
+            "endPage": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "bill-7",
+      "type": "bill",
+      "label": "議案第7号",
+      "title": "都市計画審議会の市議会議員枠を縮小",
+      "officialTitle": "我孫子市都市計画審議会条例の一部を改正する条例の制定について",
+      "lead": "都市計画審議会に選ばれる市議会議員の人数の上限を、4人から2人へ変更する議案です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "government",
+        "town"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g7"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "市の都市計画審議会に任命される市議会議員の上限人数を減らす改正です。24議案のうち、賛成と反対に分かれた3件の一つです。",
+        "background": "次回の市議会議員選挙から議員定数が減ることを踏まえ、都市計画審議会の議会議員枠を縮小するというのが市の説明です。",
+        "points": [
+          "市議会議員枠を「4人以内」から「2人以内」へ",
+          "委員全体を「12人以内」としていた上限の規定を削除",
+          "採決では賛成20人、反対1人、退席1人"
+        ],
+        "questions": [
+          "審議会に参加する議員数の減少は多様な意見の反映にどう影響するか",
+          "審議会の構成や議事の公開は十分か"
+        ],
+        "outcome": "9月29日の本会議で賛成20、反対1で可決されました。退席は1人。賛否の内訳から個々の議員の理由は判断できません。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "岩井康": "left",
+          "船橋優": "no",
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": [],
+      "exchanges": [
+        {
+          "speaker": "芝田真代",
+          "question": "過去の案件数や審議の内容を踏まえて、市議会議員の枠を減らすと判断したのか。",
+          "role": "都市計画課長",
+          "answer": "過去の議題を考慮し、市議の枠を2人にしても都市計画への関与を損なわないと判断したと答えました。",
+          "source": {
+            "id": "environment-committee",
+            "page": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "bill-8",
+      "type": "bill",
+      "label": "議案第8号",
+      "title": "消防職員の定数を14人増やす",
+      "officialTitle": "我孫子市職員定数条例の一部を改正する条例の制定について",
+      "lead": "消防本部・消防署の職員定数を174人から188人に変更する条例です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "safety",
+        "government"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g8"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "消防本部・消防署の職員の「定数」を14人増やす条例です。定数は採用可能な人数の上限を定めるもので、直ちに14人増員したという意味ではありません。",
+        "background": "定年延長への対応や育児休業取得、消防学校等での研修に伴う代替人員の確保を図り、消防力を維持・強化する目的と市は説明しています。",
+        "points": [
+          "消防職員の定数を174人から188人に変更（14人増）",
+          "定年延長・育児休業・研修時の代替人員確保に対応",
+          "定数の改正であり、実際の在籍職員数とは異なる"
+        ],
+        "questions": [
+          "実際の消防職員は何人で、今後何人を採用する予定か",
+          "増員によって現場の対応力や勤務環境はどう変わるか"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": []
+    },
+    {
+      "id": "bill-9",
+      "type": "bill",
+      "label": "議案第9号",
+      "title": "水道事業などの条例の引用条文を整理",
+      "officialTitle": "我孫子市水道事業の設置等に関する条例等の一部を改正する条例の制定について",
+      "lead": "地方自治法の改正に伴って、関係条例が引用する条項番号を改めます。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "infrastructure"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g9"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "地方自治法の改正により条項の番号がずれたため、関係条例の参照番号を直す議案です。",
+        "background": "市の説明では、地方自治法の条項番号変更に伴う条文整理が提案理由とされています。",
+        "points": [
+          "水道事業の設置等に関する条例などで法令引用を修正",
+          "条項番号の変更に対応する技術的な条例改正"
+        ],
+        "questions": [
+          "市民向けの水道サービスや料金に直接の変更はあるか"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": []
+    },
+    {
+      "id": "bill-10",
+      "type": "bill",
+      "label": "議案第10号",
+      "title": "学校給食費の管理を学校から市へ",
+      "officialTitle": "我孫子市学校給食の実施及び学校給食費の管理に関する条例の制定について",
+      "lead": "学校ごとに管理していた学校給食費を、市の一般会計で管理する仕組みに移す条例です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "education"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g10"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "これまで学校ごとに管理してきた給食費を、市の一般会計で管理する仕組みに移します。給食費を無償化する条例ではありません。",
+        "background": "市は、教職員の業務負担を軽くし、会計の透明性と公平性を高め、給食を安定的に提供する目的を挙げています。",
+        "points": [
+          "学校給食費の管理を学校単位から市の一般会計へ移行",
+          "条例では給食費の徴収、納付、減免などの基本ルールを定める",
+          "施行日は2027年4月1日。金額そのものは規則で定める",
+          "今回の条例は、給食費の支払い・管理の仕組みを定めるものです。中学校給食の完全無償化を国に求める請願・意見書は別の案件です。"
+        ],
+        "questions": [
+          "徴収業務が変わることで学校や保護者の負担はどう変化するか",
+          "給食費の収支が市の予算・決算上どう見えるようになるか"
+        ]
+      },
+      "exchanges": [
+        {
+          "speaker": "西川佳克",
+          "question": "市が給食費を集めるときの方法はどうなるのか。口座振替の手続きを詳しく知りたい。",
+          "role": "学校教育課長補佐",
+          "answer": "口座振替を予定していると説明。審査時点ではシステム業者が決まったばかりで、具体的な手続きは整理している段階だと答えました。",
+          "source": {
+            "id": "education-committee",
+            "page": 14,
+            "endPage": 15
+          }
+        }
+      ],
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": [
+        "report-kyushoku",
+        "petition-20",
+        "resolution-2"
+      ]
+    },
+    {
+      "id": "bill-11",
+      "type": "bill",
+      "label": "議案第11号",
+      "title": "2026年度の一般会計予算を補正",
+      "officialTitle": "令和8年度我孫子市一般会計補正予算（第2号）",
+      "lead": "2026年度の一般会計に追加・変更を加える補正予算です。内訳は市の原資料に掲載されています。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "finance",
+        "care",
+        "economy"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g11-14"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 15
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "年度途中の支出や収入の見通しが変わったため、一般会計の予算を変更しました。",
+        "points": [
+          "歳入・歳出をそれぞれ1億6,800万円増額し、総額を516億9,200万円としました。",
+          "財政調整基金や減債基金への積み立て、農業者向け物価高騰対策の支援金などを増やしました。旧リサイクルセンターの解体・土壌汚染対策工事は、年度ごとの事業費の組み替えで2026年度分を減らしました。"
+        ],
+        "questions": [
+          "支援金がどの程度届いたか、工事費が年度をまたいでどう執行されたか。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": []
+    },
+    {
+      "id": "bill-12",
+      "type": "bill",
+      "label": "議案第12号",
+      "title": "国民健康保険の特別会計を補正",
+      "officialTitle": "令和8年度我孫子市国民健康保険事業特別会計補正予算（第2号）",
+      "lead": "2026年度の国民健康保険事業特別会計の予算を変更する議案です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "finance",
+        "care"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g11-14"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 1
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 15
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "国民健康保険の収支を管理する会計で、繰越金などを踏まえ年度途中に予算を見直しました。",
+        "points": [
+          "歳入・歳出をそれぞれ1億5,845万4,000円増やし、総額を118億7,645万4,000円としました。",
+          "医療給付費納付金や財政調整基金への積立金などを増やし、保険事業費を減らしました。"
+        ],
+        "questions": [
+          "税収見通しの変動を次年度の予算や税率の検討でどう扱うか。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 1
+        }
+      },
+      "related": [
+        "bill-18"
+      ],
+      "exchanges": [
+        {
+          "speaker": "坂巻宗男",
+          "question": "前年度の国民健康保険税収が見込みを上回り、繰越金が増えた背景は何か。",
+          "role": "国保年金課長",
+          "answer": "保険税の計算の基礎となる被保険者の前年所得が、市の見込みより大きく伸びたことが要因と考えていると答えました。",
+          "source": {
+            "id": "education-committee",
+            "page": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "bill-13",
+      "type": "bill",
+      "label": "議案第13号",
+      "title": "介護認定の待ち時間をどう縮める？",
+      "officialTitle": "令和8年度我孫子市介護保険特別会計補正予算（第1号）",
+      "lead": "介護保険の補正予算で、認定調査を外部に委託する費用を増やしました。坂巻宗男議員は、申請から認定までの日数がどれだけ短くなるのかを尋ねました。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "care",
+        "finance"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g11-14"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 15
+        },
+        {
+          "id": "referral"
+        },
+        {
+          "id": "education-committee",
+          "page": 23,
+          "endPage": 26
+        },
+        {
+          "id": "bill-notes"
+        },
+        {
+          "id": "plenary-29",
+          "page": 3
+        }
+      ],
+      "article": {
+        "background": "要介護・要支援の認定は、介護保険サービスを利用するための手続きです。市は、調査件数が増えて市の調査員だけでは回り切らないと説明しました。補正には、前年度の決算を受けた負担金や補助金の精算も含まれます。",
+        "points": [
+          "補正額は歳入・歳出それぞれ5億389万9,000円。補正後の総額はそれぞれ150億2,389万9,000円です。",
+          "申請から認定決定までの期間を短縮するため、介護認定調査の委託料を886万9,000円、郵送などの通信運搬費を140万2,000円増やしました。事務を担う会計年度任用職員の人件費は267万円の増額です。",
+          "補正額には前年度の精算や基金への積み立てが含まれます。増額の全額が認定調査や新たな介護サービスに充てられるわけではありません。"
+        ],
+        "questions": [
+          "申請から認定までの平均日数や、30日を超えた件数は、補正後にどう変わったか。",
+          "調査件数、委託件数、基金の積立・取り崩しの実績はどう推移したか。"
+        ],
+        "outcome": "委員会は可決すべきと判断し、本会議で原案が可決されました。今回の決定は予算の変更です。申請から認定までの日数が実際にどれだけ短くなったかは、今後の実績を待つ必要があります。",
+        "milestones": [
+          {
+            "date": "2026-09-02",
+            "text": "市長が介護保険特別会計補正予算を提出。",
+            "source": {
+              "id": "plenary-02",
+              "page": 15
+            }
+          },
+          {
+            "date": "2026-09-16",
+            "text": "教育福祉常任委員会で認定調査の費用と待ち時間を審査。",
+            "source": {
+              "id": "education-committee",
+              "page": 23,
+              "endPage": 26
+            }
+          },
+          {
+            "date": "2026-09-29",
+            "text": "委員会の審査結果を本会議で報告し、原案を可決。",
+            "source": {
+              "id": "plenary-29",
+              "page": 7
+            }
+          }
+        ]
+      },
+      "exchanges": [
+        {
+          "speaker": "坂巻宗男",
+          "question": "認定調査の委託料を886万9,000円増やすのはなぜか。",
+          "role": "介護保険室長",
+          "answer": "近年は調査件数の増加が目立ち、市の調査員だけでは回り切れないと説明しました。市内の事業所に加え、前年度から指定市町村事務受託法人にも委託しており、必要な委託料が増えていると答えました。",
+          "source": {
+            "id": "education-committee",
+            "page": 25
+          }
+        },
+        {
+          "speaker": "坂巻宗男",
+          "question": "委託を増やすと、申請から認定までの時間はどれほど短くなるか。",
+          "role": "介護保険室長",
+          "answer": "申請から認定決定までは長い例で約2か月かかると説明。委託を増やし事務の進め方も見直して、平均日数を5日でも10日でも減らせるよう取り組んでいると答えました。",
+          "source": {
+            "id": "education-committee",
+            "page": 25,
+            "endPage": 26
+          }
+        },
+        {
+          "speaker": "坂巻宗男",
+          "question": "市は目標とする処理期間を定めているか。",
+          "role": "介護保険室長",
+          "answer": "介護保険法上の原則は30日以内で、市もそこを最終的な目標にしていると答えました。当面は委託や事務運用を改善して、できるところから日数を短くするという説明でした。",
+          "source": {
+            "id": "education-committee",
+            "page": 26
+          }
+        }
+      ],
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "question-6",
+        "question-3",
+        "report-otayori",
+        "bill-19"
+      ]
+    },
+    {
+      "id": "bill-14",
+      "type": "bill",
+      "label": "議案第14号",
+      "title": "後期高齢者医療の特別会計を補正",
+      "officialTitle": "令和8年度我孫子市後期高齢者医療特別会計補正予算（第2号）",
+      "lead": "2026年度の後期高齢者医療特別会計の予算を変更する議案です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "finance",
+        "care"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g11-14"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 16
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "後期高齢者医療の収支を管理する特別会計の予算を、繰越金や人件費の変動に合わせて見直しました。",
+        "points": [
+          "歳入・歳出をそれぞれ2,126万1,000円増やし、総額を33億326万1,000円としました。",
+          "歳入は繰越金を増やし、繰入金を減らしました。歳出は予備費を増やし、一般職人件費を減らしました。"
+        ],
+        "questions": [
+          "年度末の決算で、補正後の予算がどのように執行されたか。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-20"
+      ]
+    },
+    {
+      "id": "bill-15",
+      "type": "bill",
+      "label": "議案第15号",
+      "title": "下水道事業の予算を補正",
+      "officialTitle": "令和8年度我孫子市下水道事業会計補正予算（第1号）",
+      "lead": "2026年度の下水道事業会計に関する補正予算です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "infrastructure"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g15"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 16
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "大規模下水道管路の調査結果を受け、市は緊急度Ⅰと判定された箇所の補修を行うと説明しました。",
+        "points": [
+          "事業の運営に関わる収益的支出を6,076万9,000円増やしました。補正には職員給与費の増減や企業債の増額なども含まれます。"
+        ],
+        "questions": [
+          "補修箇所と工事の進捗は、その後の市の公表資料で確認する必要があります。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-21"
+      ]
+    },
+    {
+      "id": "bill-16",
+      "type": "bill",
+      "label": "議案第16号",
+      "title": "水道事業の予算を補正",
+      "officialTitle": "令和8年度我孫子市水道事業会計補正予算（第2号）",
+      "lead": "2026年度の水道事業会計に関する補正予算です。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "infrastructure"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g16"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 16
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "4月の人事異動や金利上昇による預金利息、有価証券の償還差益などを反映し、水道事業会計を補正しました。",
+        "points": [
+          "収益的収入を998万円増やし、収益的支出を548万3,000円減らしました。資本的支出は194万円の増額です。"
+        ],
+        "questions": [
+          "補正後の執行状況や、今後の水道事業の収支見通し。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-22"
+      ]
+    },
+    {
+      "id": "bill-17",
+      "type": "bill",
+      "label": "議案第17号",
+      "title": "2025年度の市の一般会計決算を認定",
+      "officialTitle": "令和7年度我孫子市一般会計歳入歳出決算の認定について",
+      "lead": "市の一般会計について、2025年度の収入と支出の決算を議会が審査・認定する議案です。",
+      "date": "2026-09-29",
+      "status": "認定",
+      "themes": [
+        "finance"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g17-20"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "2025年度の一般会計の決算について議会が認定した議案です。採決は賛成20人、反対2人となりました。",
+        "background": "一般会計の決算は、市が1年間にどれだけ収入を得て、何に支出したかを確認するものです。予算を決める審議とは異なり、実際に執行した結果を議会がチェックします。",
+        "points": [
+          "対象は2025年度の一般会計歳入歳出決算",
+          "議会では賛成20人・反対2人で認定",
+          "議案第18号（国民健康保険事業特別会計決算）も同じ賛否数で認定"
+        ],
+        "questions": [
+          "決算収支と基金の取り崩しを合わせて、財政をどう評価するか",
+          "事業ごとの支出は当初の目的や成果と見合っていたか"
+        ],
+        "outcome": "9月29日の本会議で賛成20、反対2で認定されました。賛否の内訳から個々の議員の理由は判断できません。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "岩井康": "no",
+          "船橋優": "no",
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-18"
+      ]
+    },
+    {
+      "id": "bill-18",
+      "type": "bill",
+      "label": "議案第18号",
+      "title": "2025年度の国保会計決算を認定",
+      "officialTitle": "令和7年度我孫子市国民健康保険事業特別会計歳入歳出決算の認定について",
+      "lead": "国民健康保険事業特別会計の2025年度決算を認定する議案です。",
+      "date": "2026-09-29",
+      "status": "認定",
+      "themes": [
+        "finance"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g17-20"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "lead": "自営業者などが加入する国民健康保険の特別会計について、2025年度決算を認定した議案です。",
+        "background": "一般会計とは分けて経理される国民健康保険事業の収入と支出を議会が確認する手続です。",
+        "points": [
+          "対象は2025年度国民健康保険事業特別会計の決算",
+          "採決では賛成20人、反対2人で認定"
+        ],
+        "questions": [
+          "保険料収入と医療給付費の推移をどう見るか"
+        ],
+        "outcome": "9月29日の本会議で賛成20、反対2で認定されました。賛否の内訳から個々の議員の理由は判断できません。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "岩井康": "no",
+          "船橋優": "no",
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-12",
+        "bill-17"
+      ]
+    },
+    {
+      "id": "bill-19",
+      "type": "bill",
+      "label": "議案第19号",
+      "title": "2025年度の介護保険会計決算を認定",
+      "officialTitle": "令和7年度我孫子市介護保険特別会計歳入歳出決算の認定について",
+      "lead": "介護保険特別会計の2025年度決算を認定する議案です。",
+      "date": "2026-09-29",
+      "status": "認定",
+      "themes": [
+        "finance",
+        "care"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g17-20"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 16
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "2025年度の介護保険特別会計の収入・支出について、監査委員の意見を付けて議会に報告し、認定を求めました。",
+        "points": [
+          "決算は、年度が終わった後に実際の収入と支出を示すものです。9月議会で審議した2026年度の補正予算と年度・役割が異なります。"
+        ],
+        "questions": [
+          "介護給付費や認定者数の推移を、決算資料や介護保険事業計画で確認できます。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-13",
+        "question-6",
+        "question-3",
+        "report-otayori"
+      ]
+    },
+    {
+      "id": "bill-20",
+      "type": "bill",
+      "label": "議案第20号",
+      "title": "2025年度の後期高齢者医療会計決算を認定",
+      "officialTitle": "令和7年度我孫子市後期高齢者医療特別会計歳入歳出決算の認定について",
+      "lead": "後期高齢者医療特別会計の2025年度決算を認定する議案です。",
+      "date": "2026-09-29",
+      "status": "認定",
+      "themes": [
+        "finance",
+        "care"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g17-20"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 16
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "2025年度の後期高齢者医療特別会計の収入・支出について、監査委員の意見を付けて議会に認定を求めました。",
+        "points": [
+          "認定の対象は2025年度に執行した決算です。2026年度の補正予算は別の議案です。"
+        ],
+        "questions": [
+          "決算書で保険料などの収入と、会計からの支出の内訳を確認できます。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-14"
+      ]
+    },
+    {
+      "id": "bill-21",
+      "type": "bill",
+      "label": "議案第21号",
+      "title": "2025年度の下水道会計決算などを認定",
+      "officialTitle": "令和7年度我孫子市下水道事業会計剰余金の処分及び歳入歳出決算の認定について",
+      "lead": "下水道事業会計の剰余金の処分と2025年度決算について議会が判断した議案です。",
+      "date": "2026-09-29",
+      "status": "可決・認定",
+      "themes": [
+        "infrastructure"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g21"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 16
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "2025年度の下水道事業会計で生じた剰余金について、処分計算書どおりに扱うことと、歳入歳出決算の認定を求めました。",
+        "points": [
+          "本会議では剰余金の処分を可決し、決算を認定しました。"
+        ],
+        "questions": [
+          "剰余金の金額と使い道、翌年度への影響は決算書と処分計算書で確認できます。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-15"
+      ]
+    },
+    {
+      "id": "bill-22",
+      "type": "bill",
+      "label": "議案第22号",
+      "title": "2025年度の水道会計決算などを認定",
+      "officialTitle": "令和7年度我孫子市水道事業会計剰余金の処分及び歳入歳出決算の認定について",
+      "lead": "水道事業会計の剰余金の処分と2025年度決算について議会が判断した議案です。",
+      "date": "2026-09-29",
+      "status": "可決・認定",
+      "themes": [
+        "infrastructure"
+      ],
+      "submittedOn": "2026-09-02",
+      "sources": [
+        {
+          "id": "g22"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-02",
+          "page": 16
+        },
+        {
+          "id": "referral"
+        }
+      ],
+      "article": {
+        "background": "2025年度の水道事業会計で生じた剰余金について、処分計算書どおりに扱うことと、歳入歳出決算の認定を求めました。",
+        "points": [
+          "本会議では剰余金の処分を可決し、決算を認定しました。"
+        ],
+        "questions": [
+          "老朽管の更新など今後の費用の見通しと、今回の決算・剰余金の内訳を合わせて確認できます。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "bill-16"
+      ]
+    },
+    {
+      "id": "bill-23",
+      "type": "bill",
+      "label": "議案第23号",
+      "title": "9月末、1億2,500万円の補正予算を追加",
+      "officialTitle": "令和8年度我孫子市一般会計補正予算（第3号）",
+      "lead": "8月の千葉豪雨と9月の台風25号の被害への対応で、歳入・歳出をそれぞれ1億2,500万円追加しました。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "finance",
+        "safety"
+      ],
+      "submittedOn": "2026-09-29",
+      "sources": [
+        {
+          "id": "g23"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        },
+        {
+          "id": "plenary-29",
+          "page": 2
+        }
+      ],
+      "article": {
+        "lead": "被災した住宅の応急修理などに備え、市は9月議会の最終日に一般会計補正予算を追加で提案しました。",
+        "background": "補正前の一般会計予算は516億9,200万円。補正後は518億1,700万円となります。これは年度途中の補正を反映した予算総額であり、年度当初予算とは区別が必要です。",
+        "points": [
+          "補正額：歳入・歳出それぞれ1億2,500万円",
+          "補正後の一般会計予算：518億1,700万円",
+          "追加議案として2026年9月29日に提出",
+          "市は災害救助法に基づく住宅の応急修理の委託料や予備費を増やし、財源として県支出金や繰入金を増額すると説明しました。"
+        ],
+        "questions": [
+          "住宅の応急修理を利用した世帯数と実際の支出額はどのくらいだったか。"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "report-rain"
+      ]
+    },
+    {
+      "id": "bill-24",
+      "type": "bill",
+      "label": "議案第24号",
+      "title": "教育委員会委員の再任に同意",
+      "officialTitle": "教育委員会委員の任命について",
+      "lead": "任期満了に伴い、中村通宏氏を教育委員会委員に再任することについて議会の同意を求めた議案です。",
+      "date": "2026-09-29",
+      "status": "同意",
+      "themes": [
+        "education"
+      ],
+      "submittedOn": "2026-09-29",
+      "sources": [
+        {
+          "id": "g24"
+        },
+        {
+          "id": "bills"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29"
+        }
+      ],
+      "article": {
+        "lead": "任期が満了する中村通宏氏について、教育委員会委員に再任することを市長が提案し、議会が同意しました。",
+        "background": "教育委員会委員は市長が議会の同意を得て任命します。本議案は中村通宏氏を再任するための同意人事です。",
+        "points": [
+          "対象者：中村通宏氏",
+          "提案日：2026年9月29日",
+          "議会では賛成22人・反対0人で同意"
+        ],
+        "questions": [
+          "教育委員会が担う役割や会議の内容をどこで確認できるか"
+        ]
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": []
+    },
+    {
+      "id": "petition-20",
+      "type": "petition",
+      "label": "請願第20号",
+      "title": "中学校の給食費の完全無償化を、国に求める",
+      "officialTitle": "「中学校の給食費の完全無償化を国に求める意見書」の提出を求める請願",
+      "lead": "中学校の給食費の完全無償化を早期に実現するよう、国に意見書を提出してほしいという請願。",
+      "date": "2026-09-29",
+      "status": "採択",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "petitions"
+        },
+        {
+          "id": "petition-original"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29",
+          "page": 8,
+          "endPage": 9
+        },
+        {
+          "id": "education-committee",
+          "page": 28
+        }
+      ],
+      "article": {
+        "background": "請願が求めたのは、市議会が国に意見書を提出することです。学校給食費の徴収・管理を市の会計に移す条例とは、対象となる手続きが異なります。",
+        "points": [
+          "採択は議会が要望を妥当と認める判断です。要望の内容が実現したことを意味する手続きではありません。"
+        ],
+        "questions": [
+          "提出した意見書を受けて、国や市の制度にどのような動きがあったか。"
+        ],
+        "outcome": "教育福祉常任委員会は9月16日に採択すべきものと判断しました。9月29日の本会議で採択され、同日に中学校給食費の完全無償化を国に求める意見書（発議案第2号）も可決されました。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "report-kyushoku",
+        "bill-10",
+        "resolution-2"
+      ],
+      "remarks": [
+        {
+          "speaker": "内田美恵子",
+          "role": "紹介議員",
+          "summary": "小学校の給食費が無償化されたことを踏まえ、義務教育である中学校の給食費も国の負担で無償化する意見書を出してほしいと説明しました。",
+          "source": {
+            "id": "education-committee",
+            "page": 3
+          }
+        },
+        {
+          "speaker": "坂巻宗男",
+          "role": "委員",
+          "summary": "部活動の地域展開に伴って家庭に新たな負担が生じていることに触れ、給食費の無償化を進めるべきだと述べました。",
+          "source": {
+            "id": "education-committee",
+            "page": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "petition-21",
+      "type": "petition",
+      "label": "請願第21号",
+      "title": "2027年度の教育予算を増やすよう国に求める",
+      "officialTitle": "「国における2027年度教育予算拡充に関する意見書」提出を求める請願",
+      "lead": "教育予算の拡充を求める意見書の提出についての請願。",
+      "date": "2026-09-29",
+      "status": "採択",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "petitions"
+        },
+        {
+          "id": "petition-original"
+        },
+        {
+          "id": "votes",
+          "page": 2
+        },
+        {
+          "id": "plenary-29",
+          "page": 8,
+          "endPage": 9
+        }
+      ],
+      "article": {
+        "background": "請願が求めたのは、国の教育予算を拡充するよう市議会から意見書を提出することです。",
+        "points": [
+          "採択は議会が要望を妥当と認める判断です。要望の内容が実現したことを意味する手続きではありません。"
+        ],
+        "questions": [
+          "提出した意見書を受けて、国や市の制度にどのような動きがあったか。"
+        ],
+        "outcome": "9月29日に賛成22、反対0で採択。同日に2027年度教育予算の拡充を国に求める意見書（発議案第3号）も可決されました。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 2
+        }
+      },
+      "related": [
+        "resolution-3"
+      ]
+    },
+    {
+      "id": "petition-22",
+      "type": "petition",
+      "label": "請願第22号",
+      "title": "義務教育費の国庫負担制度を維持するよう求める",
+      "officialTitle": "「義務教育費国庫負担制度の堅持に関する意見書」提出を求める請願",
+      "lead": "義務教育費国庫負担制度の堅持を国に求める意見書の提出についての請願。",
+      "date": "2026-09-29",
+      "status": "採択",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "petitions"
+        },
+        {
+          "id": "petition-original"
+        },
+        {
+          "id": "votes",
+          "page": 3
+        },
+        {
+          "id": "plenary-29",
+          "page": 8,
+          "endPage": 9
+        }
+      ],
+      "article": {
+        "background": "教職員の給与など、義務教育に必要な費用を国が負担する仕組みを維持するよう、市議会から意見書を提出してほしいという請願です。",
+        "points": [
+          "採択は議会が要望を妥当と認める判断です。要望の内容が実現したことを意味する手続きではありません。"
+        ],
+        "questions": [
+          "提出した意見書を受けて、国や市の制度にどのような動きがあったか。"
+        ],
+        "outcome": "9月29日に賛成22、反対0で採択。同日に義務教育費国庫負担制度の堅持を求める意見書（発議案第4号）も可決されました。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 3
+        }
+      },
+      "related": [
+        "resolution-4"
+      ]
+    },
+    {
+      "id": "petition-11",
+      "type": "petition",
+      "label": "陳情第11号",
+      "title": "議会選出の監査委員制度を廃止してほしい",
+      "officialTitle": "議会選出監査委員制度の廃止を求める陳情書",
+      "lead": "議会選出監査委員制度の廃止を求める陳情。採決の結果、不採択となりました。",
+      "date": "2026-09-29",
+      "status": "不採択",
+      "themes": [
+        "government"
+      ],
+      "sources": [
+        {
+          "id": "petitions"
+        },
+        {
+          "id": "petition-original"
+        },
+        {
+          "id": "votes",
+          "page": 3
+        },
+        {
+          "id": "plenary-29",
+          "page": 8,
+          "endPage": 9
+        }
+      ],
+      "article": {
+        "background": "市議会の議員から監査委員を選ぶ制度を廃止するよう求めた陳情です。議会運営委員会で審査されました。",
+        "points": [],
+        "questions": [
+          "監査委員の選任のあり方について、今後の議会資料や条例の見直しがあるか。"
+        ],
+        "outcome": "9月29日に賛成0、反対21で不採択。採決表の注記では、議会選出の監査委員だった早川真議員は参加していません。反対の理由は採決表からは分かりません。"
+      },
+      "voting": {
+        "default": "no",
+        "exceptions": {
+          "早川真": "left",
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 3
+        },
+        "note": "採決表で早川真議員は「退」。同表の注記では、当時、議会選出の監査委員だったため採決に加わりませんでした。"
+      },
+      "related": []
+    },
+    {
+      "id": "question-1",
+      "type": "question",
+      "label": "一般質問",
+      "title": "災害情報を、どうすれば早く届けられる？",
+      "officialTitle": "9月9日　甲斐俊光議員の一般質問",
+      "lead": "8月の豪雨を受け、甲斐俊光議員は、災害対策本部が対応に追われるときでも避難情報を早く届ける方法を尋ねました。",
+      "date": "2026-09-09",
+      "status": "質問実施",
+      "themes": [
+        "safety",
+        "government",
+        "finance"
+      ],
+      "person": "甲斐俊光",
+      "group": "清風会",
+      "questionType": "代表質問",
+      "article": {
+        "background": "豪雨対応のほか、市長の市政運営、将来のまちづくり、財政調整基金などが質問要項に並びました。",
+        "points": [],
+        "questions": [
+          "情報を早く出すための役割分担や運用は、その後どのように見直されたか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "甲斐俊光",
+          "question": "災害時は情報発信を専任の職員に任せ、SNSなどをまとめて管理できないか。",
+          "role": "市民生活部長",
+          "answer": "メール、LINE、X、Facebookなどに一度に送れるシステムを導入済み。本部が対応に追われる場合も、庁内で調整し、より早く発信できるようにしたいと述べました。",
+          "source": {
+            "id": "plenary-09",
+            "page": 26,
+            "endPage": 27
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 2
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-09",
+          "page": 26,
+          "endPage": 27
+        }
+      ],
+      "related": [
+        "report-rain",
+        "question-2",
+        "question-4",
+        "question-7",
+        "question-9",
+        "question-11"
+      ]
+    },
+    {
+      "id": "question-2",
+      "type": "question",
+      "label": "一般質問",
+      "title": "避難所のトイレ・食事・ベッドは足りる？",
+      "officialTitle": "9月9日　山下佳代議員の一般質問",
+      "lead": "避難所で過ごす人には、食事のアレルギーや乳児の授乳など、さまざまな事情があります。山下佳代議員は、そうした事情を踏まえた備蓄を尋ねました。",
+      "date": "2026-09-09",
+      "status": "質問実施",
+      "themes": [
+        "safety",
+        "care",
+        "education"
+      ],
+      "person": "山下佳代",
+      "group": "公明党",
+      "questionType": "代表質問",
+      "article": {
+        "background": "質問要項には、防災備蓄、福祉避難所、学校入学時の支援などが記載されています。",
+        "points": [],
+        "questions": [
+          "地域防災計画の改定で、対象者別の品目や配備先はどう変わるか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "山下佳代",
+          "question": "簡易トイレ、ベッド、アレルギー対応食、液体ミルクの備蓄はどのくらいあり、今後どう増やすのか。",
+          "role": "市民生活部長",
+          "answer": "避難者の構成によって必要量が変わるため、一律の充足率は出しにくいと説明。簡易トイレ約1万回分、ワンタッチ式ベッド約140個、アレルギー対応食約4万食などを備え、地域防災計画の次期改定で品目と数量を見直すと答えました。",
+          "source": {
+            "id": "plenary-09",
+            "page": 30
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 4
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-09",
+          "page": 30
+        }
+      ],
+      "related": [
+        "report-rain",
+        "question-1",
+        "question-4",
+        "question-7",
+        "question-9",
+        "question-11"
+      ]
+    },
+    {
+      "id": "question-3",
+      "type": "question",
+      "label": "一般質問",
+      "title": "介護を必要とする人が増えるなか、担い手は足りる？",
+      "officialTitle": "9月9日　早川真議員の一般質問",
+      "lead": "早川真議員は、介護サービスを必要とする人の見通しと、人材不足が市内の事業所に及ぼす影響を尋ねました。",
+      "date": "2026-09-09",
+      "status": "質問実施",
+      "themes": [
+        "care",
+        "transport",
+        "finance"
+      ],
+      "person": "早川真",
+      "group": "あびこ未来",
+      "questionType": "代表質問",
+      "article": {
+        "background": "質問要項には、財政運営、地域公共交通、高齢社会と介護人材などが記載されています。",
+        "points": [],
+        "questions": [
+          "研修費の助成や担い手を増やす事業が、採用・定着やサービス提供にどの程度つながったか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "早川真",
+          "question": "今後の介護サービス需要をどう見込み、職員不足でサービス提供に影響が出ている事業所をどう把握しているか。",
+          "role": "健康福祉部長",
+          "answer": "認定率の高い75歳以上の人口が増え、需要は増加が続くと見通しました。計画づくりのための事業所調査では、人材不足を理由に利用を断ったことがあると答えた事業者が12.3％だったと説明しました。",
+          "source": {
+            "id": "plenary-09",
+            "page": 66,
+            "endPage": 68
+          }
+        },
+        {
+          "speaker": "早川真",
+          "question": "市民の移動手段を維持するため、バスなどの運転士の確保に市としてどのように取り組むか。",
+          "role": "建設部長",
+          "answer": "交通事業者と協力して求人情報を市のホームページに掲載していると説明。他自治体の取組を調べながら今後の対応を検討すると答えました。",
+          "source": {
+            "id": "plenary-09",
+            "page": 65,
+            "endPage": 66
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 6
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-09",
+          "page": 66,
+          "endPage": 68
+        }
+      ],
+      "related": [
+        "bill-13",
+        "question-6",
+        "report-otayori",
+        "bill-19",
+        "report-bus",
+        "question-10"
+      ]
+    },
+    {
+      "id": "question-4",
+      "type": "question",
+      "label": "一般質問",
+      "title": "豪雨で帰宅できない人を、駅からどう案内する？",
+      "officialTitle": "9月10日　芹澤正子議員の一般質問",
+      "lead": "芹澤正子議員は、豪雨で鉄道が止まった際の帰宅困難者への対応を取り上げ、駅での案内について尋ねました。",
+      "date": "2026-09-10",
+      "status": "質問実施",
+      "themes": [
+        "safety",
+        "transport",
+        "infrastructure"
+      ],
+      "person": "芹澤正子",
+      "group": "我孫子政策倶楽部",
+      "questionType": "代表質問",
+      "article": {
+        "background": "質問要項には、千葉豪雨への対応、治水、上下水道などの論点が記載されています。",
+        "points": [],
+        "questions": [
+          "駅で案内を始める基準や、一時滞留施設に誘導する手順はその後共有されたか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "芹澤正子",
+          "question": "豪雨で列車が止まり駅に人が滞留したとき、鉄道事業者とどう連携して案内するのか。",
+          "role": "市民生活部長",
+          "answer": "駅の帰宅困難者に対応するため、JRと連携し、連絡体制や誘導方法の協議を進めると答えました。",
+          "source": {
+            "id": "plenary-10",
+            "page": 2,
+            "endPage": 4
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 7
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-10",
+          "page": 2,
+          "endPage": 4
+        }
+      ],
+      "related": [
+        "report-rain",
+        "question-1",
+        "question-2",
+        "question-7",
+        "question-9",
+        "question-11"
+      ]
+    },
+    {
+      "id": "question-5",
+      "type": "question",
+      "label": "一般質問",
+      "title": "古い公共施設の耐震補強はどこまで進んだ？",
+      "officialTitle": "9月10日　船橋優議員の一般質問",
+      "lead": "船橋優議員は、旧耐震基準で建てられた公共施設の数と、診断・補強の進み具合を確認しました。",
+      "date": "2026-09-10",
+      "status": "質問実施",
+      "themes": [
+        "safety",
+        "town"
+      ],
+      "person": "船橋優",
+      "group": "日本共産党",
+      "questionType": "代表質問",
+      "article": {
+        "background": "旧耐震基準の施設全体と、市の耐震改修促進計画で対象となる特定建築物とで、答弁で示された集計の範囲が異なります。",
+        "points": [],
+        "questions": [
+          "未対応施設について、市の個別施設計画で診断や改修の予定がどう示されるか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "船橋優",
+          "question": "旧耐震基準の公共建物は何棟あり、耐震診断と補強は済んでいるのか。",
+          "role": "財政部長",
+          "answer": "旧耐震基準の公共建物239棟のうち、計画上の特定建築物は44棟。43棟を診断し、耐震性がないと診断した36棟を補強したと説明しました。未診断の特定建築物1棟は解体中で、その他の未対応の建物は個別の施設計画で検討すると答えました。",
+          "source": {
+            "id": "plenary-10",
+            "page": 19
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 9
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-10",
+          "page": 19
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "question-6",
+      "type": "question",
+      "label": "一般質問",
+      "title": "介護保険の使い方と、認定を待つ時間を問う",
+      "officialTitle": "9月10日　内田美恵子議員の一般質問",
+      "lead": "内田美恵子議員は、介護保険を使う手続きが分かりにくいという問題と、申請してから認定までの時間を取り上げました。",
+      "date": "2026-09-10",
+      "status": "質問実施",
+      "themes": [
+        "care"
+      ],
+      "person": "内田美恵子",
+      "group": "市民フォーラム",
+      "questionType": "代表質問",
+      "article": {
+        "background": "認定までの時間は、必要な介護サービスを利用する準備に関わります。この一般質問は、補正予算を審査した委員会とは別の場で行われました。",
+        "points": [],
+        "questions": [
+          "市が説明した改善が、申請から決定までの日数にどれほど表れたか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "内田美恵子",
+          "question": "高齢者が集まる場でも介護保険の使い方を分かりやすく伝え、認定をできるだけ早く出せないか。",
+          "role": "健康福祉部長",
+          "answer": "65歳に達した人に制度のハンドブックを送り、出前講座などでも説明していると答えました。また、調査員の増員と調査の一部委託で認定にかかる時間は改善しつつあると説明しました。",
+          "source": {
+            "id": "plenary-10",
+            "page": 59
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 10
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-10",
+          "page": 59
+        }
+      ],
+      "related": [
+        "bill-13",
+        "question-3",
+        "report-otayori",
+        "bill-19"
+      ]
+    },
+    {
+      "id": "question-7",
+      "type": "question",
+      "label": "一般質問",
+      "title": "豪雨の初動対応。避難所開設が遅れた理由は？",
+      "officialTitle": "9月10日　芝田真代議員の一般質問",
+      "lead": "芝田真代議員は、8月の豪雨で市がどのように情報を集めたか、次の災害に向けて初動をどう見直すかを尋ねました。",
+      "date": "2026-09-10",
+      "status": "質問実施",
+      "themes": [
+        "safety"
+      ],
+      "person": "芝田真代",
+      "group": "会派に所属していない議員",
+      "questionType": "個人質問",
+      "article": {
+        "background": "豪雨時には、避難所を開ける職員自身も道路冠水や渋滞の影響を受けました。",
+        "points": [],
+        "questions": [
+          "見直した参集手順が、訓練や次の豪雨対応でどう機能したか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "芝田真代",
+          "question": "豪雨時の情報収集や庁内の連携はどう行われ、初動対応で改善すべき点は何か。",
+          "role": "市民生活部長",
+          "answer": "災害対策本部で各部署や避難所と電話で連絡し、情報を共有したと説明。冠水や渋滞などで職員の到着が遅れて避難所開設に時間を要したため、突発的な豪雨時に職員が集まる方法を見直す必要があると答えました。",
+          "source": {
+            "id": "plenary-10",
+            "page": 61
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 12
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-10",
+          "page": 61
+        }
+      ],
+      "related": [
+        "report-rain",
+        "question-1",
+        "question-2",
+        "question-4",
+        "question-9",
+        "question-11"
+      ]
+    },
+    {
+      "id": "question-8",
+      "type": "question",
+      "label": "一般質問",
+      "title": "柴崎地区を災害時の物資拠点にできる？",
+      "officialTitle": "9月11日　深井優也議員の一般質問",
+      "lead": "深井優也議員は、国道6号に面する柴崎地区の産業用地を、災害時の支援物資の拠点として使う可能性を取り上げました。",
+      "date": "2026-09-11",
+      "status": "質問実施",
+      "themes": [
+        "safety",
+        "town"
+      ],
+      "person": "深井優也",
+      "group": "我孫子政策倶楽部",
+      "questionType": "個人質問",
+      "article": {
+        "background": "議員は平時も活用できる道の駅などを提案しました。ここでは、災害時の集積・配送拠点に関する市の答弁を取り上げます。",
+        "points": [],
+        "questions": [
+          "柴崎地区の整備方針が具体化したとき、災害時の利用が計画に位置づけられるか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "深井優也",
+          "question": "災害時、柴崎地区産業用地は支援物資を集め、避難所などに届ける拠点になり得るか。",
+          "role": "市民生活部長",
+          "answer": "在庫は市内の倉庫に分散し、市外から大量の物資を受け入れる際は大学の体育館などを活用する計画を説明。柴崎地区が担える役割は、整備計画が具体化した段階で判断すると答えました。",
+          "source": {
+            "id": "plenary-11",
+            "page": 2,
+            "endPage": 3
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 13
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-11",
+          "page": 2,
+          "endPage": 3
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "question-9",
+      "type": "question",
+      "label": "一般質問",
+      "title": "豪雨で通報が集中。消防はどう対応した？",
+      "officialTitle": "9月11日　西川佳克議員の一般質問",
+      "lead": "西川佳克議員は、冠水や渋滞が起きるなか、消防・救急の通報が集中した場合の課題を取り上げました。",
+      "date": "2026-09-11",
+      "status": "質問実施",
+      "themes": [
+        "safety"
+      ],
+      "person": "西川佳克",
+      "group": "会派に所属していない議員",
+      "questionType": "個人質問",
+      "article": {
+        "background": "ちば北西部消防指令センターは10市共同です。答弁の通報件数は我孫子市単独の件数とは範囲が異なります。",
+        "points": [],
+        "questions": [
+          "複数の通報が集中する際の指令や、冠水時の出動経路にどのような対策が取られたか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "西川佳克",
+          "question": "共同の消防指令センターへの通報は何件あり、現場対応や搬送にはどんな課題があったのか。",
+          "role": "消防長",
+          "answer": "10市分の通報は1,264件で、同じ事案への通報が重なり対応に時間がかかったと説明。我孫子市では道路冠水や渋滞で、現場到着に時間を要したと答えました。",
+          "source": {
+            "id": "plenary-11",
+            "page": 17
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 14
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-11",
+          "page": 17
+        }
+      ],
+      "related": [
+        "report-rain",
+        "question-1",
+        "question-2",
+        "question-4",
+        "question-7",
+        "question-11"
+      ]
+    },
+    {
+      "id": "question-10",
+      "type": "question",
+      "label": "一般質問",
+      "title": "配達中に異変に気づいたら、市のどこにつなぐ？",
+      "officialTitle": "9月11日　島田安子議員の一般質問",
+      "lead": "単身世帯や支援が必要な人を地域でどう見守るか。島田安子議員は、配達などで異変に気づいた民間事業者からの連絡経路を尋ねました。",
+      "date": "2026-09-11",
+      "status": "質問実施",
+      "themes": [
+        "care",
+        "safety"
+      ],
+      "person": "島田安子",
+      "group": "公明党",
+      "questionType": "個人質問",
+      "article": {
+        "background": "新聞販売店や宅配事業者などは、日常の仕事のなかで普段と違う様子に気づくことがあります。",
+        "points": [],
+        "questions": [
+          "協力する事業者に連絡手順がどこまで伝わり、通報後に必要な支援へつながったか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "島田安子",
+          "question": "民間事業者が異変に気づいたとき、どこに通報し、その後どう支援につながるのか。これまでの通報件数も知りたい。",
+          "role": "健康福祉部長",
+          "answer": "孤立死防止の専用窓口や対象者に応じた担当課が通報を受け、市職員が訪問などで安否を確認すると説明。2020年4月からの通報は18件だったと答えました。",
+          "source": {
+            "id": "plenary-11",
+            "page": 32
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 15
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-11",
+          "page": 32
+        }
+      ],
+      "related": [
+        "question-3"
+      ]
+    },
+    {
+      "id": "question-11",
+      "type": "question",
+      "label": "一般質問",
+      "title": "災害時、学校から保護者にどう連絡する？",
+      "officialTitle": "9月11日　海津にいな議員の一般質問",
+      "lead": "海津にいな議員は、保護者がすぐに帰宅できない場合もあるとして、災害時の学校からの連絡や子どもの安全確保を取り上げました。",
+      "date": "2026-09-11",
+      "status": "質問実施",
+      "themes": [
+        "education",
+        "safety"
+      ],
+      "person": "海津にいな",
+      "group": "会派に所属していない議員",
+      "questionType": "個人質問",
+      "article": {
+        "background": "登校前に休業などを知らせる場面と、登校後に安全に引き渡す場面で、学校が取る対応は異なります。",
+        "points": [],
+        "questions": [
+          "通信が使えない場合の引渡し手順が家庭に伝わり、訓練で確認されているか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "海津にいな",
+          "question": "大雨や地震の際、学校は保護者にどう連絡し、子どもを安全に帰すのか。",
+          "role": "教育長",
+          "answer": "始業時刻の変更や臨時休業は、当日の午前6時30分までに学校の保護者連絡用アプリで知らせる体制だと説明。下校が危険なときは校内で待機し、通信障害時も学校待機や引渡しを基本にすると答えました。",
+          "source": {
+            "id": "plenary-11",
+            "page": 42,
+            "endPage": 43
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 16
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-11",
+          "page": 42,
+          "endPage": 43
+        }
+      ],
+      "related": [
+        "report-rain",
+        "question-1",
+        "question-2",
+        "question-4",
+        "question-7",
+        "question-9"
+      ]
+    },
+    {
+      "id": "question-12",
+      "type": "question",
+      "label": "一般質問",
+      "title": "就職氷河期世代の雇用を、市はどこまで把握している？",
+      "officialTitle": "9月11日　江川克哉議員の一般質問",
+      "lead": "江川克哉議員は、就職氷河期世代の支援を考えるため、市内の正規・非正規雇用の状況を尋ねました。",
+      "date": "2026-09-11",
+      "status": "質問実施",
+      "themes": [
+        "care",
+        "government",
+        "economy"
+      ],
+      "person": "江川克哉",
+      "group": "公明党",
+      "questionType": "個人質問",
+      "article": {
+        "background": "市の答弁では、市内で確認できる年齢別人口と、県の雇用割合から推定した人数とを分けています。",
+        "points": [],
+        "questions": [
+          "確定した統計が公表された後、市内の実態や支援の利用状況をどこまで把握できるか。"
+        ],
+        "outcome": "議員が市政について考えや対応をただす一般質問です。このやりとり自体に採決はありません。"
+      },
+      "exchanges": [
+        {
+          "speaker": "江川克哉",
+          "question": "市内の就職氷河期世代で、2020年と2025年の正規雇用・非正規雇用はそれぞれ何人か。",
+          "role": "企画総務部長",
+          "answer": "市内の正確な人数は把握できていないと説明。2020年の県の割合を用い、市内の40〜54歳で正規雇用約1万3,000人、非正規雇用約5,800人と推計しました。2025年は答弁時点で国勢調査の確定値が未公表でした。",
+          "source": {
+            "id": "plenary-11",
+            "page": 53,
+            "endPage": 54
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "question-outline",
+          "page": 17
+        },
+        {
+          "id": "question-index"
+        },
+        {
+          "id": "plenary-11",
+          "page": 53,
+          "endPage": 54
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "report-kyushoku",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "学校給食費の管理を、学校から市に移す準備",
+      "officialTitle": "学校給食費公会計化に向けた推進",
+      "lead": "市は、2027年度から給食費の会計を学校ごとから市の一般会計に移す準備を進めていると報告しました。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "report-kyushoku"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "目的として、保護者の利便性向上と教職員の負担軽減を挙げました。",
+        "points": [
+          "10月以降に保護者へ口座振替の申し込みなどを案内する予定です。食材を納める事業者には、2027年度から支払業務が学校から市に変わることを周知するとしました。"
+        ],
+        "questions": [
+          "保護者の手続きや支払い時期を、市はどのように案内したか。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": [
+        "bill-10",
+        "petition-20",
+        "resolution-2"
+      ]
+    },
+    {
+      "id": "report-rain",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "8月の豪雨で市はどう動いた？",
+      "officialTitle": "令和8年8月千葉豪雨",
+      "lead": "8月13日から14日の豪雨で、市は災害対策本部を設け、9カ所の避難所を開設したと報告しました。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "safety"
+      ],
+      "sources": [
+        {
+          "id": "report-rain"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "市内では1時間に最大97ミリの雨が降り、住宅浸水や道路冠水などが起きました。",
+        "points": [
+          "土砂災害警戒区域には避難指示を発令しました。鉄道の運休で帰れなくなった人には、我孫子駅の一時滞留施設としてけやきプラザを開放しました。",
+          "市は被災者向けに減免や応急修理等の申請を受け付け、防災訓練や職員の災害対応訓練を進めると説明しました。"
+        ],
+        "questions": [
+          "市が報告した対応と、議員が一般質問で尋ねた初動・避難所・情報発信の課題を合わせて確認できます。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": [
+        "question-1",
+        "question-2",
+        "question-4",
+        "question-7",
+        "question-9",
+        "question-11",
+        "bill-23"
+      ]
+    },
+    {
+      "id": "report-bus",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "あびバス平和台ルート、9月1日に運行開始",
+      "officialTitle": "あびバス平和台地区運行事業",
+      "lead": "市は9月1日、あびバスの6番目のルートとして、布佐駅南口と新木駅南口を結ぶ平和台ルートの運行を始めたと報告しました。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "transport"
+      ],
+      "sources": [
+        {
+          "id": "report-bus"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "布佐平和台地区の生活路線として、地域の公共交通を維持する取り組みです。",
+        "points": [
+          "あびバスでは初めて中型バスを導入しました。市は、路線を維持するために地域の利用が必要だと説明しました。"
+        ],
+        "questions": [
+          "実際の利用者数や、通院・買い物などの移動にどの程度使われているか。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": [
+        "question-3"
+      ]
+    },
+    {
+      "id": "report-child",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "保育料の第3子以降無償化を広げる検討",
+      "officialTitle": "多子世帯保育料軽減制度の拡充",
+      "lead": "市は、0〜2歳児クラスの保育料で、第3子以降の無償化の対象を広げる方向で検討していると報告しました。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "report-child"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "当時の仕組みでは、一部の低所得世帯を除き、上の子が小学校に入ると第1子として数えなくなることがありました。",
+        "points": [
+          "所得や上の子の年齢を問わず、第3子以降を対象にする方向で検討し、2027年度の実施を目指すと説明しました。"
+        ],
+        "questions": [
+          "対象・開始時期・申し込み方法がどのように決まったかは、その後の制度案内を確認してください。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": []
+    },
+    {
+      "id": "report-otayori",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "介護の仕事に初めて関わる人と事業所をつなぐ",
+      "officialTitle": "介護未経験者から介護の担い手となるまでの一体的支援事業",
+      "lead": "介護の経験がない人が有償ボランティアとして事業所の仕事に関われるよう、市がマッチングを支援する事業です。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "care"
+      ],
+      "sources": [
+        {
+          "id": "report-otayori"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "市は、介護分野にさまざまな人材が入るきっかけをつくる国のモデル事業を受託したと説明しました。",
+        "points": [
+          "8月に委託事業者を決定し、10月1日からボランティアを募集する予定と報告。事業所向けの研修と、登録者向けの入門研修も予定していました。"
+        ],
+        "questions": [
+          "実際の登録者数、事業所とのマッチング件数、活動を続けた人の人数。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": [
+        "bill-13",
+        "question-6",
+        "question-3",
+        "bill-19"
+      ]
+    },
+    {
+      "id": "report-cashless",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "介護保険料などをキャッシュレスで納付",
+      "officialTitle": "公金のキャッシュレス納付",
+      "lead": "市は、税以外の公金でも、9月24日から二次元コード付き納付書でキャッシュレス納付ができるようになると報告しました。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "government",
+        "care"
+      ],
+      "sources": [
+        {
+          "id": "report-cashless"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "支払いの対象として、介護保険料、後期高齢者医療保険料、行政財産使用料などを挙げています。",
+        "points": [
+          "利用方法として、スマホ決済アプリ、クレジットカード、インターネットバンキングなどが示されました。"
+        ],
+        "questions": [
+          "手元の納付書で利用できる方法や手数料は、市の最新の案内で確認してください。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": []
+    },
+    {
+      "id": "report-kohokudai",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "湖北台市民センター、市が閉館予定の延長を報告",
+      "officialTitle": "湖北台市民センターについて",
+      "lead": "市は、湖北台市民センターの閉館予定を、2026年12月末から2027年3月末に延ばすと報告しました。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "town"
+      ],
+      "sources": [
+        {
+          "id": "report-kohokudai"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "施設の老朽化を理由に閉館を予定していましたが、利用者の要望を受けて時期を見直したと説明しました。",
+        "points": [
+          "東消防署湖北分署の移転後、跡地と隣接する旧湖北台行政サービスセンター跡地を一体で活用するため、検討を進めると報告しました。"
+        ],
+        "questions": [
+          "閉館後に利用団体が使える施設や、跡地活用の計画は、その後の公表資料で確認できます。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": [
+        "bill-3"
+      ]
+    },
+    {
+      "id": "report-window",
+      "type": "report",
+      "label": "市政一般報告",
+      "title": "市役所窓口の開庁時間短縮を検証",
+      "officialTitle": "市役所の窓口開庁時間の短縮",
+      "lead": "市は1月から試行していた市役所の窓口時間短縮を、9月から西別館や教育委員会を含む範囲に広げたと報告しました。",
+      "date": "2026-09-02",
+      "status": "市が報告",
+      "themes": [
+        "government"
+      ],
+      "sources": [
+        {
+          "id": "report-window"
+        },
+        {
+          "id": "reports"
+        }
+      ],
+      "article": {
+        "background": "市は、試行開始から約8か月が経過し、市民の協力もあって特に混乱は生じていないと説明しました。",
+        "points": [
+          "一部の施設を除き、市役所全体が試行対象になりました。拡大後も課題を検証し、本格実施を目指すとしました。"
+        ],
+        "questions": [
+          "利用者が窓口に行ける時間や混雑への影響と、本格実施の判断を確認する必要があります。"
+        ],
+        "outcome": "9月2日に市長が市の取り組みや方針を報告しました。この項目についての議決はありません。"
+      },
+      "related": [
+        "bill-2"
+      ]
+    },
+    {
+      "id": "resolution-1",
+      "type": "resolution",
+      "label": "発議案第1号",
+      "title": "非核三原則の堅持を国に求める",
+      "officialTitle": "非核三原則の堅持を求める意見書",
+      "lead": "市議会は、核兵器を持たず、作らず、持ち込ませずという非核三原則を守るよう、国に意見書を出しました。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "government",
+        "peace"
+      ],
+      "sources": [
+        {
+          "id": "resolution-1"
+        },
+        {
+          "id": "opinions"
+        },
+        {
+          "id": "opinion-proposals"
+        },
+        {
+          "id": "votes",
+          "page": 3
+        }
+      ],
+      "article": {
+        "background": "意見書は、地方議会が国などの関係機関に意見を届ける手段です。",
+        "points": [
+          "提出先は内閣総理大臣、外務大臣、防衛大臣です。"
+        ],
+        "questions": [
+          "提出後に、関係機関の方針や制度にどのような動きがあったか。"
+        ],
+        "outcome": "9月29日の本会議で賛成22、反対0で可決され、同日付で提出されました。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 3
+        }
+      }
+    },
+    {
+      "id": "resolution-2",
+      "type": "resolution",
+      "label": "発議案第2号",
+      "title": "中学校給食費の完全無償化を国に求める",
+      "officialTitle": "中学校の給食費の完全無償化を早急に実現することを求める意見書",
+      "lead": "市議会は、中学校の学校給食にかかる保護者負担を国の制度でなくすよう求めました。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "resolution-2"
+        },
+        {
+          "id": "opinions"
+        },
+        {
+          "id": "opinion-proposals"
+        },
+        {
+          "id": "votes",
+          "page": 3
+        }
+      ],
+      "article": {
+        "background": "同日採択された請願第20号を受けた意見書です。給食費を誰が管理するかを決めた市の条例とは、扱う問題が異なります。",
+        "points": [
+          "提出先は衆議院議長、参議院議長、内閣総理大臣、総務大臣、財務大臣、文部科学大臣です。"
+        ],
+        "questions": [
+          "提出後に、関係機関の方針や制度にどのような動きがあったか。"
+        ],
+        "outcome": "9月29日の本会議で賛成22、反対0で可決され、同日付で提出されました。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 3
+        }
+      },
+      "related": [
+        "report-kyushoku",
+        "bill-10",
+        "petition-20"
+      ]
+    },
+    {
+      "id": "resolution-3",
+      "type": "resolution",
+      "label": "発議案第3号",
+      "title": "2027年度の教育予算拡充を国に求める",
+      "officialTitle": "国における2027年度教育予算拡充に関する意見書",
+      "lead": "市議会は、学校の教職員や教育環境を支える2027年度の国の教育予算を充実させるよう求めました。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "resolution-3"
+        },
+        {
+          "id": "opinions"
+        },
+        {
+          "id": "opinion-proposals"
+        },
+        {
+          "id": "votes",
+          "page": 3
+        }
+      ],
+      "article": {
+        "background": "国の2027年度教育予算について、同日採択された請願第21号に対応する意見書です。",
+        "points": [
+          "提出先は内閣総理大臣、総務大臣、財務大臣、文部科学大臣です。"
+        ],
+        "questions": [
+          "提出後に、関係機関の方針や制度にどのような動きがあったか。"
+        ],
+        "outcome": "9月29日の本会議で賛成22、反対0で可決され、同日付で提出されました。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 3
+        }
+      },
+      "related": [
+        "petition-21"
+      ]
+    },
+    {
+      "id": "resolution-4",
+      "type": "resolution",
+      "label": "発議案第4号",
+      "title": "義務教育費の国庫負担制度を維持するよう求める",
+      "officialTitle": "義務教育費国庫負担制度の堅持に関する意見書",
+      "lead": "市議会は、義務教育の機会を全国で保障するため、教職員給与などを国が負担する制度を維持するよう求めました。",
+      "date": "2026-09-29",
+      "status": "可決",
+      "themes": [
+        "education"
+      ],
+      "sources": [
+        {
+          "id": "resolution-4"
+        },
+        {
+          "id": "opinions"
+        },
+        {
+          "id": "opinion-proposals"
+        },
+        {
+          "id": "votes",
+          "page": 3
+        }
+      ],
+      "article": {
+        "background": "国と地方が義務教育の費用を負担する仕組みについて、同日採択された請願第22号に対応する意見書です。",
+        "points": [
+          "提出先は内閣総理大臣、総務大臣、財務大臣、文部科学大臣です。"
+        ],
+        "questions": [
+          "提出後に、関係機関の方針や制度にどのような動きがあったか。"
+        ],
+        "outcome": "9月29日の本会議で賛成22、反対0で可決され、同日付で提出されました。"
+      },
+      "voting": {
+        "default": "yes",
+        "exceptions": {
+          "海津にいな": "absent",
+          "日暮俊一": "chair"
+        },
+        "source": {
+          "id": "votes",
+          "page": 3
+        }
+      },
+      "related": [
+        "petition-22"
+      ]
+    }
+  ],
+  "calendar": [
+    {
+      "date": "2026-09-02",
+      "time": "13:00",
+      "title": "開会・提案説明・市政一般報告",
+      "note": "請願・陳情の締切は17:00"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "10:00",
+      "title": "本会議 第2日",
+      "note": "一般質問"
+    },
+    {
+      "date": "2026-09-10",
+      "time": "10:00",
+      "title": "本会議 第3日",
+      "note": "一般質問"
+    },
+    {
+      "date": "2026-09-11",
+      "time": "10:00",
+      "title": "本会議 第4日",
+      "note": "一般質問"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "休会",
+      "note": "調整日"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "10:00",
+      "title": "総務企画常任委員会",
+      "note": "議案の審査"
+    },
+    {
+      "date": "2026-09-16",
+      "time": "10:00",
+      "title": "教育福祉常任委員会",
+      "note": "給食費の管理、介護保険補正予算、請願などの審査"
+    },
+    {
+      "date": "2026-09-17",
+      "time": "10:00",
+      "title": "環境都市常任委員会",
+      "note": "議案の審査"
+    },
+    {
+      "date": "2026-09-18",
+      "time": "10:00／13:00",
+      "title": "議会運営委員会／予算審査特別委員会",
+      "note": "公表された会期日程の時刻"
+    },
+    {
+      "date": "2026-09-24",
+      "time": "10:00",
+      "title": "決算審査特別委員会",
+      "note": "9月24日・25日・28日"
+    },
+    {
+      "date": "2026-09-29",
+      "time": "13:00／14:00",
+      "title": "議会運営委員会／本会議 第5日",
+      "note": "委員長報告・討論・採決、閉会"
+    }
+  ]
+}

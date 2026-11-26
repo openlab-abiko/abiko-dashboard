@@ -1,0 +1,910 @@
+.council-shell {
+  --council-ink: #192e26;
+  --council-green: #17634c;
+  --council-deep: #164536;
+  --council-muted: #52665c;
+  --council-rule: #d5e1d7;
+  --council-tint: #edf4ee;
+  --council-paper: #f8faf6;
+  color: var(--council-ink);
+  background: var(--council-paper);
+}
+
+.council-shell:has(:is(#g-detail, #g-schedule, #g-guide):not([hidden])) { background: #fff; }
+
+.council-shell [hidden] { display: none !important; }
+.council-shell section[id] { scroll-margin-top: calc(var(--abiko-header-bottom, 96px) + 12px); }
+.council-shell a { text-underline-offset: 0.24em; }
+.council-shell :is(a, button, input, select, summary):focus-visible {
+  outline: 3px solid #197755;
+  outline-offset: 4px;
+}
+.council-shell [tabindex="-1"]:focus { outline: none; }
+
+.council-container { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+.council-section-nav {
+  display: flex;
+  gap: 6px 22px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-block: 11px;
+  font-size: 0.83rem;
+  line-height: 1.55;
+}
+.council-section-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding-block: 3px;
+  color: var(--council-muted);
+  font-size: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+.council-section-nav a[aria-current] {
+  color: var(--council-green);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.council-section-nav a:hover,
+.council-text-link:hover { text-decoration: underline; }
+
+.council-hero {
+  background: #e9f2e9;
+  border-block: 1px solid var(--council-rule);
+}
+.council-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(22px, 4.5vw, 64px);
+  align-items: center;
+  padding-block: clamp(32px, 4vw, 56px);
+}
+.council-hero h1,
+.council-page-header h1 {
+  margin: 0;
+  color: var(--council-ink);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+}
+.council-page-header > p {
+  max-width: 39em;
+  margin: 8px 0 0;
+  color: var(--council-muted);
+  line-height: 1.85;
+}
+.council-edition {
+  padding: 18px clamp(16px, 3vw, 29px);
+  border-radius: 13px;
+  background: var(--council-deep);
+  color: #fff;
+}
+.council-edition h2 { color: #fff; font-size: 1.1rem; line-height: 1.5; margin: 0; }
+.council-edition p { margin: 4px 0 11px; color: #d3e9db; font-size: 0.82rem; }
+.council-edition p span { margin-inline-start: 0.55em; white-space: nowrap; }
+.council-edition ul { list-style: none; padding: 0; margin: 0; }
+.council-edition a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  min-height: 41px;
+  padding-block: 5px;
+  color: #f2fbf4;
+  border-top: 1px solid #568371;
+  font-size: 0.87rem;
+  text-decoration: none;
+}
+.council-edition a:hover { background: #ffffff10; }
+.council-edition a:focus-visible { outline-color: #d4f6a8; }
+.council-edition strong { font-size: 1.06rem; font-variant-numeric: tabular-nums; }
+.council-edition small { font-size: 0.72em; font-weight: 400; margin-inline-start: 3px; }
+
+.council-button,
+.council-text-link {
+  display: inline-flex;
+  gap: 0.6em;
+  align-items: center;
+  width: fit-content;
+  min-height: 44px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.45;
+  text-decoration: none;
+}
+.council-button {
+  padding: 10px 17px;
+  border: 1px solid var(--council-green);
+  border-radius: var(--abiko-pill-radius);
+  background: var(--council-green);
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+.council-button:hover { background: var(--council-deep); color: #fff; }
+.council-text-link { color: var(--council-green); }
+
+.council-section { padding-block: clamp(32px, 5vw, 63px); }
+.council-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 18px;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+.council-shell :is(.council-section, .council-utility-section, .g-section) h2 {
+  color: var(--council-ink);
+  font-size: clamp(22px, 2.15vw, 30px);
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+}
+.council-shell :is(.council-section, .council-utility-section) h2 { margin: 0; }
+.council-shell #council-pickup-title {
+  color: #214e37;
+  font-size: var(--abiko-pickup-size);
+  font-weight: 650;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+.council-shell :is(.council-section, .council-utility-section) p {
+  overflow-wrap: anywhere;
+}
+.council-pickup-tabs {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 5px 5px 10px;
+  margin: 0 -5px 12px;
+  scrollbar-width: thin;
+}
+.council-pickup-tab {
+  flex: 0 0 auto;
+  min-height: 41px;
+  padding: 5px 12px;
+  border: 1px solid var(--council-rule);
+  border-radius: var(--abiko-pill-radius);
+  background: #fff;
+  color: var(--council-muted);
+  font: inherit;
+  font-size: 0.86rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.council-pickup-tab:hover { border-color: var(--council-green); }
+.council-pickup-tab[aria-pressed="true"] {
+  border-color: var(--council-green);
+  background: var(--council-green);
+  color: #fff;
+}
+#council-pickup-status { margin: 18px 0 7px; text-align: center; }
+.council-pickup-actions { display: flex; justify-content: center; }
+
+.council-photo-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: var(--abiko-card-photo-ratio);
+  overflow: hidden;
+  background: #e4eee6;
+  color: var(--council-muted);
+  font-size: 0.81rem;
+}
+.council-photo-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.council-photo-frame:has(img:not([hidden])) > span { visibility: hidden; }
+.council-photo-credit {
+  margin: 0 0 10px;
+  color: var(--council-muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+.council-photo-credit a { position: relative; color: inherit; font-size: inherit; }
+
+.council-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 7px;
+  border: 1px solid #237253;
+  border-radius: var(--abiko-pill-radius);
+  background: #fff;
+  color: #25664d;
+  font-size: 10px;
+  font-weight: 450;
+  line-height: 1.3;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.council-chip--muted {
+  border-color: #dce4de;
+  background: #e9edeb;
+  color: #34433a;
+}
+.council-chip--filled {
+  border-color: var(--council-green);
+  background: var(--council-green);
+  color: #fff;
+  font-weight: 400;
+}
+a.council-chip--muted:hover { background: #dce7df; }
+.council-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 11px;
+  align-items: center;
+  font-size: 0.77rem;
+  line-height: 1.65;
+  color: var(--council-muted);
+  margin: 0;
+}
+.council-label { color: var(--council-green); font-weight: 500; }
+
+.council-directory,
+.council-detail,
+.council-utility { padding-block: clamp(23px, 4vw, 48px) clamp(45px, 7vw, 85px); }
+.council-page-header { margin-bottom: 25px; }
+.council-page-header h1 {
+  font-size: clamp(30px, 3.2vw, 44px);
+  overflow-wrap: anywhere;
+}
+.council-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 1.25fr);
+  align-items: end;
+  gap: 8px 16px;
+  padding: 12px 16px 8px;
+  background: #fff;
+  border: 1px solid var(--council-rule);
+  border-radius: 8px;
+}
+.council-filters label { color: var(--council-ink); font-size: 13px; line-height: 1.4; }
+.council-search-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 8px; align-items: end; }
+.council-search-row label { grid-column: 1 / -1; }
+.council-filters :where(input[type="search"], select, .council-button) { min-height: 36px; font-size: 14px; }
+.council-filters .council-button { padding: 5px 12px; }
+.council-filters :where(input[type="search"], select) {
+  min-width: 0;
+  width: 100%;
+  padding: 5px 8px;
+  background: var(--council-paper);
+  border: 1px solid #8da69a;
+  border-radius: 6px;
+  line-height: 1.3;
+  font-family: inherit;
+  color: var(--council-ink);
+}
+.council-filter-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 1.25fr); gap: 8px; }
+.council-filter-row label { display: grid; gap: 4px; }
+.council-filter-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+}
+.council-filter-actions label { display: inline-flex; gap: 5px; align-items: center; min-height: 34px; }
+.council-filter-actions input { accent-color: var(--council-green); width: 17px; height: 17px; }
+.council-reset {
+  padding: 5px;
+  min-height: 34px;
+  background: none;
+  border: 0;
+  line-height: 1.4;
+  font-family: inherit;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+  color: var(--council-green);
+  cursor: pointer;
+}
+.council-result-count { margin: 19px 0 9px; font-size: 0.87rem; color: var(--council-muted); }
+.council-results { margin: 0; padding: 0; list-style: none; }
+body[data-view="gikai"] .g-bill.v73-bill.council-result-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  padding: 0 !important;
+  overflow-wrap: anywhere;
+}
+.council-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 13px 15px 15px;
+  min-width: 0;
+}
+.council-card-content .g-billbottom { margin-top: auto; }
+.council-result-card .council-photo-credit a,
+.council-result-card .council-tag-list a { z-index: 1; }
+.council-result-card:focus-within { outline: 2px solid var(--council-green); outline-offset: 2px; }
+.council-result-card:hover { transform: none; box-shadow: 0 2px 10px #23402d20; }
+body[data-view="gikai"] .g-bill.v73-bill.council-result-card :is(h2, h3) {
+  margin: 0 0 9px;
+  color: #203b2d;
+  font-size: clamp(18px, 1.4vw, 21px) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.5 !important;
+  text-wrap: balance;
+}
+.council-result-link { color: inherit; font-size: inherit; text-decoration: none; }
+.council-result-link::after { content: ""; position: absolute; inset: 0; }
+.council-result-link:hover { color: var(--council-green); }
+.council-result-card .council-meta,
+.council-detail-header .council-meta { gap: 4px 6px; font-size: 11px; }
+.council-result-card .council-meta { margin-bottom: 10px; }
+.council-tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin: 7px 0 0; }
+.council-result-card .council-tag-list { margin: 0 0 9px; }
+.council-result-card .council-tag-list a { position: relative; }
+.council-result-card .g-vote-pill { border-radius: var(--abiko-pill-radius); font-weight: 500; }
+.council-result-card .g-vote-pill--no.has-no {
+  border-color: #a95079;
+  background: #a95079;
+}
+.council-shell .council-result-card .g-vote-pill--left {
+  border-color: #83648e !important;
+  background: #83648e !important;
+}
+.council-empty, .council-note, .council-coverage { color: var(--council-muted); font-size: 0.86rem; line-height: 1.75; }
+
+.council-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 18px;
+  color: var(--council-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.council-breadcrumb a { color: inherit; font-size: inherit; text-decoration: none; }
+.council-breadcrumb a:hover { color: var(--council-green); }
+.council-reading-header,
+.council-detail-header {
+  padding-bottom: 24px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid #d7ded7;
+}
+.council-shell :is(.council-hero, .council-reading-header, .council-detail-header) h1 {
+  color: #18261d;
+  font-size: var(--abiko-reading-title-size);
+  font-weight: 850;
+  line-height: 1.38;
+  letter-spacing: -0.06em;
+}
+.council-detail-header h1 { margin: 0 0 20px; text-wrap: balance; }
+.council-reading-header h1 { margin-bottom: 20px; }
+.council-reading-header > p,
+.council-detail-header .council-lead {
+  max-width: 47em;
+  margin: 0 0 16px;
+  color: #536559;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.85;
+}
+.council-reading-header > p { margin-bottom: 0; }
+.council-detail-header .council-official {
+  color: var(--council-muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+  margin: 0 0 9px;
+}
+.council-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.36fr);
+  gap: 27px clamp(28px, 4.5vw, 64px);
+  align-items: start;
+}
+.council-body { width: min(100%, 780px); min-width: 0; }
+.council-body > section + section { margin-top: clamp(33px, 4vw, 45px); }
+
+.council-shell :is(.council-body > section, .council-guide-section, #g-schedule .council-utility-section) > h2 {
+  margin: 0 0 23px;
+  padding-inline-start: 15px;
+  border-inline-start: 4px solid #1e895c;
+  color: #17392b;
+  font-size: var(--abiko-reading-heading-size);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.51;
+}
+.council-body :is(p, li, dd) {
+  overflow-wrap: anywhere;
+}
+.council-body :is(p:not(.council-note, .council-citation), li, dd) {
+  font-size: var(--abiko-reading-body-size);
+  line-height: var(--abiko-reading-body-line);
+}
+.council-body :is(p, ul, ol) { margin: 0 0 16px; }
+.council-body :is(ol, ul) { padding-left: 1.4em; }
+.council-body li + li { margin-top: 6px; }
+.council-body .council-note { margin-bottom: 9px; }
+.council-article-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  border-top: 1px solid var(--council-rule);
+  margin-top: 26px;
+}
+.council-qa-list { border-top: 1px solid var(--council-rule); }
+.council-qa { padding-block: 14px; border-bottom: 1px solid var(--council-rule); }
+.council-qa dl { margin: 0; }
+.council-qa dt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  margin: 0 0 4px;
+  color: var(--council-muted);
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+.council-qa dd { margin: 0 0 12px; }
+.council-article-aside { display: grid; gap: 20px; min-width: 0; }
+.council-aside-card { min-width: 0; padding: 12px 0 5px; border-top: 2px solid #263d2d; }
+.council-aside-card h2 { color: #21392c; font-size: 1.15rem; font-weight: 800; margin: 0 0 12px; }
+.council-aside-card ul { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.council-aside-card li > span { margin-bottom: 3px; }
+.council-aside-card li > a { display: block; }
+.council-aside-card a, .council-source-list a { color: var(--council-green); line-height: 1.6; font-size: 0.88rem; overflow-wrap: anywhere; }
+.council-detail :is(.council-citation, .council-source-link),
+.council-qa :is(.council-citation, .council-source-link) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+p.council-citation { margin: 4px 0 0; color: var(--council-muted); }
+.council-aside-card ul.council-citation { gap: 4px; }
+.council-detail .council-source-link,
+.council-qa .council-source-link { color: var(--council-green); overflow-wrap: anywhere; }
+
+.council-voting { margin-top: 12px; }
+.council-vote-bar { display: flex; min-height: 13px; overflow: hidden; border-radius: 3px; background: #e1e8e1; }
+.council-vote-bar span { min-width: 0; }
+.council-vote-yes { --council-vote-color: #2b7251; }
+.council-vote-no { --council-vote-color: #aa4c3b; }
+.council-vote-left { --council-vote-color: #a36c17; }
+.council-vote-absent { --council-vote-color: #6a7b84; }
+.council-vote-chair { --council-vote-color: #777080; }
+.council-vote-bar span,
+.council-vote-legend dt::before { background: var(--council-vote-color); }
+.council-vote-legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 4px 8px;
+  margin: 8px 0;
+  font-size: 0.76rem;
+}
+.council-vote-legend > div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 5px; }
+.council-vote-legend dt::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; }
+.council-vote-legend dd { margin: 0; font-weight: 600; }
+.council-rollcall { border-top: 1px solid var(--council-rule); padding-top: 7px; }
+.council-rollcall summary { color: var(--council-green); font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+.council-rollcall dt { margin-top: 7px; }
+.council-rollcall dd { margin: 0; overflow-wrap: anywhere; color: var(--council-muted); }
+.council-rollcall dl { font-size: 0.8rem; line-height: 1.7; margin-bottom: 5px; }
+
+.council-utility-section + .council-utility-section,
+.council-utility-section + div,
+.council-utility-section > h2 + div { margin-top: 20px; }
+.council-utility-section > p { line-height: 1.8; color: var(--council-muted); }
+#g-schedule .council-utility-section + .council-utility-section,
+#council-session-calendars { margin-top: clamp(35px, 5vw, 53px); }
+.council-next-meeting {
+  padding-block: 14px;
+  border-block: 1px solid var(--council-rule);
+}
+.council-next-meeting h3,
+.council-meeting-row h3,
+.council-calendar-list h3 {
+  margin: 0;
+  color: var(--council-ink);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+.council-next-meeting h3 { margin-top: 8px; }
+.council-next-meeting .g-status { border-radius: var(--abiko-pill-radius); font-weight: 500; }
+.council-shell .council-next-meeting .g-date-num {
+  padding: 0;
+  margin: 4px 0;
+  color: var(--council-deep);
+  font-size: clamp(21px, 2.2vw, 29px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.council-next-meeting .g-date-num small { margin-left: 0.2em; font-weight: 400; }
+.council-next-meeting p { max-width: 45em; margin: 5px 0; }
+.council-next-meeting :is(.g-small, .g-next-p) { color: var(--council-muted); }
+.council-next-meeting .g-inline-link { font-weight: 500; }
+
+.council-meeting-list { padding: 0; margin: 14px 0 0; list-style: none; }
+.council-meeting-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 0.37fr);
+  align-items: center;
+  gap: 4px 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--council-rule);
+}
+.council-meeting-row:first-child { border-top: 1px solid var(--council-rule); }
+.council-meeting-row p {
+  display: inline-block;
+  margin: 4px 8px 0 0;
+  color: var(--council-muted);
+  font-size: 0.88rem;
+}
+.council-meeting-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 12px;
+  color: var(--council-green);
+}
+.council-meeting-links a { color: inherit; font-size: 0.84rem; line-height: 1.7; }
+
+.council-calendar-list {
+  margin: 21px 0 0;
+  padding: 0 0 0 25px;
+  list-style: none;
+}
+.council-calendar-list li {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(7.5em, 0.23fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 5px 12px;
+  padding: 0 0 19px;
+}
+.council-calendar-list li::before,
+.council-calendar-list li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  background: #6c9c82;
+}
+.council-calendar-list li::before {
+  top: 8px;
+  left: -22px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.council-calendar-list li:not(:last-child)::after {
+  top: 12px;
+  bottom: -12px;
+  left: -18.5px;
+  width: 1px;
+}
+.council-calendar-list p { margin: 0; }
+.council-event-date {
+  color: var(--council-deep);
+  font-size: 0.91rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+  line-height: 1.6;
+}
+.council-event-date span { color: var(--council-muted); font-weight: 400; }
+.council-calendar-list .council-note { margin-top: 3px; }
+.council-source-list, .council-policy { padding-left: 1.25em; line-height: 1.75; }
+.council-policy li + li { margin-top: 5px; }
+.council-guide-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--council-rule);
+}
+.council-guide-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  color: var(--council-green);
+  font-size: 0.87rem;
+}
+.council-utility-section.council-guide-section { margin-top: clamp(36px, 5vw, 62px); }
+.council-guide-section a { color: var(--council-green); }
+.council-guide-section > p { max-width: 49em; }
+.council-diagram { margin-block: 16px; }
+.council-diagram-node { min-width: 0; }
+.council-diagram-node h3, .council-committee-list h3 {
+  margin: 0 0 5px;
+  color: var(--council-deep);
+  font-size: 1.03rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.council-diagram-node p, .council-committee-list p {
+  margin: 0;
+  color: var(--council-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.council-relationship {
+  --council-diagram-line: #6c9c82;
+  padding: clamp(16px, 3vw, 29px);
+  background: #f2f7f2;
+  border-block: 1px solid var(--council-rule);
+}
+.council-citizens { text-align: center; padding-bottom: 6px; }
+.council-branches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  position: relative;
+  padding-top: 22px;
+}
+.council-branches::before,
+.council-branches::after,
+.council-branches > div::before,
+.council-arrow-stem::before {
+  content: "";
+  position: absolute;
+  background: var(--council-diagram-line);
+}
+.council-branches::before {
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 11px;
+}
+.council-branches::after {
+  top: 10px;
+  left: 25%;
+  right: calc(25% - 1px);
+  height: 1px;
+}
+.council-branches > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding-inline: clamp(6px, 2vw, 25px);
+}
+.council-branches > div::before {
+  top: -12px;
+  left: 50%;
+  width: 1px;
+  height: 13px;
+}
+.council-branches .council-diagram-node { flex: 1; text-align: center; }
+.council-down-arrow {
+  margin: 0;
+  padding: 0 0 8px;
+  color: var(--council-green);
+  font-size: 0.87rem;
+  line-height: 1.55;
+  text-align: center;
+}
+.council-arrow-stem {
+  position: relative;
+  display: block;
+  height: 14px;
+  margin-bottom: 6px;
+}
+.council-arrow-stem::before { left: 50%; top: 0; bottom: 0; width: 1px; }
+.council-arrow-stem::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border: solid var(--council-diagram-line);
+  border-width: 0 1px 1px 0;
+  transform: translateX(-3px) rotate(45deg);
+}
+.council-branches .council-down-arrow { min-height: 4.8em; }
+.council-city-office {
+  width: 50%;
+  margin: 8px 0 0 auto;
+  text-align: center;
+  padding-inline: clamp(6px, 2vw, 25px);
+}
+.council-exchange-arrows {
+  display: grid;
+  gap: 5px;
+  margin: 16px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--council-rule);
+  list-style: none;
+}
+.council-exchange-arrows li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 7px;
+  align-items: baseline;
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+.council-exchange-arrows span { color: var(--council-muted); }
+.council-exchange-arrows .council-diagram-motion { color: var(--council-green); }
+
+.council-process,
+.council-year-diagram {
+  --diagram-gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--diagram-gap);
+  padding: 14px 0;
+  border-block: 1px solid var(--council-rule);
+  list-style: none;
+}
+.council-process li, .council-year-diagram li { position: relative; }
+.council-process li:not(:last-child)::after,
+.council-year-diagram li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  top: 9px;
+  left: 100%;
+  width: var(--diagram-gap);
+  text-align: center;
+  color: var(--council-green);
+}
+.council-step-number,
+.council-year-diagram .council-chip {
+  margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.council-step-number { padding-inline: 9px; }
+.council-diagram-note,
+.council-guide-source {
+  max-width: 49em;
+  margin-top: 16px;
+  padding: 12px 15px;
+  background: #f3f6f3;
+  color: var(--council-muted);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+.council-diagram-note p, .council-guide-source p { margin: 4px 0 0; }
+.council-diagram-note a { font-size: inherit; }
+
+.council-year-diagram { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.council-meeting-relationship {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 15px;
+  max-width: 850px;
+  padding-block: 12px;
+  border-block: 1px solid var(--council-rule);
+  align-items: center;
+}
+.council-meeting-arrows {
+  margin: 0;
+  color: var(--council-green);
+  font-size: 0.87rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.council-meeting-arrows span::before { content: "⇄"; display: block; font-size: 1.35rem; }
+
+.council-record-types { margin-top: 15px; border-top: 1px solid var(--council-rule); }
+.council-record-types article {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.24fr) minmax(0, 1fr);
+  gap: 4px 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--council-rule);
+}
+.council-record-types dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 5px 12px;
+  margin: 0;
+  color: var(--council-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+.council-record-types dt { color: var(--council-green); font-size: 0.85rem; }
+.council-record-types dd { margin: 0; }
+
+.council-committee-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding-block: 13px;
+  border-block: 1px solid var(--council-rule);
+}
+.council-faq { border-top: 1px solid var(--council-rule); }
+.council-faq details { border-bottom: 1px solid var(--council-rule); }
+.council-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 45px;
+  padding-block: 9px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+.council-faq summary::-webkit-details-marker { display: none; }
+.council-faq summary::after {
+  content: "";
+  flex: 0 0 8px;
+  height: 8px;
+  margin-inline-end: 6px;
+  border: solid var(--council-green);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.council-faq details[open] summary::after { transform: rotate(225deg); }
+.council-faq-answer { max-width: 48em; padding: 2px 0 11px; color: var(--council-muted); }
+.council-faq-answer p { margin: 0 0 8px; line-height: 1.8; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .council-diagram.is-in-view .council-diagram-motion {
+    animation: council-diagram-arrival 440ms ease-out both;
+    animation-delay: var(--diagram-delay, 0ms);
+  }
+  .council-diagram li:nth-child(2) { --diagram-delay: 100ms; }
+  .council-diagram li:nth-child(3) { --diagram-delay: 200ms; }
+  .council-diagram li:nth-child(4) { --diagram-delay: 300ms; }
+  .council-diagram li:nth-child(5) { --diagram-delay: 400ms; }
+  @keyframes council-diagram-arrival {
+    from { opacity: 0.4; translate: 0 -4px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+}
+
+@media (max-width: 850px) {
+  .council-container { width: calc(100% - 42px); }
+  .council-hero-layout { gap: 21px; }
+  .council-process { grid-template-columns: 1fr; --diagram-gap: 19px; }
+  .council-process li:not(:last-child)::after {
+    content: "↓";
+    top: calc(100% + 1px);
+    left: 0;
+    line-height: var(--diagram-gap);
+  }
+  .council-detail-grid { grid-template-columns: minmax(0, 1fr) minmax(216px, 0.45fr); gap: 24px; }
+}
+
+@media (max-width: 760px) {
+  .council-reading-header > p,
+  .council-detail-header .council-lead { font-size: 14px; }
+  .council-shell :is(.council-body > section, .council-guide-section, #g-schedule .council-utility-section) > h2 { margin-bottom: 19px; }
+}
+
+@media (max-width: 740px) {
+  .council-filters { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 649px) {
+  .council-container { width: calc(100% - 34px); }
+  .council-section-nav { gap: 0 12px; padding-block: 6px; }
+  .council-section-nav a { min-height: 34px; font-size: 0.77rem; }
+  .council-hero-layout, .council-detail-grid { grid-template-columns: minmax(0, 1fr); }
+  .council-hero-layout { padding-block: 27px; }
+  .council-pickup-tab { min-height: 44px; }
+  .council-meeting-row, .council-meeting-relationship,
+  .council-record-types article, .council-committee-list,
+  .council-calendar-list li { grid-template-columns: minmax(0, 1fr); }
+  .council-meeting-relationship { gap: 8px; }
+  .council-calendar-list li { gap: 1px; }
+  .council-year-diagram { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .council-year-diagram li:nth-child(2)::after { content: none; }
+  .council-meeting-arrows span::before { content: "⇅"; }
+  .council-filters { gap: 8px; padding: 12px 12px 6px; }
+  .council-filters :where(input[type="search"], select, .council-button, .council-reset) { min-height: 44px; }
+  .council-filter-actions label { min-height: 44px; }
+  .council-filters input[type="search"] { font-size: 16px; }
+  .council-filters select { padding-inline: 5px; font-size: 13px; }
+}
+
+@media (max-width: 440px) {
+  .council-filter-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .council-filter-row label:last-child { grid-column: 1 / -1; }
+}

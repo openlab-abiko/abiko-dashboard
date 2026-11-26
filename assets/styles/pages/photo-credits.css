@@ -1,0 +1,122 @@
+
+/* ===== SOURCE: v63-typography.css ===== */
+/* Editorial type scale: slightly larger text and clearer headline hierarchy,
+   respecting graph labels, compact navigation, credits and controls. */
+:root{--reading-font:17px;--reading-line:1.92}
+body{font-size:16px;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+/* Longform editorial article pages */
+.press-article-main .press-intro,
+.press-article-main .press-standfirst,
+.press-article-main .press-article-body p,
+.press-article-main .press-article-copy p,
+.press-article-main section p:not(.press-caption):not(.source-note):not(.caption):not(.press-meta),
+.press-article-main > p:not(.press-caption):not(.source-note):not(.caption),
+.v63-fin-main > p,.v63-fin-main .v63-fin-section > p:not(.v63-fin-note):not(.v63-fin-lead):not(.v63-fin-chartnote)
+{font-size:var(--reading-font);line-height:var(--reading-line)}
+.press-article-main h2{font-size:clamp(26px,2.7vw,35px);line-height:1.5}
+.press-article-main h3{font-size:clamp(21px,2.2vw,27px);line-height:1.52}
+.press-article-main h1{font-size:clamp(34px,4.4vw,57px);line-height:1.45}
+/* Major section descriptions are part of the reading experience, not chart microcopy. */
+.section-head .description,.section-head p.description,
+.page-header .description,.page-header p.description,
+.section-intro p,.page-intro p,.page-lead,
+.v61-unified-hero .hero-description
+{font-size:16px;line-height:1.86}
+.section-head h2,.section h2:not(.chart-title),.page-heading h2{font-size:clamp(27px,2.85vw,36px);line-height:1.43}
+.section h3:not(.metric-heading):not(.chart-title){font-size:clamp(20px,2vw,27px);line-height:1.54}
+/* Keep compact card text, provenance, charts, floating navigation unchanged. */
+figcaption,.photo-credit,.image-credit,.small-caption,.citation,.source-note{line-height:1.7}
+@media(max-width:760px){:root{--reading-font:16.5px;--reading-line:1.93}
+.section-head .description,.page-header .description,.section-intro p,.page-intro p,.page-lead{font-size:15.5px}
+.section-head h2,.section h2:not(.chart-title){font-size:clamp(25px,6.5vw,31px)}
+.press-article-main h1{font-size:clamp(30px,8vw,39px)}
+.press-article-main h2{font-size:clamp(24px,6.6vw,30px)}
+}
+/* Existing editorial pages use strong, nested legacy selectors. */
+body.press-article-page main.press-article-main .press-story-body p:not(.press-caption):not(.press-data-caption){font-size:17.5px!important;line-height:1.97!important}
+body.press-article-page main.press-article-main .press-body-section h2{font-size:clamp(26px,2.8vw,34px)!important;line-height:1.51!important}
+body.press-article-page .press-story-header h1,body.press-article-page h1.press-article-title{font-size:clamp(35px,4.25vw,58px)!important;line-height:1.38!important}
+body[data-view="projects"] #projects .civic-unified-hero .v38-page-intro .description,
+body[data-view="compare"] #compare .press-hero p{font-size:clamp(15px,1.45vw,19px)!important;line-height:1.84!important}
+body[data-view="home"] .v38-page-intro .description,
+body[data-view="issues"] .v38-page-intro .description{font-size:clamp(15px,1.45vw,19px)!important;line-height:1.84!important}
+@media(max-width:760px){body.press-article-page main.press-article-main .press-story-body p:not(.press-caption):not(.press-data-caption){font-size:17px!important;line-height:1.94!important}body.press-article-page main.press-article-main .press-body-section h2{font-size:26px!important}}
+
+
+/* ===== SOURCE: v70-nav.css ===== */
+
+/* Shared six-item navigation for ABIKO COMMONS */
+@media (max-width:740px){
+  body .v37-header.v38-floating-nav .v37-mainnav.nav{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:3px!important}
+  body .v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item{font-size:clamp(8px,2.35vw,10px)!important;padding:8px 0!important;letter-spacing:-.02em!important}
+  body .v37-header.v38-floating-nav .v37-brand.brand{justify-self:start!important;text-align:left!important}
+}
+@media(max-width:355px){body .v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item{font-size:8px!important}}
+@media (min-width:741px) and (max-width:1100px){
+  body .v37-header.v38-floating-nav .v37-mainnav.nav{gap:2px!important}
+  body .v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item{font-size:clamp(10px,1.04vw,13px)!important;padding-left:7px!important;padding-right:7px!important}
+}
+
+
+/* ===== SOURCE: v71.css ===== */
+/* v71: targeted alignment and interaction fixes only. Original layout and palette retained. */
+/* Smaller, consistent page-top green panels, without shifting the global header. */
+#projects .civic-unified-hero,#compare .press-hero,#issues .civic-unified-hero{min-height:325px!important}
+#projects .civic-hero-inner,#compare .press-hero-inner,#issues .civic-hero-inner{padding-top:39px!important;padding-bottom:39px!important}
+body.v63-finance-page .v63-fin-hero-inner{min-height:325px!important;padding-top:37px!important;padding-bottom:37px!important}
+body[data-view=gikai] .g-hero .g-wrap{padding-top:44px!important;padding-bottom:45px!important}
+body[data-view=gikai] .g-page-intro .g-wrap{padding-top:40px!important;padding-bottom:42px!important}
+@media(max-width:760px){#projects .civic-unified-hero,#compare .press-hero,#issues .civic-unified-hero{min-height:345px!important}#projects .civic-hero-inner,#compare .press-hero-inner,#issues .civic-hero-inner{padding-top:36px!important;padding-bottom:36px!important}body.v63-finance-page .v63-fin-hero-inner{min-height:345px!important;padding-top:32px!important;padding-bottom:33px!important}body[data-view=gikai] .g-hero .g-wrap,body[data-view=gikai] .g-page-intro .g-wrap{padding-top:39px!important;padding-bottom:39px!important}}
+/* One navigation geometry across standalone pages; article and finance had stale +10px top offsets. */
+body.press-article-page .v37-header,body.v63-finance-page .v37-header{top:0!important}
+/* Home 6 entry links must stay in one row (even on small screens). */
+body[data-view=home] .hero-choice .feature-switch{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:clamp(3px,.7vw,9px)!important}
+body[data-view=home] .hero-choice .v37-entry{min-width:0;grid-column:auto!important;padding-inline:clamp(4px,.7vw,11px)!important}
+body[data-view=home] .hero-choice .v37-entry-label{overflow-wrap:anywhere}
+@media(max-width:700px){body[data-view=home] .hero-choice .v37-entry{padding:8px 3px!important;min-height:68px!important}body[data-view=home] .hero-choice .v37-entry-label{font-size:clamp(9px,2.25vw,12px)!important;line-height:1.45!important;letter-spacing:-.04em!important}}
+/* Smartphone news index typography and location tags. */
+.press-location{display:inline-flex;vertical-align:baseline;align-items:center;border-radius:999px;background:#1c7055;color:#fff!important;font-size:.86em!important;line-height:1.45!important;font-weight:700!important;padding:3px 9px;margin-left:5px;white-space:normal;max-width:100%}
+@media(max-width:799px){body[data-view=compare] #compare .press-teaser h3{font-size:20px!important;line-height:1.52!important}body[data-view=compare] #compare .press-feature h3{font-size:clamp(23px,6vw,28px)!important;line-height:1.48!important}body[data-view=compare] #compare .press-teaser p,body[data-view=compare] #compare .press-feature p{font-size:16px!important;line-height:1.85!important}body[data-view=compare] #compare .press-teaser .press-kicker,body[data-view=compare] #compare .press-feature .press-kicker{font-size:13px!important;line-height:1.8!important}}
+/* Source links inside a sentence keep the sentence's font and leading (all matching editorial note patterns). */
+.project-disclaimer a,.v61-project-disclaimer a,.page-intro-note a,.v63-fin-main p a,.v63-fin-main li a,.v63-fin-main .v63-fin-note a,.press-index-note a,.footnote a,.g-note a{font-size:inherit!important;line-height:inherit!important;letter-spacing:inherit!important}
+/* Suppress rectangular focus rings on interactive SVG arc shapes. Highlight the sector itself. */
+#editorDonut svg [data-budget-index],#editorDonut svg [data-budget-index]:focus-visible{outline:none!important;outline-offset:0!important;box-shadow:none!important}
+#editorDonut svg [data-budget-index]:focus-visible{filter:brightness(1.15) drop-shadow(0 1px 2px #26493660)}
+.v63-fin-main .v71-pie-tooltip{pointer-events:none;min-width:155px;max-width:200px;z-index:10;box-sizing:border-box;white-space:normal}
+/* Subnav follows every gikai view; menu language mirrors the round floating issues tabs. */
+body[data-view=gikai] .g-subnav{position:sticky!important;top:calc(var(--abiko-header-bottom,75px) + 8px)!important;z-index:75!important;width:min(1130px,calc(100% - 36px))!important;margin:12px auto!important;background:#fff!important;border:1px solid #d7e4db!important;border-radius:14px!important;box-shadow:0 5px 22px #152c2018!important;overflow:hidden!important}
+body[data-view=gikai] .g-subnav .g-wrap{width:100%!important;max-width:none!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;padding:4px!important;gap:3px!important;overflow:visible!important}
+body[data-view=gikai] .g-subnav a{min-width:0!important;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 7px!important;border:0!important;border-radius:9px!important;font-size:clamp(11px,1.1vw,14px)!important;white-space:normal!important;line-height:1.35!important;transition:background .12s ease,color .12s ease!important}
+body[data-view=gikai] .g-subnav a.is-on{background:#e0f1e7!important;color:#124c37!important;box-shadow:inset 0 3px #177a58!important}
+body[data-view=gikai] .g-subnav a:hover{background:#eff8f0!important}
+body[data-view=gikai] .g-page{scroll-margin-top:170px}
+body[data-view=gikai] #allBills{scroll-margin-top:175px}
+@media(max-width:740px){body[data-view=gikai] .g-subnav{top:calc(var(--abiko-header-bottom,95px) + 5px)!important;margin:6px auto!important}body[data-view=gikai] .g-subnav a{font-size:clamp(9px,2.45vw,11px)!important;padding:11px 2px!important}}
+/* Unified vote-count chips, pink filled style only for actual negative votes. */
+.g-vote-pill{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;border-radius:8px;padding:4px 9px;border:1px solid #8db69d;color:#236648;background:#fff;font-size:12px;font-weight:800;line-height:1.4}
+.g-vote-pill--no{border-color:#d6a0ad;color:#a05570}
+.g-vote-pill--no.has-no{border-color:#c15b86;background:#c15b86;color:#fff}
+.g-vote-pill--left{border-color:#c5b48c;color:#7e6c38}
+.g-billbottom{flex-wrap:wrap}.g-billbottom>span{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.g-sidecard dd .g-vote-pill{font-size:19px;line-height:1.2;padding:8px 13px}
+.g-debate-note{padding:0 0 12px}.g-debate-note a{font-size:inherit;color:#236c50}
+/* Main gikai cards retain the previous 3-col desktop grid. Footer is shared across sections. */
+body[data-view=gikai] .v45-footer{margin-top:0}
+@media(prefers-reduced-motion:reduce){body[data-view=gikai] .g-subnav a{transition:none!important}}
+
+/* The legacy home last-item spanning rule must not move the sixth entry to a second row. */
+body[data-view=home] .hero-choice a.v37-entry:nth-last-child(1){grid-column:auto!important;min-width:0!important;justify-content:center!important;border-right:0!important;border-bottom:1px solid #dce7de!important;background:#fff!important}
+body[data-view=home] .hero-choice a.v37-entry{justify-content:center!important;text-align:center!important}
+@media(max-width:700px){body[data-view=home] .hero-choice a.v37-entry{min-height:66px!important;padding:7px 2px!important}body[data-view=home] .hero-choice a.v37-entry:nth-last-child(1){min-height:66px!important;padding:7px 2px!important}}
+/* More compact council hero, keeping the original editorial hierarchy. */
+body[data-view=gikai] .g-hero{margin-top:-75px!important;padding-top:75px!important}
+@media(max-width:740px){body[data-view=gikai] .g-hero{margin-top:-90px!important;padding-top:90px!important}}
+
+
+/* v74: floating global navigation — soft, layered Mirai Gikai-like elevation.
+   This is the only intentional design change in the optimized distribution. */
+header#globalHeader.v37-header.v38-floating-nav.top {
+  box-shadow: 0 2px 5px rgba(22,35,28,.075),
+              0 11px 28px rgba(22,35,28,.13),
+              0 23px 52px rgba(22,35,28,.075) !important;
+}

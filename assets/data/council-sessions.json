@@ -1,0 +1,101 @@
+{
+  "sessions": [
+    "data-2026-09.json"
+  ],
+  "legacySession": "2026-09",
+  "themes": [
+    {
+      "id": "education",
+      "label": "子育て・教育"
+    },
+    {
+      "id": "care",
+      "label": "介護・福祉"
+    },
+    {
+      "id": "finance",
+      "label": "財政・予算"
+    },
+    {
+      "id": "safety",
+      "label": "防災・安全"
+    },
+    {
+      "id": "transport",
+      "label": "交通"
+    },
+    {
+      "id": "town",
+      "label": "まちづくり"
+    },
+    {
+      "id": "infrastructure",
+      "label": "水道・下水道"
+    },
+    {
+      "id": "government",
+      "label": "行政・しくみ"
+    },
+    {
+      "id": "economy",
+      "label": "産業・仕事"
+    },
+    {
+      "id": "peace",
+      "label": "平和"
+    }
+  ],
+  "councilUrl": "https://www.city.abiko.chiba.jp/shisei/shigikai/index.html",
+  "nextMeeting": {
+    "name": "2026年第4回定例会（12月議会）",
+    "date": "2026-12-01",
+    "time": "13:00",
+    "status": "招集予定",
+    "checkedOn": "2026-11-19",
+    "note": "公式案内では、開会日以降の詳しい日程は11月25日に掲載予定です。請願・陳情の締切は12月1日17時です。",
+    "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai4kai12gatsu/index.html"
+  },
+  "yearMeetingsCheckedOn": "2026-11-19",
+  "yearMeetings": [
+    {
+      "name": "第1回（3月議会）",
+      "date": "2026-02-24",
+      "status": "開催資料あり",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai1kai3gatsu/index.html",
+      "end": "2026-03-18",
+      "scheduleUrl": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai1kai3gatsu/r8-3kaikinittei.html"
+    },
+    {
+      "name": "第2回（6月議会）",
+      "date": "2026-06-08",
+      "status": "開催資料あり",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai2kai6gatsu/index.html",
+      "end": "2026-06-25",
+      "scheduleUrl": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai2kai6gatsu/r8-2kaikinittei.html"
+    },
+    {
+      "name": "第3回（9月議会）",
+      "date": "2026-09-02",
+      "status": "9月29日閉会",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/index.html",
+      "end": "2026-09-29",
+      "scheduleUrl": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai3kai9gatsu/r8-3kaikinittei.html",
+      "session": "2026-09"
+    },
+    {
+      "name": "第4回（12月議会）",
+      "date": "2026-12-01",
+      "status": "招集予定",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai4kai12gatsu/index.html"
+    }
+  ],
+  "extraMeetings": [
+    {
+      "name": "第1回臨時会",
+      "date": "2026-02-02",
+      "time": "13:00",
+      "status": "採決結果公開済み",
+      "url": "https://www.city.abiko.chiba.jp/shisei/shigikai/teirei_rinji/r8dai1kai_rinji/index.html"
+    }
+  ]
+}

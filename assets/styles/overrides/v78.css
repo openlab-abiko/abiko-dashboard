@@ -1,0 +1,159 @@
+/* v78: Shared footer, scrollable mobile global navigation, home summary typography. */
+
+/* One footer across all entry pages, case-study articles and data pages. */
+footer.footer.v45-footer{
+ background:#173b2f!important;color:#deebe0!important;
+ padding:27px 0 20px!important;
+ font-family:-apple-system,BlinkMacSystemFont,'Noto Sans JP',sans-serif;
+}
+footer.footer.v45-footer>.wrap{width:min(100%,1240px);max-width:1240px;box-sizing:border-box;margin-left:auto;margin-right:auto;padding-left:clamp(16px,3vw,32px);padding-right:clamp(16px,3vw,32px)}
+footer.footer.v45-footer .v45-footer-main{display:flex!important;align-items:flex-start!important;justify-content:space-between!important;gap:22px!important;padding-bottom:20px!important}
+footer.footer.v45-footer .v45-footer-about{min-width:0;flex:1 1 280px}
+footer.footer.v45-footer .v45-footer-about strong{font-size:clamp(18px,1.7vw,23px);font-weight:750;letter-spacing:-.04em;color:#fff}
+footer.footer.v45-footer .v45-footer-about p{margin:7px 0 0;color:#c6d9cc;font-size:12px;line-height:1.7}
+footer.footer.v45-footer .v45-footer-navigation{
+ display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;
+ align-items:stretch!important;justify-content:stretch!important;gap:0!important;
+ flex:0 1 720px!important;width:min(100%,720px)!important;min-width:0!important;max-width:720px!important;
+ margin:0 0 0 auto!important;padding:0!important;
+ border:1px solid rgba(255,255,255,.22)!important;border-radius:10px!important;
+ overflow-x:auto!important;overflow-y:hidden!important;
+ scrollbar-width:none;-ms-overflow-style:none;
+ overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;
+}
+footer.footer.v45-footer .v45-footer-navigation::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+footer.footer.v45-footer .v45-footer-navigation a{
+ box-sizing:border-box!important;display:flex!important;flex:1 0 0!important;grid-column:auto!important;
+ min-width:100px!important;min-height:56px!important;align-items:center!important;justify-content:center!important;
+ position:relative!important;white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important;
+ border:0!important;border-right:1px solid rgba(255,255,255,.22)!important;border-radius:0!important;
+ padding:10px 8px!important;margin:0!important;font-size:clamp(11px,1vw,13px)!important;font-weight:450!important;line-height:1.4!important;
+ color:#eff8f1!important;text-align:center!important;text-decoration:none!important;
+}
+footer.footer.v45-footer .v45-footer-navigation a:last-child{border-right:0!important}
+footer.footer.v45-footer .v45-footer-navigation a:hover,footer.footer.v45-footer .v45-footer-navigation a:focus-visible{background:rgba(255,255,255,.10)!important}
+footer.footer.v45-footer .v45-footer-bottom{padding-top:12px!important}
+footer.footer.v45-footer .v45-footer-facts{font-size:12px;line-height:1.8;color:#d0e1d5}
+footer.footer.v45-footer .v45-footer-sources{margin-top:16px!important;color:#deebe0}
+footer.footer.v45-footer .v45-footer-sources summary{cursor:pointer;color:#eff8f1}
+footer.footer.v45-footer .v45-footer-sources a{color:#eff8f1}
+footer.footer.v45-footer .v45-footer-sources-inner{padding-top:15px;color:#d6e6db}
+footer.footer.v45-footer .v45-footer-copyright{color:#b8d2c1;display:block;margin-top:18px}
+@media(max-width:1140px){
+ footer.footer.v45-footer .v45-footer-main{display:flex!important;flex-direction:column!important;gap:18px!important}
+ footer.footer.v45-footer .v45-footer-about{flex:auto!important}
+ footer.footer.v45-footer .v45-footer-navigation{flex:0 0 auto!important;width:100%!important;max-width:none!important;margin:0!important}
+ footer.footer.v45-footer .v45-footer-navigation a{min-width:0!important;flex:1 0 0!important}
+}
+@media(max-width:700px){
+ footer.footer.v45-footer .v45-footer-navigation{display:flex!important;flex-wrap:nowrap!important;grid-template-columns:none!important;width:100%!important;overflow-x:auto!important}
+ footer.footer.v45-footer .v45-footer-navigation a{flex:0 0 114px!important;min-width:114px!important;grid-column:auto!important;font-size:12px!important;min-height:52px!important;white-space:nowrap!important;border:0!important;border-right:1px solid rgba(255,255,255,.22)!important;border-bottom:0!important}
+ footer.footer.v45-footer .v45-footer-navigation a:nth-child(2n){border-right:1px solid rgba(255,255,255,.22)!important}
+ footer.footer.v45-footer .v45-footer-navigation a:last-child{border-right:0!important}
+}
+
+/* On phones, keep the centered brand and right hamburger, and put all six
+   page links in a separate horizontally scrollable strip. */
+@media(max-width:740px){
+ body header#globalHeader.v37-header.v38-floating-nav .v37-header-inner.topinner{
+  position:relative!important;display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+  grid-template-rows:minmax(44px,auto) auto!important;grid-template-areas:'brand' 'nav'!important;
+  row-gap:4px!important;column-gap:0!important;justify-items:center!important;
+  align-items:center!important;justify-content:stretch!important;min-height:0!important;
+  box-sizing:border-box!important;gap:4px 0!important;padding:5px 0 7px!important;
+ }
+ body header#globalHeader.v37-header.v38-floating-nav .v37-brand.brand,
+ body[data-view="gikai"] header#globalHeader.v37-header.v38-floating-nav .v37-header-inner.topinner>.v37-brand.brand{
+  grid-area:brand!important;justify-self:center!important;align-self:center!important;
+  display:block!important;position:static!important;white-space:nowrap!important;
+  text-align:center!important;max-width:calc(100% - 95px)!important;
+  width:auto!important;min-width:0!important;margin:0 auto!important;
+  font-size:clamp(15px,4vw,18px)!important;line-height:1.3!important;
+ }
+ body header#globalHeader.v37-header.v38-floating-nav .v75-header-menu{
+  display:flex!important;position:absolute!important;top:6px!important;right:10px!important;
+  width:40px!important;height:40px!important;transform:none!important;z-index:5!important;
+ }
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav.nav,
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav.v36-global-links{
+  grid-area:nav!important;display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;
+  width:100%!important;max-width:100%!important;min-width:0!important;min-height:40px!important;
+  overflow-x:auto!important;overflow-y:hidden!important;
+  margin:0!important;padding:2px 12px 4px!important;gap:7px!important;
+  justify-content:flex-start!important;align-items:center!important;align-content:center!important;
+  box-sizing:border-box!important;scroll-padding-inline:12px!important;
+  overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none!important;-ms-overflow-style:none!important;touch-action:pan-x;
+ }
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav.nav::after{display:none!important;content:none!important}
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item{
+  display:inline-flex!important;flex:0 0 auto!important;min-width:max-content!important;max-width:none!important;
+  width:auto!important;min-height:34px!important;height:34px!important;box-sizing:border-box!important;
+  align-items:center!important;justify-content:center!important;text-align:center!important;
+  margin:0!important;padding:7px 12px!important;gap:0!important;
+  font-size:12px!important;line-height:1.25!important;letter-spacing:0!important;
+  border-radius:9px!important;white-space:nowrap!important;transform:none!important;
+ }
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item[aria-current="page"],
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item.v37-selected{
+  border-width:1.5px!important;box-sizing:border-box!important;
+ }
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item .nav-label-long{display:none!important}
+ body header#globalHeader.v37-header.v38-floating-nav .v37-mainnav a.v37-nav-item .nav-label-short{display:inline!important}
+}
+
+/* A single editorial pickup heading directly above the 10 randomly selected cards. */
+body[data-view="home"] .hero-choice{display:none!important}
+body[data-view="home"] .hero{padding-bottom:0!important;margin-bottom:0!important}
+body[data-view="home"] .v61-highlights,
+body[data-view="home"] .v66-highlights{margin-top:0!important;padding-top:clamp(12px,2vw,22px)!important}
+body[data-view="home"] .v78-pickup-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:.55em;
+ font-size:clamp(22px,2.8vw,32px);font-weight:800;line-height:1.3;letter-spacing:-.04em;
+ color:#173c2e;margin:0 0 17px!important;padding:0}
+body[data-view="home"] .v78-pickup-heading span{font-size:.55em;letter-spacing:.055em;font-weight:750;color:#277354;text-transform:none}
+@media(max-width:700px){
+ body[data-view="home"] .v78-pickup-heading{margin-bottom:12px!important;font-size:24px}
+ body[data-view="home"] .v66-highlights .v66-brief .v64-brief-cat{
+  font-size:12px!important;line-height:1.33!important;font-weight:750!important;
+  top:7px!important;left:7px!important;padding:6px 8px!important;
+  max-width:calc(100% - 14px)!important;overflow:visible!important;
+  text-overflow:clip!important;white-space:normal!important;overflow-wrap:anywhere!important;
+ }
+ body[data-view="home"] .v66-highlights .v66-brief .v66-card-footer strong{
+  font-size:16.5px!important;line-height:1.38!important;font-weight:800!important;
+ }
+ body[data-view="home"] .v66-highlights .v66-brief .v66-card-footer{min-height:100px!important;gap:6px!important}
+}
+@media(max-width:370px){
+ body[data-view="home"] .v66-highlights .v66-brief .v64-brief-cat{font-size:11.3px!important}
+ body[data-view="home"] .v66-highlights .v66-brief .v66-card-footer strong{font-size:15.5px!important}
+}
+/* Anchors should always expose the beginning of the target, never hide it
+   beneath the floating global navigation. */
+html{scroll-padding-top:125px}
+:is(.v63-fin-main,.v63-finance-page,.section,.press-article-main) [id],
+body[data-view="projects"] .ref-project-card,
+body[data-view="issues"] .issue-detail,
+body[data-view="dashboard"] .data-card{
+ scroll-margin-top:var(--v78-anchor-offset,135px)!important;
+}
+/* Unlike the global nav, the footer should show all SIX destinations in one
+   uninterrupted row, including on a narrow phone. */
+@media(max-width:700px){
+ footer.footer.v45-footer .v45-footer-navigation{
+  display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  grid-template-rows:auto!important;gap:0!important;flex-wrap:nowrap!important;
+  overflow:visible!important;width:100%!important;min-width:0!important;
+ }
+ footer.footer.v45-footer .v45-footer-navigation a{
+  display:flex!important;flex:none!important;grid-column:auto!important;
+  width:auto!important;min-width:0!important;max-width:100%!important;
+  min-height:48px!important;padding:9px 0!important;
+  white-space:nowrap!important;word-break:keep-all!important;
+  font-size:clamp(8px,2.45vw,10px)!important;letter-spacing:-.055em!important;
+  border-right:1px solid rgba(255,255,255,.22)!important;border-bottom:0!important;
+ }
+ footer.footer.v45-footer .v45-footer-navigation a:nth-child(2n){border-right:1px solid rgba(255,255,255,.22)!important}
+ footer.footer.v45-footer .v45-footer-navigation a:last-child{border-right:0!important}
+}

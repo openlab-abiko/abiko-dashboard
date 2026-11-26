@@ -1,0 +1,111 @@
+/* v80 – Editorial home summary cards. Visual model: text-first civic explainers. */
+/* Heading size: same as the previously smaller Pick UP part, both in one typographic scale. */
+body[data-view="home"] .v78-pickup-heading{
+  display:flex!important;flex-wrap:wrap!important;align-items:baseline!important;
+  font-family:inherit!important;font-size:var(--abiko-pickup-size)!important;font-weight:650!important;
+  line-height:1.55!important;letter-spacing:0!important;gap:.45em!important;
+  color:#214e37!important;margin:0 0 16px!important;
+}
+body[data-view="home"] .v78-pickup-heading span{
+  font-size:1em!important;font-weight:650!important;color:inherit!important;
+  letter-spacing:0!important;text-transform:none!important;
+}
+/* A card is an editorial invitation, not a thumbnail tile. */
+body[data-view="home"] .v66-highlights .v64-brief-grid{
+  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:20px!important;align-items:stretch!important;
+}
+body[data-view="home"] .v66-highlights .v80-editorial-card{
+  background:#fff!important;border:1px solid #263a30!important;border-radius:13px!important;
+  box-shadow:0 1px 0 rgba(20,45,30,.04)!important;overflow:hidden!important;
+  min-width:0!important;transform:none;transition:box-shadow .2s ease,transform .2s ease!important;
+}
+body[data-view="home"] .v66-highlights .v80-editorial-card:hover{
+  transform:translateY(-3px)!important;box-shadow:0 10px 28px rgba(20,50,30,.10)!important;
+}
+body[data-view="home"] .v66-highlights .v80-editorial-card .v64-brief-link{
+  display:flex!important;flex-direction:column!important;align-items:stretch!important;
+  height:100%!important;min-height:0!important;justify-content:flex-start!important;
+  color:#1c3426!important;text-decoration:none!important;
+}
+body[data-view="home"] .v80-card-copy{
+  display:flex;flex-direction:column;align-items:flex-start;
+  order:1;gap:0;padding:21px 21px 15px;min-width:0;
+}
+body[data-view="home"] .v80-category{
+  display:inline-flex;align-items:center;max-width:100%;min-width:0;
+  padding:5px 10px;margin:0 0 13px;border-radius:var(--abiko-pill-radius);
+  background:#e9f3ec;color:#22644a;border:1px solid #c8e0cf;
+  font-size:12px;font-weight:500;letter-spacing:0;line-height:1.4;
+  white-space:normal;overflow-wrap:anywhere;
+}
+body[data-view="home"] .v80-card-title{
+  display:block!important;color:#183326!important;
+  font-size:clamp(20px,1.7vw,23px)!important;font-weight:750!important;
+  letter-spacing:-.035em!important;line-height:1.5!important;
+  margin:0 0 12px!important;padding:0!important;
+  border:0!important;overflow-wrap:anywhere;
+}
+body[data-view="home"] .v80-card-summary{
+  margin:0!important;padding:0!important;color:#4e6457!important;
+  font-size:14px!important;font-weight:400!important;line-height:1.75!important;
+  letter-spacing:0!important;display:block;
+}
+body[data-view="home"] .v66-highlights .v80-editorial-card .v80-card-media{
+  display:block!important;order:2!important;position:relative!important;
+  flex:none!important;align-self:stretch!important;box-sizing:border-box!important;
+  aspect-ratio:unset!important;height:185px!important;max-height:none!important;
+  margin:0 21px 0!important;min-width:0!important;overflow:hidden!important;
+  border:1px solid #e3ebe3;border-radius:9px!important;
+  background:#eef5ee!important;
+}
+body[data-view="home"] .v80-card-media .v66-photo,
+body[data-view="home"] .v80-card-media .v66-graphic{height:100%!important;width:100%!important;box-sizing:border-box!important;}
+body[data-view="home"] .v80-card-media .v66-photo img{width:100%!important;height:100%!important;object-fit:cover!important;}
+body[data-view="home"] .v66-highlights .v80-editorial-card .v80-card-bottom{
+  display:flex;order:3;align-items:center;justify-content:space-between;gap:9px;
+  border-top:1px solid #e8eee9;margin:17px 0 0;padding:13px 21px 15px;
+  color:#22644b;font-size:14px;font-weight:700;line-height:1.3;
+}
+body[data-view="home"] .v80-card-arrow{
+  font-size:21px;display:inline-flex;justify-content:center;align-items:center;
+  width:31px;height:31px;border-radius:50%;border:1px solid #bed8c6;
+  transition:transform .16s ease,background-color .16s ease;
+}
+body[data-view="home"] .v80-editorial-card:hover .v80-card-arrow{transform:translate(2px,-2px);background:#edf7ed}
+body[data-view="home"] .v80-editorial-card .v64-brief-link:focus-visible{outline:3px solid #2c8e65!important;outline-offset:-4px!important}
+/* Do not waste space in visualization panels; keep existing rendered charts legible. */
+body[data-view="home"] .v80-card-media .v66-graphic{padding:12px 12px 8px!important;gap:8px!important;}
+body[data-view="home"] .v80-card-media .v66-graphic svg{max-height:137px!important}
+body[data-view="home"] .v80-card-media .v66-info-art{justify-content:center!important;}
+@media(max-width:1050px){
+ body[data-view="home"] .v66-highlights .v64-brief-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:17px!important}
+}
+@media(max-width:700px){
+ body[data-view="home"] .v64-brief-inner{padding:0 16px!important;}
+ body[data-view="home"] .v66-highlights .v64-brief-grid{
+  grid-template-columns:minmax(0,1fr)!important;gap:18px!important;
+ }
+ body[data-view="home"] .v78-pickup-heading{margin:0 0 14px!important;}
+ body[data-view="home"] .v66-highlights .v80-editorial-card{border-radius:12px!important;}
+ body[data-view="home"] .v80-card-copy{padding:21px 20px 14px!important;}
+ body[data-view="home"] .v80-category{font-size:13px!important;padding:6px 11px!important;margin-bottom:13px!important;}
+ body[data-view="home"] .v80-card-title{font-size:22px!important;line-height:1.46!important;margin-bottom:10px!important;}
+ body[data-view="home"] .v80-card-summary{font-size:15px!important;line-height:1.78!important;}
+ body[data-view="home"] .v66-highlights .v80-editorial-card .v80-card-media{
+  height:clamp(172px,48vw,210px)!important;margin:0 20px!important;border-radius:9px!important;
+ }
+ body[data-view="home"] .v66-highlights .v80-editorial-card .v80-card-bottom{
+  font-size:14px!important;padding:13px 20px 15px!important;margin-top:17px!important;
+ }
+ body[data-view="home"] .v80-card-media .v66-graphic{padding:16px 14px 10px!important;gap:7px!important;}
+ body[data-view="home"] .v80-card-media .v66-graphic svg{max-height:160px!important;}
+}
+@media(max-width:350px){
+ body[data-view="home"] .v80-card-title{font-size:21px!important;}
+ body[data-view="home"] .v80-card-summary{font-size:14.5px!important;}
+ body[data-view="home"] .v64-brief-inner{padding:0 12px!important;}
+}
+@media(prefers-reduced-motion:reduce){
+ body[data-view="home"] .v80-editorial-card,body[data-view="home"] .v80-card-arrow{transition:none!important;}
+}

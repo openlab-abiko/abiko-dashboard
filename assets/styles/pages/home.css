@@ -1,0 +1,768 @@
+
+/* ===== SOURCE: v61.css ===== */
+/* Abiko Commons v61 — one hero vocabulary; dense, readable fiscal panels; home summaries */
+:root{--abiko-hero-green:#19513d;--abiko-hero-white:#fff;--abiko-hero-sub:#e2f1e8;--abiko-hero-kicker:#b4dac7}
+/* The first pixel under/around the floating global nav must also be green. */
+body[data-view="compare"],body[data-view="projects"],body[data-view="finance-story"]{background:var(--abiko-hero-green)!important}
+body[data-view="projects"] #featurePanels,
+body[data-view="compare"] #featurePanels{background:transparent!important;margin:0!important}
+body[data-view="projects"] #featurePanels>#projects,
+body[data-view="compare"] #featurePanels>#compare{padding:0!important;margin:0!important;background:#f8faf7!important}
+body[data-view="finance-story"] .page-layout{background:#faf9f2!important}
+body[data-view="finance-story"] footer{background:#faf9f2}
+
+/* One consistent hero background, same vertical rhythm and same baseline. */
+#projects .civic-unified-hero,
+#compare .press-hero,
+body[data-view="finance-story"] section.hero{
+  box-sizing:border-box!important;
+  background:var(--abiko-hero-green)!important;
+  color:var(--abiko-hero-white)!important;
+  min-height:390px!important;
+  width:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  border:0!important;
+  position:relative;
+  overflow:hidden!important;
+  isolation:isolate;
+}
+#projects .civic-unified-hero:before,
+#compare .press-hero:before,
+body[data-view="finance-story"] section.hero:before{
+  content:""!important;position:absolute!important;right:-170px!important;top:-230px!important;
+  width:640px!important;height:640px!important;border:95px solid rgba(216,237,220,.07)!important;
+  border-radius:50%!important;pointer-events:none!important;z-index:-1!important;
+}
+body[data-view="finance-story"] section.hero:after{display:none!important}
+#projects .civic-hero-inner,
+#compare .press-hero-inner,
+body[data-view="finance-story"] .hero-inner{
+  box-sizing:border-box!important;
+  width:100%!important;max-width:1320px!important;
+  margin:0 auto!important;
+  padding:48px clamp(18px,3.2vw,48px)!important;
+}
+/* Project title is moved to the full-bleed hero; explanatory footnote stays in content. */
+#projects .civic-unified-hero .v38-page-intro{
+  padding:0!important;margin:0!important;max-width:920px!important;
+  border:0!important;background:transparent!important;box-shadow:none!important;
+}
+#projects .civic-unified-hero .v38-page-intro .overline,
+#compare .press-hero .press-overline,
+body[data-view="finance-story"] .hero .eyebrow{
+  display:block!important;margin:0 0 14px!important;color:var(--abiko-hero-kicker)!important;
+  font:800 11px/1.6 ui-monospace,SFMono-Regular,monospace!important;
+  letter-spacing:.12em!important;
+}
+#projects .civic-unified-hero .v38-page-intro h1,
+#compare .press-hero h1,
+body[data-view="finance-story"] .hero h1{
+  font-size:clamp(35px,4vw,56px)!important;
+  color:#fff!important;
+  font-weight:850!important;letter-spacing:-.06em!important;
+  line-height:1.24!important;margin:0 0 20px!important;
+}
+#projects .civic-unified-hero .v38-page-intro .description,
+#projects .civic-unified-hero .v38-page-intro .description strong,
+#compare .press-hero p,
+body[data-view="finance-story"] .hero .hero-lead{
+  font-weight:450!important;
+  color:var(--abiko-hero-sub)!important;
+  font-size:clamp(14px,1.35vw,18px)!important;
+  line-height:1.9!important;
+  letter-spacing:.01em!important;
+  margin:0!important;
+  max-width:770px!important;
+}
+#projects .civic-unified-hero .v38-page-intro .description strong{font-weight:500!important}
+#projects .v61-project-disclaimer{max-width:1100px;margin:28px 0 24px;font-size:12px;line-height:1.85;color:#50695a}
+#projects .v61-project-disclaimer .project-disclaimer{font-size:inherit!important;display:block!important;line-height:inherit!important;color:inherit!important}
+#projects .v61-project-disclaimer a{color:#15784e!important}
+#projects>.wrap{padding-top:4px!important}
+/* Finance title shares the same color and geometry, keeping the numeric 512.3 summary. */
+body[data-view="finance-story"] section.hero .hero-inner{
+  grid-template-columns:minmax(0,1.45fr) minmax(205px,.55fr)!important;
+  column-gap:clamp(20px,4vw,60px)!important;
+  align-items:center!important;
+}
+body[data-view="finance-story"] section.hero h1 span{color:#fff!important}
+body[data-view="finance-story"] section.hero .hero-key{min-width:0!important}
+body[data-view="finance-story"] section.hero .hero-key p:empty{display:none!important}
+body[data-view="finance-story"] section.hero .hero-bottom{margin-top:20px!important}
+body[data-view="finance-story"] section.hero .hero-bottom small{color:#bdd8c8!important}
+/* Keep the global header active item singular, in case stale markup is injected. */
+body[data-view="finance-story"] #globalHeader a[href="compare.html"].v37-nav-item:not([aria-current="page"]){
+  background:transparent!important;border-color:transparent!important;box-shadow:none!important;
+}
+
+/* Dashboard: 3-column square-cell rhythm with a full-row Sankey.
+   Tall 22-income and purpose explorer panels sit side-by-side (2 stacked cells each). */
+@media(min-width:971px){
+ body[data-view="dashboard"] .chart-grid{grid-auto-rows:minmax(340px,auto)!important;grid-auto-flow:row!important;gap:16px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-sankey{grid-column:1/-1!important;grid-row:span 2!important;min-height:690px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-revenue{grid-column:1!important;grid-row:span 2!important;min-height:696px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-expense{grid-column:2!important;grid-row:span 2!important;min-height:696px!important}
+}
+/* Remove the height cap responsible for 'small diagram centered in a large frame'. */
+body[data-view="dashboard"] .is-legacy-sankey .card-figure{
+ display:block!important;width:100%!important;max-width:none!important;flex:1 1 auto!important;
+ min-width:0!important;min-height:0!important;height:auto!important;
+ padding:5px 10px 6px!important;overflow:visible!important;
+}
+body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-wrap{
+ display:block!important;width:100%!important;max-width:none!important;
+ overflow:visible!important;align-items:stretch!important;justify-content:stretch!important;
+}
+body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-wrap>svg{
+ display:block!important;width:100%!important;max-width:none!important;
+ height:auto!important;max-height:none!important;overflow:visible!important;
+ object-fit:fill!important;min-width:0!important;
+}
+body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-keys{padding-inline:12px!important}
+body[data-view="dashboard"] .is-legacy-sankey .legacy-flow-readout{margin:0 10px 10px!important}
+/* The revenue box owns two square units of height. Its full 22-row list scrolls internally. */
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue{display:flex!important;flex-direction:column!important;overflow:hidden!important}
+body[data-view="dashboard"] .is-legacy-revenue .card-figure{
+ display:flex!important;flex-direction:column!important;flex:1 1 0!important;
+ min-height:0!important;height:auto!important;max-height:none!important;
+ padding:4px 14px 4px!important;overflow:hidden!important;
+}
+body[data-view="dashboard"] .is-legacy-revenue .legacy-revenue-visual{
+ flex:1 1 0!important;min-height:0!important;max-height:none!important;
+ width:100%!important;padding:8px 4px 14px!important;
+ overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior:contain;
+ scrollbar-width:thin!important;scrollbar-color:#7cae95 #252e2c;
+}
+body[data-view="dashboard"] .is-legacy-revenue .legacy-show-all{flex:0 0 auto!important;margin:7px 0!important}
+body[data-view="dashboard"] .is-legacy-revenue .legacy-explain{flex:0 0 auto!important;padding-bottom:4px!important}
+/* Matching adjacent tall card (purpose explorer). */
+body[data-view="dashboard"] .is-legacy-expense{overflow:hidden!important;display:flex!important;flex-direction:column!important}
+body[data-view="dashboard"] .is-legacy-expense .card-figure{flex:1 1 0!important;min-height:0!important;height:auto!important;overflow:hidden!important}
+body[data-view="dashboard"] .is-legacy-expense .legacy-inside-visual{overflow-y:auto!important;overscroll-behavior:contain;max-height:360px!important;scrollbar-width:thin}
+
+@media(min-width:701px) and (max-width:970px){
+ body[data-view="dashboard"] .chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-rows:minmax(350px,auto)!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-sankey{grid-column:1/-1!important;grid-row:span 2!important;min-height:700px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-revenue{grid-column:1!important;grid-row:span 2!important;min-height:700px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-expense{grid-column:2!important;grid-row:span 2!important;min-height:700px!important}
+}
+@media(max-width:700px){
+ #projects .civic-unified-hero,#compare .press-hero,body[data-view="finance-story"] section.hero{min-height:350px!important}
+ #projects .civic-hero-inner,#compare .press-hero-inner,body[data-view="finance-story"] .hero-inner{padding:41px 18px!important}
+ #projects .civic-unified-hero .v38-page-intro h1,#compare .press-hero h1,body[data-view="finance-story"] section.hero h1{font-size:clamp(32px,9vw,39px)!important;line-height:1.27!important;margin-bottom:18px!important}
+ #projects .v61-project-disclaimer{margin:20px 0 25px!important}
+ body[data-view="finance-story"] section.hero .hero-inner{display:block!important}
+ body[data-view="finance-story"] section.hero .hero-key{margin-top:18px!important}
+ body[data-view="finance-story"] section.hero .hero-key b{font-size:32px!important}
+ body[data-view="finance-story"] section.hero .hero-bottom{margin-top:15px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-sankey,body[data-view="dashboard"] .chart-grid>.is-legacy-expense,body[data-view="dashboard"] .chart-grid>.is-legacy-revenue{grid-column:1/-1!important;grid-row:auto!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-revenue{height:690px!important;min-height:690px!important;max-height:690px!important}
+ body[data-view="dashboard"] .is-legacy-revenue .legacy-revenue-visual{max-height:none!important}
+ /* Phone already has two readable lists; the line diagram remains accessible in details. */
+ body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-wrap{display:none!important}
+ body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-expand .legacy-sankey-wrap{display:block!important;overflow-x:auto!important}
+ body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-expand .legacy-sankey-wrap svg{min-width:720px!important;width:720px!important;max-width:none!important}
+}
+/* Homepage — two square summaries from each of the five destination pages. */
+body[data-view="home"] .v61-highlights{background:#f6f9f4;color:#1d392b;border-top:1px solid #dce8dd;padding:clamp(42px,5vw,76px) 0 clamp(55px,6vw,90px)}
+.v61-highlights-inner{max-width:1350px;margin:0 auto;padding:0 clamp(18px,3.5vw,48px)}
+.v61-highlights-head{margin-bottom:40px;max-width:830px}
+.v61-highlights-eyebrow{display:block;color:#238559;font:800 11px/1.6 ui-monospace,monospace;letter-spacing:.14em;margin-bottom:13px}
+.v61-highlights-head h2{font-size:clamp(30px,3.5vw,48px);line-height:1.3;letter-spacing:-.06em;color:#183c2e;margin:0 0 16px;font-weight:850}
+.v61-highlights-head>p{color:#536a5a;font-size:clamp(14px,1.2vw,17px);line-height:1.85;margin:0}
+.v61-highlight-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(25px,4vw,58px);row-gap:clamp(34px,4vw,54px)}
+.v61-highlight-group{min-width:0}
+.v61-highlight-group-head{display:flex;justify-content:space-between;align-items:end;gap:12px;padding-bottom:13px;margin-bottom:14px;border-bottom:2px solid #265d42}
+.v61-highlight-group-head small{font:750 10px/1.5 ui-monospace,monospace;letter-spacing:.11em;color:#318158}
+.v61-highlight-group-head h3{font-size:clamp(18px,1.7vw,24px);letter-spacing:-.05em;color:#213c2d;margin:3px 0 0;line-height:1.4;font-weight:850}
+.v61-highlight-group-head>a{color:#256c48;font-size:12px;text-decoration:none;font-weight:800;white-space:nowrap}
+.v61-highlight-group-head>a:hover{text-decoration:underline}
+.v61-highlight-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;min-width:0}
+.v61-highlight-card{aspect-ratio:1;min-width:0;min-height:0;border:1px solid #cfdfd2;border-radius:12px;background:#fff;padding:clamp(14px,1.55vw,24px);display:flex;flex-direction:column;justify-content:space-between;gap:7px;transition:box-shadow .18s,border-color .18s}
+.v61-highlight-card:hover{border-color:#9cbd9f;box-shadow:0 9px 25px #1b533b13}
+.v61-highlight-kicker{font-size:clamp(10px,.85vw,12px);line-height:1.4;font-weight:800;color:#34875b;letter-spacing:.015em}
+.v61-highlight-card h4{color:#1d382a;font-size:clamp(16px,1.42vw,20px);line-height:1.35;letter-spacing:-.035em;margin:0 0 9px;font-weight:850}
+.v61-highlight-card p{font-size:clamp(11px,1vw,13px);line-height:1.65;color:#617569;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.v61-highlight-link{align-self:start;font-size:12px!important;line-height:1.4;color:#fff!important;background:#1c6a49;padding:10px 13px;text-decoration:none!important;border-radius:99px;font-weight:800;white-space:nowrap}
+.v61-highlight-link:hover{background:#165139;color:#fff}
+.v61-highlight-link:focus-visible{outline:3px solid #33885b;outline-offset:3px}
+.v61-highlights-note{font-size:11px;color:#788b7b;margin:28px 0 0;line-height:1.75}
+@media(max-width:900px){.v61-highlight-groups{grid-template-columns:1fr;max-width:680px}.v61-highlight-card{padding:clamp(16px,4vw,27px)}.v61-highlight-card h4{font-size:clamp(16px,3.2vw,22px)}.v61-highlight-card p{font-size:clamp(11px,2.2vw,14px)}}
+@media(max-width:420px){.v61-highlight-pair{gap:9px}.v61-highlight-card{padding:12px;border-radius:10px}.v61-highlight-card h4{font-size:15px;margin-bottom:6px}.v61-highlight-card p{font-size:10.5px;line-height:1.55;-webkit-line-clamp:3}.v61-highlight-kicker{font-size:9.5px}.v61-highlight-link{font-size:10px!important;padding:8px 10px}}
+@media(prefers-reduced-motion:reduce){.v61-highlight-card{transition:none}}
+/* 61.1 visual QA corrections: remove the old green band laid over projects title. */
+#projects .civic-unified-hero .v38-page-intro:before,
+#projects .civic-unified-hero .v38-page-intro:after{display:none!important;content:none!important}
+/* Finance: old editorial hero had its own tall outer padding. All three titles now have one height. */
+body[data-view="finance-story"] section.hero{padding:0!important}
+body[data-view="finance-story"] section.hero .hero-inner{padding-top:16px!important;padding-bottom:16px!important}
+/* The floating header needs green behind it; the article below the hero needs paper-colored gutters. */
+body[data-view="finance-story"]{background:#faf9f2!important;position:relative}
+body[data-view="finance-story"]:before{content:"";position:absolute;left:0;right:0;top:0;height:140px;background:var(--abiko-hero-green);pointer-events:none;z-index:0}
+body[data-view="finance-story"] .reading-progress,
+body[data-view="finance-story"] #globalHeader,
+body[data-view="finance-story"] section.hero,
+body[data-view="finance-story"] .page-layout{position:relative}
+body[data-view="finance-story"] #globalHeader{position:sticky!important}
+@media(max-width:700px){
+ #projects .civic-unified-hero,#compare .press-hero,body[data-view="finance-story"] section.hero{min-height:440px!important}
+ body[data-view="finance-story"] section.hero .hero-inner{padding:30px 18px!important}
+ body[data-view="finance-story"] section.hero .hero-key{
+  margin-top:16px!important;padding:9px 0 0!important;
+  display:flex!important;align-items:baseline!important;gap:12px!important;
+  border-top:1px solid #ffffff55!important;
+ }
+ body[data-view="finance-story"] section.hero .hero-key span{font-size:10px!important;line-height:1.45!important;max-width:140px}
+ body[data-view="finance-story"] section.hero .hero-key b{font-size:27px!important;line-height:1.2!important;white-space:nowrap!important}
+ body[data-view="finance-story"] section.hero .hero-key b small{font-size:13px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-expense{min-height:530px!important}
+ body[data-view="dashboard"] .is-legacy-expense .card-figure{min-height:305px!important}
+}
+
+
+/* ===== SOURCE: v62.css ===== */
+/* Abiko Commons v62 — editorial simplification and compact data cards */
+/* The ten issues page uses exactly the same full-width hero vocabulary as projects/cases/finance. */
+body[data-view="issues"]{background:var(--abiko-hero-green,#19513d)!important}
+body[data-view="issues"] #featurePanels{margin:0!important;background:transparent!important}
+#featurePanels>#issues{padding:0!important;margin:0!important;background:#f4f5f1!important}
+#featurePanels>#issues>.wrap{padding-top:28px!important}
+#issues .civic-unified-hero{
+ box-sizing:border-box!important;width:100%!important;min-height:390px!important;
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ position:relative;overflow:hidden!important;background:var(--abiko-hero-green,#19513d)!important;
+ color:white!important;isolation:isolate;
+}
+#issues .civic-unified-hero:before{content:"";position:absolute;right:-170px;top:-230px;width:640px;height:640px;border:95px solid rgba(216,237,220,.07);border-radius:50%;pointer-events:none;z-index:-1}
+#issues .civic-hero-inner{box-sizing:border-box;width:100%!important;max-width:1320px!important;margin:auto!important;padding:48px clamp(18px,3.2vw,48px)!important}
+#issues .civic-unified-hero .v38-page-intro{margin:0!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;max-width:950px!important}
+#issues .civic-unified-hero .v38-page-intro:before,#issues .civic-unified-hero .v38-page-intro:after{content:none!important;display:none!important}
+#issues .civic-unified-hero .overline{color:var(--abiko-hero-kicker,#b4dac7)!important;font:800 11px/1.6 ui-monospace,SFMono-Regular,monospace!important;letter-spacing:.12em!important;margin:0 0 14px!important}
+#issues .civic-unified-hero h1{font-size:clamp(35px,4vw,56px)!important;line-height:1.24!important;letter-spacing:-.06em!important;margin:0 0 20px!important;font-weight:850!important;color:#fff!important}
+#issues .civic-unified-hero .description,#issues .civic-unified-hero .description strong{font-weight:450!important;color:var(--abiko-hero-sub,#e2f1e8)!important;font-size:clamp(14px,1.35vw,18px)!important;line-height:1.9!important;letter-spacing:.01em!important;margin:0!important;max-width:770px!important}
+/* Home — no independent section heading, group headings or explanatory footer. */
+body[data-view="home"] .v61-highlights{padding:clamp(14px,2vw,28px) 0 clamp(40px,5vw,72px)!important}
+body[data-view="home"] .v61-highlight-groups{row-gap:clamp(20px,3vw,40px)!important;column-gap:clamp(22px,3vw,48px)!important}
+body[data-view="home"] .v61-highlight-card{gap:7px!important;padding:clamp(13px,1.5vw,20px)!important}
+body[data-view="home"] .v61-highlight-kicker{font-size:clamp(10px,.86vw,12px)!important;color:#34815b;font-weight:800;letter-spacing:.03em!important}
+body[data-view="home"] .v61-highlight-card h4{font-size:clamp(15px,1.38vw,20px);margin:0 0 6px!important}
+body[data-view="home"] .v61-highlight-card p{line-height:1.6}
+body[data-view="home"] a.v61-highlight-link{
+ padding:6px 11px!important;min-height:0!important;line-height:1.35!important;
+ font-size:11px!important;font-weight:750!important;border-radius:5px!important;
+ width:auto!important;min-width:0!important;max-width:max-content!important;
+ box-shadow:none!important;display:inline-flex!important;align-items:center!important;
+}
+body[data-view="home"] .v62-highlight-data-card .v62-mini-chart{height:auto;width:100%;margin:4px 0 0;min-height:65px}
+body[data-view="home"] .v62-mini-chart svg{display:block;width:100%;height:auto;max-height:86px}
+body[data-view="home"] .v62-mini-number{display:flex;justify-content:space-between;gap:6px;align-items:baseline;margin-top:3px}
+body[data-view="home"] .v62-mini-number strong{font-size:clamp(14px,1.4vw,20px);line-height:1.2;color:#236f51;letter-spacing:-.035em}
+body[data-view="home"] .v62-mini-number span{font-size:9px;color:#738f7e;white-space:nowrap}
+body[data-view="home"] .v62-mini-budget-legend{display:flex;flex-wrap:wrap;gap:4px 9px;margin-top:7px;color:#526d5b;font-size:10px;line-height:1.3}
+body[data-view="home"] .v62-mini-budget-legend span{white-space:nowrap}
+body[data-view="home"] .v62-mini-budget-legend i{display:inline-block;width:7px;height:7px;border-radius:2px;margin-right:4px}
+body[data-view="home"] .v62-highlight-data-card p.v62-mini-label{font-size:9px!important;color:#718c7c!important;line-height:1.3!important;display:block!important}
+/* Compact dashboard cards: return the two explorers to one standard grid cell each. */
+body[data-view="dashboard"] .chart-grid{grid-auto-flow:row!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue,
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense{
+ grid-column:auto!important;grid-row:auto!important;min-height:400px!important;
+ height:400px!important;max-height:400px!important;overflow:hidden!important;
+ display:flex!important;flex-direction:column!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue>.card-figure,
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense>.card-figure{
+ flex:1 1 0!important;min-height:0!important;height:auto!important;max-height:none!important;
+ overflow:hidden!important;display:flex!important;flex-direction:column!important;
+ align-items:stretch!important;justify-content:flex-start!important;
+ padding:4px 12px 0!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-revenue-visual{
+ flex:1 1 0!important;min-height:0!important;height:auto!important;max-height:none!important;
+ overflow-y:auto!important;overflow-x:hidden!important;padding:5px 5px 2px!important;
+ scrollbar-width:thin!important;overscroll-behavior:contain;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-horizontal-bars{gap:7px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-bar-label{margin-bottom:3px!important;gap:4px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-bar-label strong{font-size:10.5px!important;line-height:1.35!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-bar-label b{font-size:10.5px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-bar-track{height:6px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-show-all{
+ flex:0 0 auto!important;padding:6px 9px!important;margin:6px 4px 6px!important;
+ font-size:10.5px!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .legacy-explain,
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-explain{display:none!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-finance-control{padding:0 4px!important;gap:6px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-finance-control label{
+ display:flex!important;gap:6px!important;justify-content:space-between!important;
+ font-size:11px!important;white-space:nowrap!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-finance-control select{padding:6px 8px!important;font-size:11px!important;min-width:0!important;width:70%!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-finance-tabs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:3px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-finance-tabs button{padding:6px 3px!important;font-size:10px!important;white-space:nowrap!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-figure-label{
+ padding:6px 4px 4px!important;display:flex!important;align-items:baseline!important;
+ gap:4px 7px!important;font-size:12px!important;line-height:1.1!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-figure-label strong{font-size:19px!important;letter-spacing:-.035em!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-figure-label small{font-size:9.5px!important;line-height:1.35!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-inside-visual{
+ min-height:0!important;max-height:none!important;flex:1 1 0!important;overflow-y:auto!important;
+ overscroll-behavior:contain;padding:4px!important;scrollbar-width:thin;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-horizontal-bars{gap:9px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-bar-label{margin-bottom:3px!important;gap:5px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-bar-label strong,
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-bar-label b{font-size:10.5px!important;line-height:1.4!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-bar-track{height:7px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-trend-hint{display:none!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-trend-scroll{width:100%!important;overflow:hidden!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-compact-trend{width:100%!important;height:auto!important;max-height:147px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-table-wrap{max-height:none!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-table-wrap td,
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .legacy-table-wrap th{font-size:10.5px!important;padding:4px!important}
+/* Keep the standard card's source footer and footnote visible, but avoid double blocks. */
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .chart-footnote,
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .chart-footnote{
+ font-size:10px!important;line-height:1.55!important;padding-top:4px!important;padding-bottom:6px!important;
+ display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;overflow:hidden!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-revenue .card-bottom,
+body[data-view="dashboard"] .chart-grid>.is-legacy-expense .card-bottom{min-height:46px!important;flex:0 0 auto!important}
+/* Sankey: the viewBox is cropped to the actual visible content, and a smaller
+   linear scale retains a readable label distribution at reduced card height. */
+body[data-view="dashboard"] .chart-grid>.is-legacy-sankey{grid-column:1/-1!important;grid-row:span 2!important;min-height:0!important;height:auto!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-sankey .card-figure{
+ min-height:0!important;max-height:none!important;flex:1 1 auto!important;
+ width:100%!important;padding:0 0 4px!important;justify-content:flex-start!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-sankey .legacy-sankey-wrap{width:100%!important;max-width:none!important;padding:0!important;margin:0!important;overflow:visible!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-sankey .legacy-sankey-wrap>svg{
+ display:block!important;width:100%!important;max-width:none!important;min-width:0!important;
+ height:auto!important;max-height:none!important;margin:0!important;
+}
+body[data-view="dashboard"] .chart-grid>.is-legacy-sankey .legacy-sankey-keys{padding-inline:4px!important}
+body[data-view="dashboard"] .chart-grid>.is-legacy-sankey .legacy-flow-readout{margin:4px 8px 8px!important;padding:8px 11px!important}
+@media(max-width:970px){
+ body[data-view="dashboard"] .chart-grid>.is-legacy-expense,
+ body[data-view="dashboard"] .chart-grid>.is-legacy-revenue{
+  grid-column:auto!important;grid-row:auto!important;
+  min-height:400px!important;height:400px!important;max-height:400px!important;
+ }
+}
+@media(max-width:700px){
+ #issues .civic-unified-hero{min-height:440px!important}
+ #issues .civic-hero-inner{padding:41px 18px!important}
+ #issues .civic-unified-hero h1{font-size:clamp(32px,9vw,39px)!important;line-height:1.27!important}
+ body[data-view="home"] .v61-highlight-pair{gap:9px!important}
+ body[data-view="home"] .v61-highlight-card{padding:12px!important}
+ body[data-view="home"] .v61-highlight-card h4{font-size:15px!important}
+ body[data-view="home"] .v62-mini-number strong{font-size:14px}
+ body[data-view="home"] .v62-mini-number span{font-size:8px}
+ body[data-view="home"] .v62-mini-budget-legend{font-size:8.5px}
+ body[data-view="home"] .v62-highlight-data-card p.v62-mini-label{font-size:8px!important}
+ body[data-view="home"] .v62-mini-chart svg{max-height:70px!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-sankey{grid-row:auto!important;height:auto!important;min-height:0!important}
+ body[data-view="dashboard"] .chart-grid>.is-legacy-revenue,
+ body[data-view="dashboard"] .chart-grid>.is-legacy-expense{
+  grid-column:1/-1!important;grid-row:auto!important;min-height:400px!important;
+  height:400px!important;max-height:400px!important;
+ }
+ body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-wrap{display:none!important}
+ body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-expand .legacy-sankey-wrap{display:block!important;overflow-x:auto!important}
+ body[data-view="dashboard"] .is-legacy-sankey .legacy-sankey-expand .legacy-sankey-wrap svg{width:720px!important;min-width:720px!important}
+}
+@media(prefers-reduced-motion:reduce){.v62-mini-chart svg{animation:none!important}}
+
+
+/* ===== SOURCE: v63-typography.css ===== */
+/* Editorial type scale: slightly larger text and clearer headline hierarchy,
+   respecting graph labels, compact navigation, credits and controls. */
+:root{--reading-font:17px;--reading-line:1.92}
+body{font-size:16px;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+/* Longform editorial article pages */
+.press-article-main .press-intro,
+.press-article-main .press-standfirst,
+.press-article-main .press-article-body p,
+.press-article-main .press-article-copy p,
+.press-article-main section p:not(.press-caption):not(.source-note):not(.caption):not(.press-meta),
+.press-article-main > p:not(.press-caption):not(.source-note):not(.caption),
+.v63-fin-main > p,.v63-fin-main .v63-fin-section > p:not(.v63-fin-note):not(.v63-fin-lead):not(.v63-fin-chartnote)
+{font-size:var(--reading-font);line-height:var(--reading-line)}
+.press-article-main h2{font-size:clamp(26px,2.7vw,35px);line-height:1.5}
+.press-article-main h3{font-size:clamp(21px,2.2vw,27px);line-height:1.52}
+.press-article-main h1{font-size:clamp(34px,4.4vw,57px);line-height:1.45}
+/* Major section descriptions are part of the reading experience, not chart microcopy. */
+.section-head .description,.section-head p.description,
+.page-header .description,.page-header p.description,
+.section-intro p,.page-intro p,.page-lead,
+.v61-unified-hero .hero-description
+{font-size:16px;line-height:1.86}
+.section-head h2,.section h2:not(.chart-title),.page-heading h2{font-size:clamp(27px,2.85vw,36px);line-height:1.43}
+.section h3:not(.metric-heading):not(.chart-title){font-size:clamp(20px,2vw,27px);line-height:1.54}
+/* Keep compact card text, provenance, charts, floating navigation unchanged. */
+figcaption,.photo-credit,.image-credit,.small-caption,.citation,.source-note{line-height:1.7}
+@media(max-width:760px){:root{--reading-font:16.5px;--reading-line:1.93}
+.section-head .description,.page-header .description,.section-intro p,.page-intro p,.page-lead{font-size:15.5px}
+.section-head h2,.section h2:not(.chart-title){font-size:clamp(25px,6.5vw,31px)}
+.press-article-main h1{font-size:clamp(30px,8vw,39px)}
+.press-article-main h2{font-size:clamp(24px,6.6vw,30px)}
+}
+/* Existing editorial pages use strong, nested legacy selectors. */
+body.press-article-page main.press-article-main .press-story-body p:not(.press-caption):not(.press-data-caption){font-size:17.5px!important;line-height:1.97!important}
+body.press-article-page main.press-article-main .press-body-section h2{font-size:clamp(26px,2.8vw,34px)!important;line-height:1.51!important}
+body.press-article-page .press-story-header h1,body.press-article-page h1.press-article-title{font-size:clamp(35px,4.25vw,58px)!important;line-height:1.38!important}
+body[data-view="projects"] #projects .civic-unified-hero .v38-page-intro .description,
+body[data-view="compare"] #compare .press-hero p{font-size:clamp(15px,1.45vw,19px)!important;line-height:1.84!important}
+body[data-view="home"] .v38-page-intro .description,
+body[data-view="issues"] .v38-page-intro .description{font-size:clamp(15px,1.45vw,19px)!important;line-height:1.84!important}
+@media(max-width:760px){body.press-article-page main.press-article-main .press-story-body p:not(.press-caption):not(.press-data-caption){font-size:17px!important;line-height:1.94!important}body.press-article-page main.press-article-main .press-body-section h2{font-size:26px!important}}
+
+
+/* ===== SOURCE: v64.css ===== */
+/* v64 | Shared editorial rhythm, responsive newspaper layout and contextual previews */
+:root{--v64-deep:#19513d;--v64-white:#fff}
+/* Newspaper: retain all three columns on narrower desktop windows. */
+@media(min-width:800px){
+ #compare .press-newsgrid{display:grid!important;grid-template-columns:minmax(0,1.04fr) minmax(0,1.04fr) minmax(0,.86fr)!important;gap:clamp(14px,2.1vw,34px)!important;align-items:start!important}
+ #compare .press-latest{grid-column:auto!important;grid-row:auto!important;min-width:0!important;margin:0!important;padding-top:0!important;border-top:0!important}
+ #compare .press-latest-list{display:block!important}
+ #compare .press-featured,#compare .press-center{min-width:0}
+}
+@media (min-width:800px) and (max-width:1100px){#compare .press-latest-list li a{grid-template-columns:1fr!important;gap:2px!important}#compare .press-teaser h3,#compare .press-feature h3{font-size:clamp(15px,1.5vw,21px)!important}}
+/* Article pages and finance must not inherit the homepage top padding: it caused the floating nav to drop. */
+body.press-article-page,body.v63-finance-page{padding-top:0!important}
+body.press-article-page .v37-header,body.v63-finance-page .v37-header{top:10px!important}
+body.press-article-page .v39-fab-group,body.v63-finance-page .v39-fab-group{z-index:80}
+/* Keep upper green bands consistent, no extra dividers or secondary strips. */
+body.v63-finance-page .v63-fin-hero,body.v63-finance-page .v63-fin-hero::before,
+body[data-view=issues] #issues .civic-unified-hero,body[data-view=projects] #projects .civic-unified-hero,
+body[data-view=compare] #compare .press-hero{background-color:var(--v64-deep)!important}
+body.v63-finance-page .v63-fin-hero{background-image:none!important;border:0!important}
+body[data-view=issues] #issues .civic-unified-hero,body[data-view=issues] #issues .civic-hero-inner,
+body[data-view=projects] #projects .civic-unified-hero{border-top:0!important;box-shadow:none!important;outline:0!important}
+body[data-view=issues] #issues .civic-unified-hero:after,body[data-view=issues] #issues .civic-hero-inner:before,
+body[data-view=issues] #issues .civic-hero-inner:after{display:none!important;content:none!important}
+/* The decorative underline in the main slogan and separation rule preceding previews are removed. */
+body[data-view=home] .hero h1 .serif::after{display:none!important;content:none!important}
+body[data-view=home] .hero-choice,body[data-view=home] .hero-choice::after{border-bottom:0!important}
+body[data-view=home] .v61-highlights{border-top:0!important;background:#f7f9f5!important;padding:24px 0 66px!important;margin:0!important}
+body[data-view=home] .v64-brief-inner{max-width:1200px;padding:0 22px;margin:auto}
+body[data-view=home] .v64-brief-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+body[data-view=home] .v64-brief{min-width:0;background:#fff;border:1px solid #e4eae2;border-radius:7px;box-shadow:0 1px 2px #162c1b10;overflow:hidden;transition:transform .15s,box-shadow .15s}
+body[data-view=home] .v64-brief:hover{transform:translateY(-3px);box-shadow:0 8px 30px #1d442e1f}
+body[data-view=home] .v64-brief-link{display:flex;flex-direction:column;min-height:100%;height:100%;color:#1a3027;text-decoration:none!important}
+body[data-view=home] .v64-brief-link:focus-visible{outline:3px solid #32886e;outline-offset:-3px}
+body[data-view=home] .v64-brief-cat{order:0;margin:12px 14px 7px;font:750 10px/1.5 system-ui,'Noto Sans JP',sans-serif;letter-spacing:.06em;color:#397a60}
+body[data-view=home] .v64-brief-art{order:1;display:block;margin:0 0 4px;min-height:0;aspect-ratio:1.7;overflow:hidden;background:#e6f0e6}
+body[data-view=home] .v64-brief-photo{display:block;height:100%;width:100%;position:relative;margin:0;overflow:hidden;background:linear-gradient(120deg,#cee3d9,#f0f5ed)}
+body[data-view=home] .v64-brief-photo img{display:block;height:100%;width:100%;object-fit:cover}
+body[data-view=home] .v64-brief-photo figcaption{position:absolute;bottom:0;right:0;left:0;padding:6px 9px;background:#132a21ad;color:#fff;font-size:9px;line-height:1.25}
+body[data-view=home] .v64-brief-copy{order:2;display:flex;flex-direction:column;gap:5px;padding:8px 14px 9px;flex:1;min-width:0}
+body[data-view=home] .v64-brief-num{font-size:10px;font-weight:700;line-height:1.5;color:#7b8c80;letter-spacing:.055em}
+body[data-view=home] .v64-brief-title{font-size:clamp(16px,1.35vw,21px);line-height:1.44;letter-spacing:-.04em;font-weight:840;display:block;color:#142f25}
+body[data-view=home] .v64-brief-desc{font-size:12.5px;line-height:1.6;color:#52685b;display:block}
+body[data-view=home] .v64-brief-foot{order:3;display:flex;justify-content:space-between;align-items:center;gap:7px;padding:10px 14px 13px;border-top:1px solid #e7eee9;min-width:0}
+body[data-view=home] .v64-brief-foot small{font-size:10px;line-height:1.35;color:#647a6b;flex:1;min-width:0}
+body[data-view=home] .v64-brief-more{flex:none;display:inline-block;border-radius:5px;border:1px solid #b9d0c1;padding:6px 9px;font:750 10px/1.1 system-ui,sans-serif;color:#245f49;background:#f6faf6;white-space:nowrap}
+body[data-view=home] .v64-budget-graphic,body[data-view=home] .v64-budget-share{height:100%;min-height:0;background:#f0f5ee;padding:14px 11px;color:#24563f;font-family:system-ui,sans-serif}
+body[data-view=home] .v64-budget-graphic>small{display:block;color:#5c7565;font-size:10px;margin-bottom:12px}
+body[data-view=home] .v64-budget-graphic>span{position:relative;height:26px;display:flex;align-items:center;justify-content:space-between;margin:6px 0;gap:6px}
+body[data-view=home] .v64-budget-graphic i{position:absolute;inset:0 auto 0 0;background:#72ac8f;border-radius:3px;font-size:11px;line-height:26px;font-weight:800;color:#fff;font-style:normal;padding-left:8px}
+body[data-view=home] .v64-budget-graphic span:first-of-type i{background:#8da9a0}
+body[data-view=home] .v64-budget-graphic span strong{z-index:1;font-size:11px;color:#132e25;margin-left:auto;padding-right:4px;background:#ffffffe8;border-radius:2px}
+body[data-view=home] .v64-budget-graphic>b{display:block;font-size:19px;margin-top:8px;color:#176949}
+body[data-view=home] .v64-budget-graphic em{font-size:10px;font-weight:500;color:#466454;font-style:normal}
+body[data-view=home] .v64-budget-share strong{font-size:37px;line-height:1.1;letter-spacing:-.07em}
+body[data-view=home] .v64-budget-share strong small{font-size:14px;letter-spacing:0}
+body[data-view=home] .v64-budget-share-bar{height:16px;border-radius:4px;overflow:hidden;background:#cbdcd3;margin:9px 0}
+body[data-view=home] .v64-budget-share-bar i{display:block;height:100%;width:48.3%;background:#2e916a}
+body[data-view=home] .v64-budget-share>span{display:flex;justify-content:space-between;font-size:11px;font-weight:750}
+body[data-view=home] .v64-budget-share>small{display:block;margin-top:7px;font-size:10px;color:#577a65}
+body[data-view=home] .v64-mini-plot{height:100%;box-sizing:border-box;overflow:hidden;background:#f7faf7;padding:8px 10px;color:#233f32;display:flex;flex-direction:column;justify-content:space-around}
+body[data-view=home] .v64-mini-plot svg{display:block;width:100%;height:auto;max-height:155px;margin:auto}
+body[data-view=home] .v64-chart-legend{display:flex;gap:10px;font-size:9.5px;line-height:1.3;font-weight:650}
+body[data-view=home] .v64-chart-legend span{display:inline-flex;align-items:center;gap:4px}
+body[data-view=home] .v64-chart-legend i{display:inline-block;width:8px;height:8px;border-radius:2px}
+body[data-view=home] .v64-treemap-head{display:flex;justify-content:space-between;gap:5px;align-items:center;font-size:9px;color:#556e60}
+body[data-view=home] .v64-treemap-head strong{font-size:9px;color:#2d6c52}
+body[data-view=home] .v64-plot-stat{display:flex;gap:8px;justify-content:space-between;font-size:9.5px;color:#496c59}
+body[data-view=home] .v64-plot-stat b{font-size:9.5px}
+/* Anchor destinations briefly stand out, then remain easy to find. */
+.v64-targeted{box-shadow:0 0 0 3px #72ae8b,0 8px 25px #16372715!important;scroll-margin-top:120px!important}
+/* Article page's new articles sidebar uses the same tab metaphor as the listing. */
+.press-article-rail .v64-rail-tabs{display:flex;margin:10px 0 15px;border-bottom:2px solid #22382c}
+.press-article-rail .v64-rail-tabs button{flex:1;background:transparent;border:0;border-bottom:3px solid transparent;padding:10px 4px;font-size:12px;color:#63776b;font-weight:760;cursor:pointer;margin-bottom:-2px}
+.press-article-rail .v64-rail-tabs button[aria-pressed=true]{color:#fff;background:#263d2e;border-color:#263d2e}
+.press-article-rail .v64-rail-list li[hidden]{display:none!important}
+.press-article-rail .v64-rail-count{font-size:11px;color:#63776b;margin:8px 0 14px}
+@media(max-width:1080px){body[data-view=home] .v64-brief-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:800px){body[data-view=home] .v64-brief-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}body[data-view=home] .v64-brief-inner{padding:0 13px}}
+@media(max-width:550px){
+ body[data-view=home] .v61-highlights{padding:14px 0 40px!important}
+ body[data-view=home] .v64-brief-cat{font-size:9px;margin:8px 9px 5px}
+ body[data-view=home] .v64-brief-art{aspect-ratio:1.34}
+ body[data-view=home] .v64-brief-copy{padding:7px 9px;gap:4px}
+ body[data-view=home] .v64-brief-title{font-size:15px;line-height:1.38}
+ body[data-view=home] .v64-brief-desc{font-size:11px;line-height:1.5}
+ body[data-view=home] .v64-brief-foot{padding:7px 9px 9px;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+ body[data-view=home] .v64-brief-more{font-size:10px;padding:5px 8px}
+ body[data-view=home] .v64-brief-foot small{font-size:9px}
+ body[data-view=home] .v64-mini-plot{padding:6px}
+ body[data-view=home] .v64-mini-plot svg{max-height:115px}
+ body[data-view=home] .v64-plot-stat,body[data-view=home] .v64-plot-stat b{font-size:8px}
+ body[data-view=home] .v64-budget-graphic{padding:8px}
+ body[data-view=home] .v64-budget-graphic>b{font-size:15px}
+ body[data-view=home] .v64-budget-share{padding:10px}
+ body[data-view=home] .v64-budget-share strong{font-size:30px}
+}
+@media(prefers-reduced-motion:reduce){body[data-view=home] .v64-brief{transition:none}}
+/* v64 final hero normalization. Prevent a 12px background strip above the issues hero. */
+body[data-view=issues]{background-color:var(--v64-deep)!important}
+body[data-view=issues] #featurePanels>#issues{padding-top:0!important;margin-top:0!important}
+body[data-view=issues] #issues .civic-unified-hero{min-height:390px!important}
+body[data-view=projects] #featurePanels>#projects{padding-top:0!important;margin-top:0!important;border-top:0!important}
+body.v63-finance-page{background-color:var(--v64-deep)!important}
+body.v63-finance-page .v63-fin-layout{background:#fafbf8!important;max-width:none!important}
+body.v63-finance-page .v63-fin-layout>.v63-fin-sidebar,body.v63-finance-page .v63-fin-layout>.v63-fin-main{min-width:0}
+body.v63-finance-page .v63-fin-hero-inner{min-height:390px!important}
+@media(max-width:760px){
+ body[data-view=issues] #issues .civic-unified-hero{min-height:440px!important}
+ body.v63-finance-page .v63-fin-hero-inner{min-height:440px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:stretch!important}
+ body.v63-finance-page .v63-fin-hero-figure{width:100%}
+}
+/* Project hero's legacy section positioning introduced a 6px break. */
+body[data-view=projects] #featurePanels>#projects{margin-top:-3px!important}
+body[data-view=projects] #projects .civic-unified-hero{margin-top:-3px!important}
+body[data-view=projects] #featurePanels>#projects{margin-top:-6px!important}
+@media(max-width:760px){body.v63-finance-page .v63-fin-hero-figure{flex:0 1 auto!important}}
+/* Editorial cards follow the entry menu without a large empty buffer. */
+body[data-view=home] .hero{padding-bottom:16px!important;border-bottom:0!important}
+body[data-view=home] .v61-highlights{padding-top:18px!important;border:0!important}
+@media(max-width:700px){body[data-view=home] .hero{padding-bottom:14px!important}body[data-view=home] .v61-highlights{padding-top:13px!important}}
+
+
+/* ===== SOURCE: v65.css ===== */
+/* v65 | Home summaries: one graphic, one title, one link. */
+body[data-view="home"] .v64-brief-grid{align-items:stretch}
+body[data-view="home"] .v65-brief{display:flex;min-width:0}
+body[data-view="home"] .v65-brief .v64-brief-link{width:100%;justify-content:stretch}
+body[data-view="home"] .v65-brief .v65-card-art{order:0;margin:0;position:relative;flex:none;aspect-ratio:1.45;background:#eef4ed;overflow:hidden}
+body[data-view="home"] .v65-brief .v64-brief-cat{position:absolute;top:9px;left:9px;z-index:5;margin:0;padding:5px 9px;border-radius:16px;background:#225c46;color:#fff;font-weight:700;font-size:10.5px;line-height:1.4;letter-spacing:.015em;box-shadow:none;white-space:nowrap}
+body[data-view="home"] .v65-brief .v64-brief-photo figcaption{background:none!important;display:block;left:auto;right:4px;bottom:4px;max-width:92%;color:#fff;font-size:9px;text-align:right;text-shadow:0 1px 3px #000,0 0 6px #000;line-height:1.2;padding:3px 5px}
+body[data-view="home"] .v65-brief .v64-brief-copy{order:1;display:block;flex:1;padding:13px 14px 12px;min-height:55px}
+body[data-view="home"] .v65-brief .v64-brief-title{font-size:clamp(16px,1.45vw,21px);line-height:1.4;font-weight:800}
+body[data-view="home"] .v65-brief .v64-brief-foot{order:2;padding:10px 13px 12px;gap:7px;align-items:center;flex-direction:row!important}
+body[data-view="home"] .v65-brief .v64-brief-foot small{font-size:10px;white-space:normal}
+body[data-view="home"] .v65-brief .v64-brief-more{border:1px solid #b3d1bf;border-radius:5px;background:#fff;font-size:10px;padding:6px 9px}
+body[data-view="home"] .v65-mini-head{display:flex;justify-content:space-between;align-items:baseline;gap:5px;font-size:10px;color:#315d48;margin:0 0 6px}
+body[data-view="home"] .v65-mini-head b{font-weight:800;line-height:1.3}
+body[data-view="home"] .v65-mini-head small{font-size:9px;white-space:nowrap;color:#5d796b}
+body[data-view="home"] .v65-budget-compare{height:100%;background:#eaf3ea;color:#18392b;padding:40px 11px 9px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between}
+body[data-view="home"] .v65-budget-year{display:grid;grid-template-columns:58px 1fr;gap:2px 6px;align-items:baseline;margin:4px 0 7px;color:#254c3b}
+body[data-view="home"] .v65-budget-year>span{font-size:10px}
+body[data-view="home"] .v65-budget-year>b{font-size:17px;letter-spacing:-.03em;text-align:right}
+body[data-view="home"] .v65-budget-track{grid-column:1/-1;height:11px;background:#d5e2d8;border-radius:2px;overflow:hidden}
+body[data-view="home"] .v65-budget-track i{display:block;height:100%;width:0;border-radius:2px;transition:width 1050ms cubic-bezier(.19,.9,.2,1)}
+body[data-view="home"] .v65-visible .v65-budget-track i{width:var(--v65-goal)}
+body[data-view="home"] .v65-budget-delta{border-top:1px solid #ccded1;display:flex;justify-content:space-between;align-items:baseline;padding-top:7px;color:#195b3f;gap:5px}
+body[data-view="home"] .v65-budget-delta b{font-size:16px;white-space:nowrap}
+body[data-view="home"] .v65-budget-delta small{font-size:10px;text-align:right}
+body[data-view="home"] .v65-spend-chart{height:100%;background:#eaf3ea;padding:39px 9px 8px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between}
+body[data-view="home"] .v65-spend-stack{display:flex;height:18px;width:100%;overflow:hidden;border-radius:2px;clip-path:inset(0 100% 0 0);transition:clip-path 1150ms cubic-bezier(.2,.8,.2,1) 100ms}
+body[data-view="home"] .v65-visible .v65-spend-stack{clip-path:inset(0 0 0 0)}
+body[data-view="home"] .v65-spend-stack>span{height:100%;min-width:0}
+body[data-view="home"] .v65-spend-key{display:grid;grid-template-columns:1fr 1fr;gap:2px 6px;margin-top:5px}
+body[data-view="home"] .v65-spend-key>span{display:flex;min-width:0;align-items:center;gap:3px;font-size:9px;color:#294939;line-height:1.18}
+body[data-view="home"] .v65-spend-key i{display:block;width:6px;height:6px;flex:none;border-radius:1px}
+body[data-view="home"] .v65-spend-key em{font-style:normal;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body[data-view="home"] .v65-spend-key b{font-size:8.7px;margin-left:auto;flex:none}
+body[data-view="home"] .v65-demographic-chart,body[data-view="home"] .v65-treemap-chart{height:100%;background:#eaf3ea;box-sizing:border-box;padding:38px 7px 7px;display:flex;flex-direction:column;justify-content:space-between}
+body[data-view="home"] .v65-demographic-chart svg,body[data-view="home"] .v65-treemap-chart svg{width:100%;max-height:155px;min-height:0;display:block}
+body[data-view="home"] .v65-mini-legend{display:flex;gap:9px;font-size:9px;color:#426a57;line-height:1.2}
+body[data-view="home"] .v65-mini-legend span{display:inline-flex;align-items:center;gap:4px}
+body[data-view="home"] .v65-mini-legend i{width:8px;height:8px;display:inline-block;border-radius:1px}
+body[data-view="home"] .v65-chart-tail{font-size:9px;color:#446c58;display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+body[data-view="home"] .v65-chart-tail b{color:#245942}
+body[data-view="home"] .v65-rise-bar{transform:scaleY(0);transform-origin:center bottom;transform-box:fill-box;transition:transform 850ms cubic-bezier(.22,.76,.2,1)}
+body[data-view="home"] .v65-rise-bar.is-negative{transform-origin:center top}
+body[data-view="home"] .v65-visible .v65-rise-bar{transform:scaleY(1)}
+body[data-view="home"] .v65-grow-piece{opacity:0;transform:scale(.88);transform-origin:center;transition:opacity 550ms ease,transform 700ms cubic-bezier(.2,.8,.2,1);transition-delay:var(--v65-delay)}
+body[data-view="home"] .v65-visible .v65-grow-piece{opacity:1;transform:scale(1)}
+/* The data dashboard uses source-specific timescales; year-based cards are given a distinct chip. */
+body[data-view="dashboard"] .card-head .chip{font-variant-numeric:tabular-nums}
+@media(max-width:800px){body[data-view="home"] .v65-brief .v65-card-art{aspect-ratio:1.24}}
+@media(max-width:550px){
+ body[data-view="home"] .v65-brief .v64-brief-cat{top:6px;left:6px;padding:4px 6px;font-size:8.7px;max-width:calc(100% - 12px);overflow:hidden;text-overflow:ellipsis}
+ body[data-view="home"] .v65-brief .v65-card-art{aspect-ratio:1.05}
+ body[data-view="home"] .v65-brief .v64-brief-copy{padding:9px 8px;min-height:54px}
+ body[data-view="home"] .v65-brief .v64-brief-title{font-size:14px}
+ body[data-view="home"] .v65-brief .v64-brief-foot{padding:7px 8px 9px;gap:4px;flex-wrap:wrap}
+ body[data-view="home"] .v65-brief .v64-brief-foot small{font-size:8.6px}
+ body[data-view="home"] .v65-brief .v64-brief-more{font-size:9px;padding:5px 7px;margin-left:auto}
+ body[data-view="home"] .v65-spend-chart{padding:34px 5px 5px}
+ body[data-view="home"] .v65-spend-key{gap:1px 3px}
+ body[data-view="home"] .v65-spend-key>span{font-size:7.4px;gap:2px}
+ body[data-view="home"] .v65-spend-key b{font-size:7.4px}
+ body[data-view="home"] .v65-spend-key i{width:5px;height:5px}
+ body[data-view="home"] .v65-budget-compare{padding:34px 7px 6px}
+ body[data-view="home"] .v65-budget-year{grid-template-columns:42px 1fr}
+ body[data-view="home"] .v65-budget-year>b{font-size:13px}
+ body[data-view="home"] .v65-budget-delta b{font-size:13px}
+ body[data-view="home"] .v65-budget-delta small{font-size:8px}
+ body[data-view="home"] .v65-demographic-chart,body[data-view="home"] .v65-treemap-chart{padding:35px 5px 5px}
+ body[data-view="home"] .v65-mini-head{font-size:8px}
+ body[data-view="home"] .v65-mini-head small{font-size:7.5px}
+ body[data-view="home"] .v65-demographic-chart svg,body[data-view="home"] .v65-treemap-chart svg{max-height:112px}
+ body[data-view="home"] .v65-chart-tail{font-size:7.5px}
+}
+@media(prefers-reduced-motion:reduce){body[data-view="home"] .v65-budget-track i,body[data-view="home"] .v65-spend-stack,body[data-view="home"] .v65-rise-bar,body[data-view="home"] .v65-grow-piece{transition:none!important}body[data-view="home"] .v65-budget-track i{width:var(--v65-goal)}body[data-view="home"] .v65-spend-stack{clip-path:none}body[data-view="home"] .v65-rise-bar{transform:none}body[data-view="home"] .v65-grow-piece{opacity:1;transform:none}}
+/* v65.1: keep both annual-budget bars and the difference within mobile summary artwork. */
+@media(max-width:550px){
+ body[data-view="home"] .v65-budget-compare{justify-content:initial;padding-top:33px;gap:2px}
+ body[data-view="home"] .v65-budget-year{grid-template-columns:51px 1fr;gap:0 4px;margin:1px 0 4px;align-items:center}
+ body[data-view="home"] .v65-budget-year>span{font-size:9px;white-space:nowrap}
+ body[data-view="home"] .v65-budget-year>b{font-size:12px}
+ body[data-view="home"] .v65-budget-track{height:8px}
+ body[data-view="home"] .v65-budget-delta{padding-top:3px;gap:2px}
+ body[data-view="home"] .v65-budget-delta b{font-size:11.5px}
+ body[data-view="home"] .v65-budget-delta small{font-size:8px}
+}
+
+
+/* ===== SOURCE: v66.css ===== */
+/* v66 — finance infographics, data motion and concise editorial picks */
+:root{--v66-deep:#185b48;--v66-paper:#fafcf8}
+/* Five modules × two random items; only artwork and linked title, no redundant labels or body. */
+body[data-view=home] .v66-highlights .v66-brief .v64-brief-link{display:flex;flex-direction:column;justify-content:flex-start;overflow:hidden}
+body[data-view=home] .v66-highlights .v66-brief .v65-card-art{order:0;flex:1 1 auto;aspect-ratio:1.38;position:relative;overflow:hidden;margin:0!important;min-width:0;background:#edf4ed}
+body[data-view=home] .v66-highlights .v66-brief .v64-brief-cat{position:absolute;top:10px;left:10px;z-index:3;background:#1e624c;border-radius:100px;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.015em;line-height:1.4;padding:5px 11px;margin:0;box-shadow:none}
+body[data-view=home] .v66-highlights .v66-brief .v66-card-footer{display:flex;align-items:center;gap:8px;justify-content:space-between;min-height:84px;background:#fff;padding:11px 14px 12px;flex:none}
+body[data-view=home] .v66-highlights .v66-brief .v66-card-footer strong{font-size:clamp(15px,1.35vw,19px);letter-spacing:-.04em;line-height:1.35;font-weight:850;color:#1e4030;flex:1;min-width:0;overflow-wrap:anywhere}
+body[data-view=home] .v66-highlights .v66-brief .v66-card-action{border-radius:5px;border:1px solid #b8cfc0;background:#f7faf7;color:#265e49;white-space:nowrap;flex:none;font-size:10px;line-height:1.2;font-weight:800;padding:7px 8px}
+body[data-view=home] .v66-photo{position:relative;height:100%;width:100%;margin:0;display:block;background:#d9e8df;overflow:hidden}
+body[data-view=home] .v66-photo img{width:100%;height:100%;object-fit:cover;display:block}
+body[data-view=home] .v66-photo figcaption{position:absolute;bottom:5px;right:6px;left:auto;width:auto;text-align:right;max-width:95%;color:white;font-size:8.5px;line-height:1.35;padding:2px 3px;background:none!important;text-shadow:0 1px 4px #061a14,0 0 4px #061a14}
+body[data-view=home] .v66-photo.is-missing-photo{background:linear-gradient(145deg,#c5dacb,#e5f1df)}
+body[data-view=home] .v66-text-art,body[data-view=home] .v66-issue-art{height:100%;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:37px 22px 14px;background:linear-gradient(135deg,#dcebe1,#b8d5c4);color:#205a44;box-sizing:border-box}
+body[data-view=home] .v66-text-art small,body[data-view=home] .v66-issue-art small{font-size:11px;letter-spacing:.09em;font-weight:750}
+body[data-view=home] .v66-text-art strong,body[data-view=home] .v66-issue-art strong{font-size:clamp(18px,2vw,30px);line-height:1.34;letter-spacing:-.05em}
+body[data-view=home] .v66-issue-art span{font-size:12px;font-weight:600}
+body[data-view=home] .v66-graphic{height:100%;padding:43px 12px 12px;display:flex;flex-direction:column;box-sizing:border-box;background:#eaf3ea;color:#205b46;gap:6px;overflow:hidden}
+body[data-view=home] .v66-graphic svg{width:100%;height:auto;flex:1 1 auto;min-height:0;max-height:180px;overflow:visible}
+body[data-view=home] .v66-minihead{display:flex;align-items:baseline;justify-content:space-between;gap:5px;font-size:10px;color:#365e49;flex:none;line-height:1.4}
+body[data-view=home] .v66-minihead b{font-weight:800}
+body[data-view=home] .v66-minihead span{font-size:9px;white-space:nowrap}
+body[data-view=home] .v66-legend{display:flex;flex-wrap:wrap;gap:5px 11px;flex:none;font-size:9px;color:#3b6651}
+body[data-view=home] .v66-legend span{display:inline-flex;align-items:center;gap:4px}
+body[data-view=home] .v66-legend i{width:9px;height:9px;border-radius:2px}
+body[data-view=home] .v66-mini-bar{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0);transition:transform 860ms cubic-bezier(.2,.82,.2,1)}
+body[data-view=home] .v66-inview .v66-mini-bar{transform:scaleY(1)}
+body[data-view=home] .v66-mini-bar:hover{filter:brightness(1.12)}
+body[data-view=home] .v66-budget-mini{display:flex;flex-direction:column;justify-content:center;gap:13px;flex:1}
+body[data-view=home] .v66-budget-mini>div{display:grid;grid-template-columns:1fr 1fr;gap:4px 6px;align-items:end;font-size:11px}
+body[data-view=home] .v66-budget-mini>div b{text-align:right;font-size:18px;white-space:nowrap}
+body[data-view=home] .v66-budget-mini>div i{grid-column:1/-1;height:11px;background:#d2e0d3;border-radius:2px;display:block;overflow:hidden}
+body[data-view=home] .v66-budget-mini>div i em{display:block;width:0;height:100%;transition:width 1100ms cubic-bezier(.22,.82,.2,1)}
+body[data-view=home] .v66-inview .v66-budget-mini>div i em{width:var(--v66-goal)}
+body[data-view=home] .v66-budget-mini>strong{font-size:18px;color:#195c42;border-top:1px solid #c8dcd0;padding-top:8px}
+body[data-view=home] .v66-budget-mini>strong small{font-size:10px;white-space:nowrap;font-weight:700}
+body[data-view=home] .v66-stacked-bar{width:100%;height:16px;border-radius:3px;overflow:hidden;display:flex;clip-path:inset(0 100% 0 0);transition:clip-path 1100ms cubic-bezier(.2,.9,.2,1)}
+body[data-view=home] .v66-inview .v66-stacked-bar{clip-path:inset(0 0 0 0)}
+body[data-view=home] .v66-fin-key{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 9px;flex:1;align-content:center}
+body[data-view=home] .v66-fin-key span{display:flex;min-width:0;align-items:center;gap:4px;font-size:9px;color:#2b5540}
+body[data-view=home] .v66-fin-key i{height:8px;width:8px;flex:none;border-radius:1px}
+body[data-view=home] .v66-fin-key em{font-style:normal;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body[data-view=home] .v66-fin-key b{font-size:9px;white-space:nowrap;margin-left:auto}
+body[data-view=home] .v66-info-art{height:100%;display:flex;flex-direction:column;justify-content:center;gap:11px;padding:12px 6px}
+body[data-view=home] .v66-info-art small{font-size:12px;font-weight:760}
+body[data-view=home] .v66-info-art strong{font-size:clamp(29px,4vw,48px);letter-spacing:-.06em;line-height:1.2;font-variant-numeric:tabular-nums}
+body[data-view=home] .v66-info-art strong em{font-style:normal;font-size:.43em;letter-spacing:0;margin-left:5px}
+body[data-view=home] .v66-info-art span{font-size:12px;line-height:1.5;max-width:19em}
+body[data-view=home] .v66-tile{opacity:0;transform:scale(.96);transform-origin:center;transition:opacity 700ms,transform 750ms}
+body[data-view=home] .v66-inview .v66-tile{opacity:1;transform:none}
+/* Municipal-finance diagrams */
+.v63-fin-main .v66-donut-layout{display:grid;grid-template-columns:minmax(225px,1fr) minmax(195px,1fr);gap:16px;align-items:center;margin:10px 0}
+.v63-fin-main .v66-donut-plot{min-width:0;position:relative}
+.v63-fin-main .v66-pie-svg{width:100%;height:auto;max-width:340px;display:block;margin:0 auto;opacity:.4;transform:scale(.87) rotate(-7deg);transition:transform 1000ms cubic-bezier(.18,.82,.18,1),opacity 900ms}
+.v63-fin-main .is-v66-visible .v66-pie-svg{opacity:1;transform:scale(1) rotate(0)}
+.v63-fin-main .v66-pie-svg [data-pie-index]{cursor:pointer;transition:filter .2s ease,opacity .2s ease;outline:none}
+.v63-fin-main .v66-pie-svg [data-pie-index]:hover,.v63-fin-main .v66-pie-svg [data-pie-index]:focus-visible,.v63-fin-main .v66-pie-svg [data-pie-index].active{filter:brightness(1.13) drop-shadow(0px 1px 2px #283b2a60)}
+.v63-fin-main .v66-pie-selection{text-align:center;font-size:12px;line-height:1.5;color:#305d49;min-height:45px}
+.v63-fin-main .v66-pie-selection span{font-size:12px;font-weight:700;margin-right:5px;display:inline}
+.v63-fin-main .v66-pie-selection strong{font-size:16px;white-space:nowrap;color:#1c644c}
+.v63-fin-main .v66-pie-selection small{font-size:11px;white-space:nowrap;margin-left:5px}
+.v63-fin-main .v66-donut-list{display:grid;gap:5px;max-height:390px;overflow-y:auto}
+.v63-fin-main .v66-donut-list button{display:flex;align-items:center;gap:6px;min-width:0;text-align:left;cursor:pointer;background:transparent;border:1px solid transparent;border-radius:5px;padding:8px;font-size:12px;color:#255541}
+.v63-fin-main .v66-donut-list button:hover,.v63-fin-main .v66-donut-list button.active{background:#eaf3ec;border-color:#c6ddce}
+.v63-fin-main .v66-donut-list i{width:10px;height:10px;border-radius:50%;flex:none}
+.v63-fin-main .v66-donut-list span{flex:1;min-width:0;line-height:1.35}
+.v63-fin-main .v66-donut-list b{white-space:nowrap;font-size:12px}
+.v63-fin-main .v66-alternate-bars{border-top:1px solid #e3ece4;margin:18px 0 0;padding-top:6px;font-size:13px}
+.v63-fin-main .v66-alternate-bars summary{cursor:pointer;font-weight:700;color:#296e52;padding:10px 0}
+.v63-fin-main .v66-house-pie{padding:10px 8px 4px;min-height:0}
+.v63-fin-main .v66-house-pie .v66-pie-svg{max-width:230px}
+.v63-fin-main .v66-house-pie .v66-pie-selection{min-height:47px}
+.v63-fin-main .v66-house-pie .v66-pie-selection span{display:block;font-size:10px}
+.v63-fin-main .v66-house-pie .v66-pie-selection strong{font-size:14px}
+.v63-fin-main .v66-life-grid>div{display:flex;flex-direction:column;gap:8px}
+.v63-fin-main .v66-life-grid span{font-size:11px;color:#428266}
+.v63-fin-main .v66-life-grid strong{font-size:19px;line-height:1.45}
+.v63-fin-main .v66-life-grid ul{margin:0 0 5px;padding-left:19px;line-height:1.7;font-size:13.5px;color:#3b5145}
+.v63-fin-main .v66-life-grid li{margin-bottom:7px}
+.v63-fin-main .v66-life-grid a{font-size:12px;font-weight:800;line-height:1.5;margin-top:auto}
+.v63-fin-main .editor-donut{position:relative}
+.v63-fin-main .v66-budget-tooltip{position:absolute;z-index:5;width:max-content;min-width:135px;max-width:170px;padding:9px 12px;background:#183f30;color:#fff;border-radius:6px;box-shadow:0 6px 20px #1c433a50;pointer-events:none;font-size:12px;line-height:1.55}
+.v63-fin-main .v66-budget-tooltip strong,.v63-fin-main .v66-budget-tooltip span{display:block}
+.v63-fin-main .v66-budget-tooltip[hidden]{display:none!important}
+.v63-fin-main .editor-donut svg{transition:transform 850ms ease,opacity 850ms}
+.v63-fin-main .v63-graph-panel:not(.is-v66-visible) .editor-donut svg{opacity:.72;transform:scale(.9) rotate(-4deg)}
+.v63-finance-page .v63-big-number-grid,.v63-finance-page .v63-budget-band,.v63-finance-page .v63-annual-graph{transition:opacity .8s,transform .8s}
+.v63-finance-page .v63-big-number-grid:not(.is-v66-visible),.v63-finance-page .v63-annual-graph:not(.is-v66-visible){opacity:.78;transform:translateY(6px)}
+.v63-finance-page .v66-count{font-variant-numeric:tabular-nums}
+@media(max-width:800px){.v63-fin-main .v66-donut-layout{grid-template-columns:1fr}.v63-fin-main .v66-donut-list{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}.v63-fin-main .v66-donut-list button{padding:5px;font-size:11px}}
+@media(max-width:550px){body[data-view=home] .v66-highlights .v66-brief .v65-card-art{aspect-ratio:1.03}body[data-view=home] .v66-highlights .v66-brief .v66-card-footer{min-height:77px;padding:8px;gap:4px;align-items:flex-start;flex-direction:column}body[data-view=home] .v66-highlights .v66-brief .v66-card-footer strong{font-size:13.5px;line-height:1.35}body[data-view=home] .v66-highlights .v66-brief .v66-card-action{padding:5px 7px;font-size:9px;margin-left:auto}body[data-view=home] .v66-graphic{padding:32px 6px 5px;gap:3px}body[data-view=home] .v66-graphic svg{max-height:126px}body[data-view=home] .v66-minihead{font-size:8.7px}body[data-view=home] .v66-minihead span{font-size:7.5px}body[data-view=home] .v66-legend{font-size:8px;gap:5px}body[data-view=home] .v66-fin-key{gap:2px 4px}body[data-view=home] .v66-fin-key span,body[data-view=home] .v66-fin-key b{font-size:7.7px}body[data-view=home] .v66-fin-key i{width:6px;height:6px}body[data-view=home] .v66-stacked-bar{height:12px}body[data-view=home] .v66-budget-mini{gap:5px}body[data-view=home] .v66-budget-mini>div{font-size:9px}body[data-view=home] .v66-budget-mini>div b{font-size:12px}body[data-view=home] .v66-budget-mini>div i{height:8px}body[data-view=home] .v66-budget-mini>strong{font-size:14px}body[data-view=home] .v66-budget-mini>strong small{display:block;font-size:8px}body[data-view=home] .v66-info-art{gap:7px}body[data-view=home] .v66-info-art small{font-size:10px}body[data-view=home] .v66-info-art strong{font-size:30px}body[data-view=home] .v66-info-art span{font-size:10px}body[data-view=home] .v66-highlights .v66-brief .v64-brief-cat{top:5px;left:5px;font-size:8px;padding:4px 7px;max-width:calc(100% - 10px);overflow:hidden;text-overflow:ellipsis}body[data-view=home] .v66-issue-art{padding:30px 12px 10px}body[data-view=home] .v66-issue-art strong{font-size:20px}.v63-fin-main .v66-donut-list{grid-template-columns:1fr}.v63-fin-main .v66-life-grid ul{font-size:12.5px}.v63-fin-main .v66-house-pie .v66-pie-svg{max-width:235px}}
+@media(prefers-reduced-motion:reduce){body[data-view=home] .v66-mini-bar{transform:none!important;transition:none!important}body[data-view=home] .v66-budget-mini>div i em{width:var(--v66-goal)!important;transition:none!important}body[data-view=home] .v66-stacked-bar{clip-path:none!important;transition:none!important}body[data-view=home] .v66-tile{opacity:1!important;transform:none!important;transition:none!important}.v63-fin-main .v66-pie-svg{opacity:1!important;transform:none!important;transition:none!important}}
+
+body.press-article-page .press-breadcrumb{font-size:10px!important;gap:7px!important;line-height:1.5;margin-bottom:18px!important;font-weight:550}
+body.press-article-page .press-breadcrumb a{font-size:inherit!important}
+body.press-article-page .v45-footer{margin-top:0}
+
+/* Keep inline municipal-source links at exactly the surrounding paragraph size. */
+.v63-fin-main p a,.v63-fin-main .v63-fin-note a,.v63-fin-main li a{font-size:inherit!important;line-height:inherit!important}
+/* Animate annual finances only after the figure enters the viewport. */
+.v63-fin-main .v63-annual-graph .v63-annual-track i{transform:scaleX(0);transform-origin:0% 50%;transition:transform 900ms cubic-bezier(.18,.84,.25,1)}
+.v63-fin-main .v63-annual-graph.is-v66-visible .v63-annual-track i{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){.v63-fin-main .v63-annual-graph .v63-annual-track i{transform:none!important;transition:none!important}}
+
+body[data-view=home] .v66-photo.is-fallback-photo figcaption{display:none}
+
+
+/* ===== SOURCE: v67.css ===== */
+/* v67 fixes: keep counter numerals as large as their parent typography. */
+.v63-finance-page span.v66-count {
+  display:inline!important;
+  font-size:inherit!important;
+  font-weight:inherit!important;
+  font-style:inherit!important;
+  color:inherit!important;
+  letter-spacing:inherit!important;
+  line-height:inherit!important;
+  vertical-align:baseline!important;
+  white-space:inherit!important;
+}
+.v63-finance-page .v63-fin-hero-figure strong .v66-count {font-size:inherit!important;display:inline!important;}
+/* Give the restored summaries a stable layout even when the previous version's
+   highlight node is absent, as well as enough spacing from the quick links. */
+body[data-view="home"] .v66-highlights {display:block;min-height:0;}
+body[data-view="home"] .v66-highlights .v64-brief-grid{display:grid;}
+/* Monthly analogy: the user can hover a slice (mouse, stylus) or focus it
+   (keyboard), and use tapping to persist the same detail on touch devices. */
+.v63-fin-main .v66-house-pie .v66-pie-selection strong {font-size:clamp(14px,1.45vw,18px);}
+@media (prefers-reduced-motion: reduce) {
+ .v63-finance-page .v66-count {transition:none!important;animation:none!important;}
+}
+

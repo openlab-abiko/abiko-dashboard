@@ -1,0 +1,49 @@
+
+/* ===== SOURCE: issue-transport-v42.css ===== */
+/* Editorial-grade comparators. Shared, restrained cyan/green palette; no nested cards. */
+#issues .v42-access-explorer,#issues .v42-station-access{margin:26px 0;padding:28px clamp(16px,2vw,30px);background:#f5f8f6;border:1px solid #dfebe3;border-radius:18px}
+#issues .v42-access-heading span{font:800 11px ui-monospace,monospace;letter-spacing:.11em;color:#447f69}
+#issues .v42-access-heading h4{font-size:clamp(19px,2vw,26px);line-height:1.4;letter-spacing:-.025em;margin:8px 0}
+#issues .v42-access-heading p{max-width:700px;margin:0;color:#50665c;font-size:14px;line-height:1.85}
+#issues .v42-access-controls{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;padding:22px 0 16px;border-bottom:1px solid #d8e5dc}
+#issues .v42-control-label{display:block;font-size:11px;font-weight:800;letter-spacing:.04em;color:#60776c;margin-bottom:8px}
+#issues .v42-segments{display:flex;flex-wrap:wrap;gap:4px}
+#issues .v42-segments button{font:750 12.5px inherit;border:1px solid #cddcd3;background:#fff;color:#406254;border-radius:999px;padding:9px 14px;min-height:38px;white-space:nowrap}
+#issues .v42-segments button[aria-pressed=true]{background:#236c54;color:#fff;border-color:#236c54}
+#issues .v42-segments button:hover{border-color:#236c54}
+#issues .v42-journey-rows{display:grid;gap:4px;margin:12px 0 20px}
+#issues .v42-journey-row{display:grid;grid-template-columns:110px minmax(0,1fr) 98px;align-items:center;gap:15px;padding:12px 0;border-bottom:1px solid #e1e9e3}
+#issues .v42-journey-name{display:flex;gap:9px;align-items:center;font-size:11px;color:#87a296;letter-spacing:.04em}
+#issues .v42-journey-name span{font-size:14px;color:#263f32;letter-spacing:0}
+#issues .v42-journey-track{height:14px;border-radius:999px;background:#e0eae2;overflow:hidden}
+#issues .v42-journey-track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#7bb7a2,#307e67);transition:width .35s ease}
+#issues .v42-journey-time{text-align:right;white-space:nowrap;font-size:15px;font-weight:850;font-variant-numeric:tabular-nums;color:#163f34}
+#issues .v42-journey-time.is-unknown{font-size:12px;color:#74897f}
+#issues .v42-access-footer{display:grid;gap:12px}
+#issues .v42-access-footer>span,#issues .v42-station-note{font-size:12px;color:#60776a;line-height:1.85}
+#issues .v42-access-footer details{border-top:1px solid #dce7e1;padding-top:12px}
+#issues .v42-access-footer summary{font-size:13px;font-weight:800;color:#26664f;cursor:pointer}
+#issues .v42-method{color:#52675b;font-size:13px;line-height:1.8;padding:8px 0}
+#issues .v42-method a{font-weight:700;color:#217450}
+#issues .v42-access-table{border-collapse:collapse;width:100%;font-size:12px;min-width:480px;background:white}
+#issues .v42-access-table th,#issues .v42-access-table td{border-bottom:1px solid #e2eae4;padding:12px 8px;text-align:center;font-variant-numeric:tabular-nums}
+#issues .v42-access-table th:first-child{text-align:left}
+#issues #v42AccessTable{overflow-x:auto}
+#issues .v42-rail-list{display:grid;gap:6px;margin:22px 0}
+#issues .v42-rail-row{display:grid;grid-template-columns:90px minmax(0,1fr) 52px;align-items:center;gap:16px;padding:8px 0;border-bottom:1px solid #dfe9e2}
+#issues .v42-rail-row b{font-size:14px}
+#issues .v42-rail-row strong{font-size:17px;color:#194c3c;font-variant-numeric:tabular-nums;text-align:right}
+#issues .v42-rail-track{height:11px;background:#dce8df;border-radius:999px;overflow:hidden}
+#issues .v42-rail-track span{display:block;height:100%;background:#6bb79d;border-radius:inherit}
+#issues .v42-lastmile{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(210px,1fr);gap:18px;margin:18px 0 8px;padding-top:20px;border-top:1px solid #dce7df}
+#issues .v42-lastmile h5{font-size:17px;margin:4px 0}
+#issues .v42-lastmile p{font-size:12.5px;line-height:1.75;color:#5e7268;margin:0 0 12px}
+#issues .v42-lastmile-result{display:grid;align-content:center;gap:8px;min-width:0}
+#issues .v42-lastmile-result>span{font-size:12px;color:#668378}
+#issues .v42-lastmile-result>span strong{font-size:15px}
+#issues .v42-lastmile-result>div{padding:10px 14px;border-radius:10px;background:white;border:1px solid #e0e9e2;display:grid;grid-template-columns:1fr auto;align-items:center;font-size:13px}
+#issues .v42-lastmile-result>div b{font-size:23px;color:#1b6550;font-variant-numeric:tabular-nums}
+#issues .v42-lastmile-result>div small{grid-column:1/-1;color:#82968a;font-size:11px}
+@media(max-width:760px){#issues .v42-access-controls{display:grid;gap:10px}#issues .v42-lastmile{grid-template-columns:1fr}#issues .v42-journey-row{grid-template-columns:88px minmax(0,1fr) 93px;gap:9px}#issues .v42-segments button{font-size:12px;padding:9px 12px}}
+@media(max-width:390px){#issues .v42-journey-name{font-size:10px}#issues .v42-journey-name span{font-size:12.5px}#issues .v42-journey-row{grid-template-columns:74px minmax(0,1fr) 80px;gap:6px}#issues .v42-journey-time{font-size:13px}#issues .v42-segments button{padding:8px 9px;font-size:11.5px}}
+

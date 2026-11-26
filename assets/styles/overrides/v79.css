@@ -1,0 +1,128 @@
+/* v79 — local-navigation clarity, fixed bottom action, inline finance contents.
+   Keeps existing data graphics and page layouts unchanged. */
+
+/* The visible six-link global nav is the header's navigation on every screen.
+   The full-screen menu is opened only from the floating action at bottom right. */
+body header#globalHeader .v75-header-menu,
+body header#globalHeader .v73-header-burger{display:none!important}
+
+/* The "top" button comes out to the left, not above, when the reader scrolls.
+   The menu button therefore remains at the same x/y throughout the page. */
+body .v39-fab-group{
+ position:fixed!important;right:calc(15px + env(safe-area-inset-right,0px))!important;
+ bottom:calc(18px + env(safe-area-inset-bottom,0px))!important;
+ top:auto!important;left:auto!important;transform:none!important;
+ display:flex!important;flex-direction:row!important;align-items:flex-end!important;
+ gap:10px!important;z-index:1200!important;
+}
+body .v39-fab-group #menuToggle{
+ flex:0 0 auto!important;position:relative!important;margin:0!important;
+ bottom:auto!important;top:auto!important;right:auto!important;transform:none!important;
+}
+body .v39-fab-group #v39BackToTop{flex:0 0 auto!important;margin:0!important}
+@media(min-width:741px){body .v39-fab-group{right:22px!important;bottom:22px!important}}
+
+/* A calm two-level navigation: generous targets, a clear current page, and
+   compact contents directly below each section title. */
+.v79-overlay[hidden]{display:none!important}
+.v79-overlay{background:#164b37!important;color:#fff!important;overflow-y:auto!important;overscroll-behavior:contain}
+.v79-overlay .v79-overlay-inner{width:min(1060px,calc(100% - 48px))!important;min-height:100dvh!important;display:flex!important;flex-direction:column!important;margin:0 auto!important}
+.v79-overlay .v79-overlay-top{display:flex!important;flex-wrap:wrap!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;
+ padding:25px 3px 18px!important;border-bottom:1px solid rgba(255,255,255,.26)!important}
+.v79-overlay .v79-overlay-top h2{font-size:clamp(13px,1.3vw,15px)!important;font-weight:550!important;color:#c8e5d2!important;
+ letter-spacing:.035em!important;line-height:1.45!important;margin:0!important;padding:0!important;outline:0}
+.v79-overlay .v75-overlay-home{font-size:clamp(19px,2.2vw,25px)!important;white-space:normal!important;letter-spacing:-.05em!important}
+.v79-overlay .v79-menu-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:12px 24px!important;align-content:start!important;align-items:start!important;padding:28px 0 36px!important;flex:1 0 auto!important}
+.v79-overlay .v79-menu-group{border:1px solid rgba(255,255,255,.21)!important;border-radius:12px!important;
+ padding:0!important;min-width:0!important;background:rgba(255,255,255,.025)!important;overflow:hidden!important}
+.v79-overlay .v79-menu-group.is-active{border-color:rgba(255,255,255,.64)!important;background:rgba(255,255,255,.085)!important}
+.v79-overlay .v79-page-head{min-height:61px!important;display:flex!important;align-items:center!important;gap:8px!important;padding:5px 10px!important}
+.v79-overlay .v79-page-head .v77-page-link{display:flex!important;align-items:center!important;min-height:45px!important;
+ font-size:clamp(17px,1.65vw,21px)!important;line-height:1.4!important;font-weight:670!important;
+ color:white!important;letter-spacing:-.045em!important;border:0!important;box-shadow:none!important;
+ background:transparent!important;padding:9px 9px!important;margin:0!important;min-width:0!important;text-align:left!important;flex:1!important}
+.v79-overlay .v79-page-head .v77-page-link[aria-current="page"]{color:#fff!important;background:transparent!important;box-shadow:none!important;padding-left:9px!important}
+.v79-overlay .v79-page-head .v77-page-link[aria-current="page"]::before{content:"";display:inline-block;width:7px;height:7px;flex:0 0 7px;
+ background:#d4f2dc;border-radius:50%;margin-right:10px}
+.v79-overlay .v79-page-head .v77-page-link::after{content:none!important;display:none!important}
+.v79-overlay .v79-page-head .v77-page-link:hover{background:rgba(255,255,255,.11)!important;border-radius:7px!important}
+.v79-overlay .v79-sub-toggle{min-height:38px!important;min-width:64px!important;flex:0 0 auto!important;white-space:nowrap!important;
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;
+ padding:8px 10px!important;font-weight:580!important;font-size:12px!important;
+ border:1px solid rgba(244,255,248,.38)!important;border-radius:7px!important;background:transparent!important;color:#fff!important}
+.v79-overlay .v79-sub-toggle[aria-expanded="true"]{background:rgba(255,255,255,.14)!important;border-color:rgba(255,255,255,.69)!important}
+.v79-overlay .v79-menu-children{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:3px 5px!important;padding:10px 13px 16px!important;margin:0!important;
+ background:rgba(3,31,20,.16)!important;border-top:1px solid rgba(255,255,255,.19)!important}
+.v79-overlay .v79-menu-children[hidden]{display:none!important}
+.v79-overlay #v75SiteNav .v79-menu-children .v77-sub-link{
+ display:flex!important;align-items:center!important;min-width:0!important;min-height:40px!important;
+ padding:8px 9px!important;margin:0!important;line-height:1.5!important;
+ color:#edf7ef!important;font-size:13px!important;font-weight:450!important;
+ text-decoration:none!important;overflow-wrap:anywhere!important;border:1px solid transparent!important;border-radius:7px!important;
+ background:transparent!important;letter-spacing:0!important;text-align:left!important
+}
+.v79-overlay #v75SiteNav .v79-menu-children .v77-sub-link::after{content:none!important;display:none!important}
+.v79-overlay #v75SiteNav .v79-menu-children .v77-sub-link:hover{background:rgba(255,255,255,.17)!important}
+.v79-overlay #v75SiteNav .v79-menu-children .v77-sub-link.is-current{background:#fff!important;color:#164b37!important;font-weight:650!important}
+/* The close control stays centered at the viewport bottom even when contents scroll. */
+.v79-overlay .v79-overlay-bottom{position:sticky!important;bottom:0!important;z-index:3!important;
+ display:flex!important;justify-content:center!important;align-items:center!important;flex:0 0 auto!important;
+ padding:29px 12px calc(17px + env(safe-area-inset-bottom,0px))!important;
+ margin-top:auto!important;background:linear-gradient(180deg,rgba(22,75,55,0),#164b37 27%,#164b37 100%)!important}
+.v79-overlay .v79-close{position:relative!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ min-height:53px!important;width:min(280px,calc(100vw - 50px))!important;max-width:100%!important;
+ background:#fff!important;color:#164b37!important;border:1px solid #fff!important;border-radius:999px!important;
+ font-size:15px!important;font-weight:730!important;letter-spacing:.02em!important;box-shadow:0 10px 26px rgba(0,14,6,.16)!important;
+ transition:transform .14s ease,background-color .14s ease!important;cursor:pointer!important}
+.v79-overlay .v79-close:hover{background:#eaf5ed!important;transform:translateY(-2px)}
+.v79-overlay .v79-close span{font-size:25px!important;line-height:1!important;font-weight:400!important}
+@media(max-width:740px){
+ .v79-overlay .v79-overlay-inner{width:calc(100% - 24px)!important}
+ .v79-overlay .v79-overlay-top{padding:17px 7px 14px!important}
+ .v79-overlay .v79-overlay-top h2{font-size:12px!important}
+ .v79-overlay .v79-menu-grid{grid-template-columns:1fr!important;gap:7px!important;padding:15px 0 20px!important}
+ .v79-overlay .v79-page-head{min-height:54px!important;padding:3px 8px!important}
+ .v79-overlay .v79-page-head .v77-page-link{font-size:19px!important;min-height:43px!important}
+ .v79-overlay .v79-menu-children{grid-template-columns:repeat(2,minmax(0,1fr))!important;padding:8px 9px 13px!important;gap:2px 4px!important}
+ .v79-overlay #v75SiteNav .v79-menu-children .v77-sub-link{font-size:12.5px!important;padding:8px!important;min-height:43px!important}
+ .v79-overlay .v79-overlay-bottom{padding-top:24px!important;padding-bottom:calc(14px + env(safe-area-inset-bottom,0px))!important}
+}
+@media(max-width:350px){.v79-overlay .v79-menu-children{grid-template-columns:1fr!important}}
+@media(prefers-reduced-motion:reduce){.v79-overlay .v79-close{transition:none!important}}
+
+/* Make the mobile finance table of contents a genuine article element, instead
+   of hiding it or docking it under the sticky global header. */
+@media(max-width:760px){
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc{display:block!important;position:relative!important;top:auto!important;
+  z-index:2!important;margin:17px 0 24px!important;border:1px solid #d8e5dc!important;border-left:4px solid #237c5d!important;
+  border-radius:8px!important;background:#fff!important;box-shadow:none!important;overflow:hidden!important}
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc summary{display:flex!important;align-items:center!important;
+  padding:16px 15px!important;min-height:56px!important;color:#1d503a!important;font-size:15px!important;font-weight:720!important;
+  line-height:1.45!important;list-style:none!important}
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc summary span{font-weight:480!important;color:#5d7867!important;font-size:12px!important}
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc summary::after{content:"＋";font-size:17px!important;color:#2e7055!important;margin-left:4px}
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc[open] summary::after{content:"−"}
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc nav{max-height:none!important;padding:6px 12px 14px!important;
+  overflow:visible!important;border-top:1px solid #e1eae3!important;gap:0!important}
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc nav a{font-size:14px!important;min-height:42px!important;
+  color:#2e5741!important;line-height:1.55!important;padding:9px 7px!important;text-decoration:none!important;
+  border-bottom:1px solid #edf2ee!important}
+ body.v63-finance-page #tocMobile.v63-fin-mobile-toc nav a:last-child{border-bottom:0!important}
+}
+
+/* Home summary photograph usage: provenance stays in each article / footer's
+   source section, not over the image. The category text is ordinary weight. */
+body[data-view="home"] .v66-highlights .v66-brief .v64-brief-cat{font-weight:480!important}
+body[data-view="home"] .v66-highlights .v66-photo figcaption{display:none!important}
+
+/* Avoid a repeated noninformative line after the main disclosure and sources.
+   All six footer links, the attribution disclosure and sources remain intact. */
+footer.footer.v45-footer .v45-footer-copyright{display:none!important}
+/* Force readable left-aligned page names even when legacy menu styles used
+   justify-content:space-between on all anchors. */
+.v79-overlay #v75SiteNav .v79-page-head .v77-page-link{justify-content:flex-start!important;text-align:left!important}
+@media(max-width:740px){
+ .v79-overlay #v75SiteNav .v79-menu-children .v77-sub-link{font-size:clamp(13px,3.4vw,14px)!important}
+}
